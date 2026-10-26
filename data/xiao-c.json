@@ -1,0 +1,11 @@
+{
+  "updated_at": "2026-10-26 Asia/Taipei · 建置版",
+  "status": "等待確認本金與部位配置；未成交",
+  "capital_usd": null,
+  "cash_usd": null,
+  "nav_usd": null,
+  "pnl_usd": null,
+  "positions": [],
+  "trades": [],
+  "review": "尚無可計算的模擬損益。歷史回測尚未執行：缺少開盤前封存的完整推薦與下單規模。未來逐筆比對原論點、催化結果、市場因素、估值與配置，提出可前瞻驗證的調整。"
+}
