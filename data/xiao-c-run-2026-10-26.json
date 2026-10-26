@@ -1,0 +1,36 @@
+{
+  "state": {
+    "cash": 300000,
+    "positions": {},
+    "events": [],
+    "realized": 0
+  },
+  "run_at": "2026-10-26T15:42:30Z",
+  "session": "2026-10-26",
+  "session_status": "依NYSE官方日曆與美東時鐘，屬正常盤中；未取得即時交易所營運狀態feed",
+  "calendar_source": "https://www.nyse.com/markets/hours-calendars",
+  "decisions": [
+    {
+      "action": "NO_TRADE",
+      "reason": "缺少開盤前封存的訊號；不得盤中補填開盤成交"
+    }
+  ],
+  "trade_count": 0,
+  "signal_archive_valid": false,
+  "cash": 300000,
+  "nav": 300000,
+  "realized": 0,
+  "unrealized": 0,
+  "pnl": 0,
+  "return": 0,
+  "missing_marks": [],
+  "valuation_type": "intraday-cash-only",
+  "benchmark_status": "尚未啟動：依原實驗規則與首筆合格交易同日起算",
+  "limitations": [
+    "無開盤前封存的結構化交易訊號",
+    "原始網站摘要只列條件式觀察，無可證明已成立的買單",
+    "本次未取得可驗證10/26開盤行情，不以10/23收盤價代替",
+    "無持股，因此現金估值不依賴行情",
+    "未啟動歷史回測或對照組成交"
+  ]
+}
