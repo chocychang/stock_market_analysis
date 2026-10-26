@@ -1,11 +1,17 @@
 {
-  "updated_at": "2026-10-26 Asia/Taipei · 本金與配置已確認",
-  "status": "已啟用，等待首筆開盤前封存訊號",
+  "updated_at": "2026-10-26 23:42:30 Asia/Taipei｜首次實際執行",
+  "status": "今日正常盤中；已執行：NO_TRADE（無開盤前合格訊號）",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
   "pnl_usd": 0,
   "positions": [],
   "trades": [],
-  "review": "初始本金300,000美元；每筆最多15,000美元、單股上限45,000美元、最低現金60,000美元。尚無成交。採前瞻模擬，與同期SPY及固定持有策略比較；歷史回測僅使用可驗證的過去訊號。現有條件式觀察不回溯轉成開盤買單。"
+  "review": "本次成交0筆、持股0股、現金300,000美元。AMD為條件式分批，ASML/MSFT/AMZN仍屬觀察，且沒有開盤前封存的明確買單，故不回填開盤成交。已保存實際執行報告，詳見下方方法與報告連結。",
+  "latest_report": "reports/xiao-c-2026-10-26.html",
+  "methodology": "xiao-c-methodology.html",
+  "run_at": "2026-10-26T15:42:30Z",
+  "market_session": "2026-10-26",
+  "signal_archive_valid": false,
+  "valuation_type": "intraday-cash-only"
 }
