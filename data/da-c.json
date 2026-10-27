@@ -1,0 +1,87 @@
+{
+  "updated_at": "2026-10-27 23:08:36 Asia/Taipei",
+  "name": "大C",
+  "status": "CDNS買進意圖待決策後報價；早晨重演另列",
+  "capital_usd": 300000,
+  "cash_usd": 300000,
+  "nav_usd": 300000,
+  "pnl_usd": 0,
+  "positions": [],
+  "pending_orders": [
+    {
+      "ticker": "CDNS",
+      "side": "BUY",
+      "max_budget_usd": 30000,
+      "decision_at": "2026-10-27T15:08:36Z",
+      "status": "pending-valid-post-decision-quote"
+    }
+  ],
+  "scenario": {
+    "id": "da-c-2026-10-27-morning-counterfactual-v1",
+    "mode": "retrospective-scenario-only",
+    "not_forward_test": true,
+    "scenario_assumption": "假設大C於今早08:03已存在，讀到當晨摘要後因CDNS正式上修指引決定於同日正常盤開盤買入。此決策現在才重建，並非當晨真實封存買單，不計入正式績效。",
+    "source_commit": "9dd99998940b898ac8e57c7229fd4d90e1ff5ad4",
+    "morning_published_at": "2026-10-27T08:03:01.966+08:00",
+    "news_source": "https://investor.cadence.com/news/news-details/2026/Cadence-Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+    "news_date": "2026-10-26",
+    "news_trigger": "正式上修2026全年收入成長展望；未使用事後股價上漲作買入理由，未假設超越未封存的市場預期",
+    "prices_source": "https://stockanalysis.com/stocks/cdns/history/",
+    "provider": "StockAnalysis / S&P Global Market Intelligence; single-provider indicative data",
+    "quote_validation": "10/27行列開盤325.96，盤中335.89介於低323.68與高337.25之間；同站overview開盤相同，但其較舊快照欄位不一致，未用其336.81標價。Nasdaq即時資料不可得，未獨立確認官方開盤拍賣成交。",
+    "session": "2026-10-27",
+    "assumed_execution_at": "2026-10-27T09:30:00-04:00",
+    "mark_at": "2026-10-27T11:03:00-04:00",
+    "price_adjustment_limitation": "來源歷史序列按拆股調整；未取得未調整交易所原始帶，故此結果僅為單一來源試算，不升格為正式成交",
+    "ticker": "CDNS",
+    "side": "BUY",
+    "open_reference": 325.96,
+    "slippage_bps": 10,
+    "fill_price": 326.28595999999993,
+    "shares": 91,
+    "cost_usd": 29692.022359999995,
+    "initial_capital_usd": 300000,
+    "cash_usd": 270307.97764,
+    "mark_price": 335.89,
+    "market_value_usd": 30565.989999999998,
+    "realized_pnl_usd": 0,
+    "unrealized_pnl_usd": 873.9676400000026,
+    "nav_usd": 300873.96764,
+    "account_return": 0.002913225466666675,
+    "position_return": 0.029434426170222183,
+    "review_exit_reference": 293.657364,
+    "partial_profit_reference": 391.5431519999999,
+    "commission_usd": 0,
+    "cost_notes": "已包含買進10bps滑價；未扣未發生賣出成本；現金利息0，尚無股息及個人稅費。",
+    "action_at_mark": "HOLD：相對平均成本約上漲2.94%，尚未到+20%減半或-10%退出。沒有持續盤中監控的假設。",
+    "other_decisions": [
+      {
+        "ticker": "AMD",
+        "action": "WATCH",
+        "reason": "原摘要為既有基本面與未來財報，無新上修公告觸發"
+      },
+      {
+        "ticker": "ASML",
+        "action": "WATCH",
+        "reason": "既有Q3供需與估值觀察，非本次新事件"
+      },
+      {
+        "ticker": "MSFT",
+        "action": "WATCH",
+        "reason": "尚未公布摘要所指下一份財報；不把公布日期當正面結果"
+      },
+      {
+        "ticker": "AMZN",
+        "action": "WATCH",
+        "reason": "等待新財報，未出現本次規則要求的明確事件"
+      }
+    ],
+    "limitations": [
+      "事後選用策略與重建決策，可能有選擇偏差；不能據此證明推薦有效",
+      "只有一檔、一筆、盤中估值，非當日收盤結果",
+      "行情僅單一來源，非真實可保證的成交價格",
+      "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
+    ]
+  },
+  "latest_report": "reports/da-c-2026-10-27.html"
+}
