@@ -1,0 +1,56 @@
+{
+  "state": {
+    "cash": 300000,
+    "positions": {},
+    "events": [],
+    "realized": 0
+  },
+  "run_at": "2026-10-27T14:57:50Z",
+  "session": "2026-10-27",
+  "session_status": "依NYSE官方日曆與美東時鐘屬正常盤中；未連接即時營運狀態feed",
+  "calendar_source": "https://www.nyse.com/markets/hours-calendars",
+  "decisions": [
+    {
+      "ticker": "AMD",
+      "action": "WATCH",
+      "reason": "Q3指引需兌現；追蹤資料中心收入/毛利、現金流和Q4展望。"
+    },
+    {
+      "ticker": "AMZN",
+      "action": "WATCH",
+      "reason": "10/29財報後核對AWS利潤、零售利潤率、CapEx與FCF。"
+    },
+    {
+      "ticker": "ASML",
+      "action": "WATCH",
+      "reason": "追蹤EUV/DUV供需、訂單轉收入、毛利與客戶資本支出。"
+    },
+    {
+      "ticker": "CDNS",
+      "action": "WATCH",
+      "reason": "核對backlog轉收入、營業利潤率與上調後FY26指引。"
+    },
+    {
+      "ticker": "MSFT",
+      "action": "WATCH",
+      "reason": "10/28財報後核對Azure增長、雲端毛利、資本支出回報與RPO。"
+    }
+  ],
+  "trade_count": 0,
+  "signal_archive_valid": true,
+  "cash": 300000,
+  "nav": 300000,
+  "realized": 0,
+  "unrealized": 0,
+  "pnl": 0,
+  "return": 0,
+  "missing_marks": [],
+  "valuation_type": "intraday-cash-only",
+  "benchmark_status": "尚未啟動：依原實驗規則與首筆合格交易同日起算",
+  "limitations": [
+    "五檔訊號均為WATCH，無買賣委託；不需以行情模擬成交",
+    "全現金帳戶，利息假設0；無持股需要估值",
+    "歷史回測尚未執行；基準帳戶等待首筆合格交易日啟動",
+    "早晨欄位名稱已透過相容轉換讀取，保留原始封存檔不改寫"
+  ]
+}
