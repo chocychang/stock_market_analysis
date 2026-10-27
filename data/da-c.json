@@ -1,21 +1,23 @@
 {
-  "updated_at": "2026-10-27 23:08:36 Asia/Taipei",
+  "updated_at": "2026-10-27 23:51 Asia/Taipei",
   "name": "大C",
-  "status": "CDNS買進意圖待決策後報價；早晨重演另列",
+  "status": "已模擬買入CDNS 87股｜成交價含10bps滑價；估值截至23:46",
   "capital_usd": 300000,
-  "cash_usd": 300000,
-  "nav_usd": 300000,
-  "pnl_usd": 0,
-  "positions": [],
-  "pending_orders": [
+  "cash_usd": 270320.7504,
+  "nav_usd": 299970.3504,
+  "pnl_usd": -29.64959999999337,
+  "positions": [
     {
       "ticker": "CDNS",
-      "side": "BUY",
-      "max_budget_usd": 30000,
-      "decision_at": "2026-10-27T15:08:36Z",
-      "status": "pending-valid-post-decision-quote"
+      "shares": 87,
+      "average_cost": 341.14079999999996,
+      "cost_usd": 29679.249599999996,
+      "mark_price": 340.8,
+      "mark_at": "2026-10-27T15:46:00Z",
+      "unrealized_pnl_usd": -29.64959999999337
     }
   ],
+  "pending_orders": [],
   "scenario": {
     "id": "da-c-2026-10-27-morning-counterfactual-v1",
     "mode": "retrospective-scenario-only",
@@ -83,5 +85,34 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-10-27.html"
+  "latest_report": "reports/da-c-2026-10-27.html",
+  "version": "2026-10-27-CDNS-filled-1546",
+  "execution": {
+    "version": "2026-10-27-CDNS-filled-1546",
+    "quote": {
+      "ticker": "CDNS",
+      "price": 340.8,
+      "quote_at": "2026-10-27T15:46:00Z",
+      "retrieved_at": "2026-10-27T15:51:15Z",
+      "source_url": "https://stockanalysis.com/stocks/cdns/",
+      "session": "2026-10-27",
+      "session_type": "regular",
+      "day_low": 323.68,
+      "day_high": 341,
+      "delayed": true,
+      "latency_note": "Provider labels real-time; retrieved approximately five minutes after quote timestamp. Single-source indicative paper fill."
+    },
+    "shares": 87,
+    "average_cost": 341.14079999999996,
+    "cost_usd": 29679.249599999996,
+    "cash_usd": 270320.7504,
+    "market_value_usd": 29649.600000000002,
+    "unrealized_pnl_usd": -29.64959999999337,
+    "realized_pnl_usd": 0,
+    "nav_usd": 299970.3504,
+    "execution_at": "2026-10-27T15:46:00Z",
+    "decision_at": "2026-10-27T15:08:36Z",
+    "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
+  }
 }
+
