@@ -1,20 +1,29 @@
 {
-  "updated_at": "2026-10-27 23:51 Asia/Taipei",
+  "updated_at": "2026-10-28T15:48:33.519Z",
   "name": "大C",
-  "status": "已模擬買入CDNS 87股｜成交價含10bps滑價；估值截至23:46",
+  "status": "已模擬買入GEV 34股；CDNS持有87股",
   "capital_usd": 300000,
-  "cash_usd": 270320.7504,
-  "nav_usd": 299970.3504,
-  "pnl_usd": -29.64959999999337,
+  "cash_usd": 240477.69716000004,
+  "nav_usd": 300352.91716000007,
+  "pnl_usd": 352.91716000007,
   "positions": [
     {
       "ticker": "CDNS",
       "shares": 87,
       "average_cost": 341.14079999999996,
       "cost_usd": 29679.249599999996,
-      "mark_price": 340.8,
-      "mark_at": "2026-10-27T15:46:00Z",
-      "unrealized_pnl_usd": -29.64959999999337
+      "mark_price": 345.54,
+      "mark_at": "2026-10-28T14:48:00Z",
+      "unrealized_pnl_usd": 382.73040000000765
+    },
+    {
+      "ticker": "GEV",
+      "shares": 34,
+      "average_cost": 877.7368599999999,
+      "cost_usd": 29843.053239999994,
+      "mark_price": 876.86,
+      "mark_at": "2026-10-28T15:33:00Z",
+      "unrealized_pnl_usd": -29.81323999999222
     }
   ],
   "pending_orders": [],
@@ -85,8 +94,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-10-27.html",
-  "version": "2026-10-27-CDNS-filled-1546",
+  "latest_report": "reports/da-c-2026-10-28.html",
+  "version": "2026-10-28-GEV-filled-v2",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -113,6 +122,33 @@
     "execution_at": "2026-10-27T15:46:00Z",
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
-  }
+  },
+  "review": "GEV因正式上修全年指引買入34股，單價877.73686美元（含10bps滑價），成本29843.05美元；原買單22:56:50固定，採23:33報價，約23:48取得。CDNS持有87股，未達退出門檻。買單未因GEV當日下跌而取消；上修指引不保證股價上漲，後續驗證交付、利潤率及現金流。",
+  "previous_close": {
+    "session": "2026-10-27",
+    "price": 343.08,
+    "quote_at": "2026-10-27T20:00:00Z",
+    "source_url": "https://stockanalysis.com/stocks/cdns/history/",
+    "nav": 300168.71040000004,
+    "pnl": 168.71040000000357,
+    "limitation": "Historical source split-adjusted; current adjacent-day values match quoted previous close."
+  },
+  "latest_execution": {
+    "ticker": "GEV",
+    "price": 876.86,
+    "quote_at": "2026-10-28T15:33:00Z",
+    "retrieved_at": "2026-10-28T15:48:33.519Z",
+    "source_url": "https://stockanalysis.com/stocks/gev/",
+    "delayed": true,
+    "session": "2026-10-28",
+    "day_low": 836.24,
+    "day_high": 883.49,
+    "decision_at": "2026-10-28T14:56:50Z",
+    "shares": 34,
+    "fill_price": 877.7368599999999,
+    "cost_usd": 29843.053239999994
+  },
+  "valuation_note": "混合時間估值：CDNS台灣22:48，GEV23:33；非同步即時淨值、非收盤",
+  "realized_pnl_usd": 0
 }
 
