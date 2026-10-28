@@ -1,17 +1,19 @@
 {
-  "updated_at": "2026-10-27 22:57:50 Asia/Taipei",
-  "status": "正常盤中；5檔WATCH，無買賣委託，NO_TRADE",
+  "updated_at": "2026-10-28T15:47:36.063Z",
+  "status": "10檔盤前封存WATCH，0筆交易，全現金",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
   "pnl_usd": 0,
   "positions": [],
   "trades": [],
-  "review": "今天08:03已封存AMD、ASML、MSFT、AMZN、CDNS訊號，全部為WATCH。無合格買賣委託，成交0筆，持股0股，現金300,000美元；總損益0。早晚訊號交接已讀取成功，未把觀察升級成買進。",
-  "latest_report": "reports/xiao-c-2026-10-27.html",
+  "review": "今日十檔盤前訊號全為WATCH，條件未確認，保留300000美元。沒有已平倉樣本，不能判斷推薦成功率。晨報GEV尚未公布財報；晚間新消息不可倒填小C開盤買單。",
+  "latest_report": "reports/xiao-c-2026-10-28.html",
   "methodology": "xiao-c-methodology.html",
-  "run_at": "2026-10-27T14:57:50Z",
-  "market_session": "2026-10-27",
+  "run_at": "2026-10-28T14:57:00Z",
+  "market_session": "2026-10-28",
   "signal_archive_valid": true,
-  "valuation_type": "intraday-cash-only"
+  "valuation_type": "intraday-cash-only",
+  "version": "2026-10-28-night-v1"
 }
+
