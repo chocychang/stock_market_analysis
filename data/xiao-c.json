@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-28T15:47:36.063Z",
-  "status": "10檔盤前封存WATCH，0筆交易，全現金",
+  "updated_at": "2026-10-30 23:04:34 Asia/Taipei",
+  "status": "11檔盤前封存WATCH，今日0筆交易，全現金",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
   "pnl_usd": 0,
   "positions": [],
   "trades": [],
-  "review": "今日十檔盤前訊號全為WATCH，條件未確認，保留300000美元。沒有已平倉樣本，不能判斷推薦成功率。晨報GEV尚未公布財報；晚間新消息不可倒填小C開盤買單。",
-  "latest_report": "reports/xiao-c-2026-10-28.html",
+  "review": "08:04:28封存11檔WATCH，無已驗證開盤買賣訊號。今日0筆交易、0股、現金300000美元。保留觀望樣本，零虧損不證明選股有效；基準未完成，無法量化觀望機會成本。10/29夜間缺漏不補造交易。",
+  "latest_report": "reports/xiao-c-2026-10-30.html",
   "methodology": "xiao-c-methodology.html",
-  "run_at": "2026-10-28T14:57:00Z",
-  "market_session": "2026-10-28",
+  "run_at": "2026-10-30T15:04:34.555Z",
+  "market_session": "2026-10-30",
   "signal_archive_valid": true,
   "valuation_type": "intraday-cash-only",
-  "version": "2026-10-28-night-v1"
+  "version": "2026-10-30-night-v1"
 }
 
