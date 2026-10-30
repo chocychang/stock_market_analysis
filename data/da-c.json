@@ -1,29 +1,45 @@
 {
-  "updated_at": "2026-10-28T15:48:33.519Z",
+  "updated_at": "2026-10-30 23:04:34 Asia/Taipei",
   "name": "大C",
-  "status": "已模擬買入GEV 34股；CDNS持有87股",
+  "status": "CDNS 87股、GEV 34股續持；今日無交易，帳戶轉為浮虧",
   "capital_usd": 300000,
   "cash_usd": 240477.69716000004,
-  "nav_usd": 300352.91716000007,
-  "pnl_usd": 352.91716000007,
+  "nav_usd": 298779.19716000004,
+  "pnl_usd": -1220.8028399999603,
   "positions": [
     {
       "ticker": "CDNS",
       "shares": 87,
       "average_cost": 341.14079999999996,
       "cost_usd": 29679.249599999996,
-      "mark_price": 345.54,
-      "mark_at": "2026-10-28T14:48:00Z",
-      "unrealized_pnl_usd": 382.73040000000765
+      "mark_price": 331.84,
+      "mark_at": "2026-10-30T14:51:00Z",
+      "source_url": "https://stockanalysis.com/stocks/cdns/",
+      "retrieved_at": "2026-10-30T15:04:34.555Z",
+      "delayed": true,
+      "market_value_usd": 28870.079999999998,
+      "unrealized_pnl_usd": -809.1695999999974,
+      "position_return": -0.027263815996210305,
+      "action": "HOLD",
+      "exit_reference": 307.02671999999995,
+      "partial_profit_reference": 409.36895999999996
     },
     {
       "ticker": "GEV",
       "shares": 34,
       "average_cost": 877.7368599999999,
       "cost_usd": 29843.053239999994,
-      "mark_price": 876.86,
-      "mark_at": "2026-10-28T15:33:00Z",
-      "unrealized_pnl_usd": -29.81323999999222
+      "mark_price": 865.63,
+      "mark_at": "2026-10-30T14:55:00Z",
+      "source_url": "https://stockanalysis.com/stocks/gev/",
+      "retrieved_at": "2026-10-30T15:04:34.555Z",
+      "delayed": true,
+      "market_value_usd": 29431.42,
+      "unrealized_pnl_usd": -411.63323999999557,
+      "position_return": -0.013793268292276006,
+      "action": "HOLD",
+      "exit_reference": 789.9631739999999,
+      "partial_profit_reference": 1053.2842319999997
     }
   ],
   "pending_orders": [],
@@ -94,8 +110,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-10-28.html",
-  "version": "2026-10-28-GEV-filled-v2",
+  "latest_report": "reports/da-c-2026-10-30.html",
+  "version": "2026-10-30-night-v1",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -123,15 +139,21 @@
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
   },
-  "review": "GEV因正式上修全年指引買入34股，單價877.73686美元（含10bps滑價），成本29843.05美元；原買單22:56:50固定，採23:33報價，約23:48取得。CDNS持有87股，未達退出門檻。買單未因GEV當日下跌而取消；上修指引不保證股價上漲，後續驗證交付、利潤率及現金流。",
+  "review": "大C轉為浮虧。CDNS與GEV買進理由是指引上修，但利多可能已反映在價格，估值與市場風險仍會壓過營運成長。這是待驗證的解釋，尚無市場/產業歸因模型證明。今天不因虧損改寫原成交，也不憑兩筆未平倉樣本調整風險參數；持續檢查CDNS利潤率與backlog轉化、GEV交付與現金品質。下一輪如有下修或達門檻，先固定賣單再取決策後報價。",
   "previous_close": {
-    "session": "2026-10-27",
-    "price": 343.08,
-    "quote_at": "2026-10-27T20:00:00Z",
-    "source_url": "https://stockanalysis.com/stocks/cdns/history/",
-    "nav": 300168.71040000004,
-    "pnl": 168.71040000000357,
-    "limitation": "Historical source split-adjusted; current adjacent-day values match quoted previous close."
+    "session": "2026-10-29",
+    "type": "close-valuation-reconstructed-on-2026-10-30",
+    "nav_usd": 300483.84716000006,
+    "pnl_usd": 483.847160000063,
+    "prices": {
+      "CDNS": 342.75,
+      "GEV": 887.85
+    },
+    "sources": [
+      "https://stockanalysis.com/stocks/cdns/history/",
+      "https://stockanalysis.com/stocks/gev/history/"
+    ],
+    "limitations": "今日取得歷史收盤，以當前已保存持股估值；不代表10/29夜間曾執行風險或消息檢查。拆股調整來源，前收與當日overview一致；未另記未發生的股息。"
   },
   "latest_execution": {
     "ticker": "GEV",
@@ -148,7 +170,22 @@
     "fill_price": 877.7368599999999,
     "cost_usd": 29843.053239999994
   },
-  "valuation_note": "混合時間估值：CDNS台灣22:48，GEV23:33；非同步即時淨值、非收盤",
-  "realized_pnl_usd": 0
+  "valuation_note": "單一行情來源，CDNS22:51、GEV22:55；不是23:00同步或收盤淨值",
+  "realized_pnl_usd": 0,
+  "performance": {
+    "return": -0.004069342799999868,
+    "exposure": 0.19513239393564208,
+    "closed_trade_count": 0,
+    "win_rate": null,
+    "sharpe": null,
+    "max_drawdown": null
+  },
+  "limitations": [
+    "單一行情來源，CDNS22:51、GEV22:55；不是23:00同步或收盤淨值",
+    "10/29晚間未完成：風險檢查有缺口，不回補假成交",
+    "沒有完整日淨值，不報精確最大回撤或Sharpe；已平倉勝率無樣本",
+    "SPY和同股買入持有對照尚未實作；與全現金小C曝險不同",
+    "GEV除息日10/27早於10/28買進，不給此筆股息；CDNS無已查得當期股息"
+  ]
 }
 
