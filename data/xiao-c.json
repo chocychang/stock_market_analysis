@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-10-30 23:04:34 Asia/Taipei",
-  "status": "11檔盤前封存WATCH，今日0筆交易，全現金",
+  "updated_at": "2026-11-03 22:25:49 Asia/Taipei",
+  "status": "盤前恢復完成；缺少當日晨間訊號，現金300000美元",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
   "pnl_usd": 0,
   "positions": [],
   "trades": [],
-  "review": "08:04:28封存11檔WATCH，無已驗證開盤買賣訊號。今日0筆交易、0股、現金300000美元。保留觀望樣本，零虧損不證明選股有效；基準未完成，無法量化觀望機會成本。10/29夜間缺漏不補造交易。",
-  "latest_report": "reports/xiao-c-2026-10-30.html",
+  "review": "缺少當日晨間封存訊號，不能回補過期開盤委託。10/31與11/1為週末；11/2正常交易日未完成評估。本次恢復不取代當晚23:00正常盤工作",
+  "latest_report": "reports/xiao-c-2026-11-03-recovery.html",
   "methodology": "xiao-c-methodology.html",
-  "run_at": "2026-10-30T15:04:34.555Z",
-  "market_session": "2026-10-30",
+  "run_at": "2026-11-03T14:25:49.058Z",
+  "market_session": "2026-11-03",
   "signal_archive_valid": true,
-  "valuation_type": "intraday-cash-only",
-  "version": "2026-10-30-night-v1"
+  "valuation_type": "cash-only-pre-open-recovery",
+  "version": "2026-11-03-recovery-v1"
 }
 
