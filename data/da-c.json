@@ -1,45 +1,41 @@
 {
-  "updated_at": "2026-10-30 23:04:34 Asia/Taipei",
+  "updated_at": "2026-11-03 22:25:49 Asia/Taipei",
   "name": "大C",
-  "status": "CDNS 87股、GEV 34股續持；今日無交易，帳戶轉為浮虧",
+  "status": "排程已補觸發；盤前恢復估值，截至11/2收盤",
   "capital_usd": 300000,
   "cash_usd": 240477.69716000004,
-  "nav_usd": 298779.19716000004,
-  "pnl_usd": -1220.8028399999603,
+  "nav_usd": 298461.56716000004,
+  "pnl_usd": -1538.432839999965,
   "positions": [
     {
       "ticker": "CDNS",
       "shares": 87,
-      "average_cost": 341.14079999999996,
       "cost_usd": 29679.249599999996,
-      "mark_price": 331.84,
-      "mark_at": "2026-10-30T14:51:00Z",
-      "source_url": "https://stockanalysis.com/stocks/cdns/",
-      "retrieved_at": "2026-10-30T15:04:34.555Z",
-      "delayed": true,
-      "market_value_usd": 28870.079999999998,
-      "unrealized_pnl_usd": -809.1695999999974,
-      "position_return": -0.027263815996210305,
-      "action": "HOLD",
-      "exit_reference": 307.02671999999995,
-      "partial_profit_reference": 409.36895999999996
+      "average_cost": 341.14079999999996,
+      "mark_price": 329.51,
+      "mark_at": "2026-11-02T21:00:00Z",
+      "price_session": "2026-11-02",
+      "price_type": "regular-close",
+      "source_url": "https://stockanalysis.com/stocks/cdns/history/",
+      "retrieved_at": "2026-11-03T14:25:49.058Z",
+      "market_value_usd": 28667.37,
+      "unrealized_pnl_usd": -1011.8795999999966,
+      "position_return": -0.03409384043186847
     },
     {
       "ticker": "GEV",
       "shares": 34,
-      "average_cost": 877.7368599999999,
       "cost_usd": 29843.053239999994,
-      "mark_price": 865.63,
-      "mark_at": "2026-10-30T14:55:00Z",
-      "source_url": "https://stockanalysis.com/stocks/gev/",
-      "retrieved_at": "2026-10-30T15:04:34.555Z",
-      "delayed": true,
-      "market_value_usd": 29431.42,
-      "unrealized_pnl_usd": -411.63323999999557,
-      "position_return": -0.013793268292276006,
-      "action": "HOLD",
-      "exit_reference": 789.9631739999999,
-      "partial_profit_reference": 1053.2842319999997
+      "average_cost": 877.7368599999999,
+      "mark_price": 862.25,
+      "mark_at": "2026-11-02T21:00:00Z",
+      "price_session": "2026-11-02",
+      "price_type": "regular-close",
+      "source_url": "https://stockanalysis.com/stocks/gev/history/",
+      "retrieved_at": "2026-11-03T14:25:49.058Z",
+      "market_value_usd": 29316.5,
+      "unrealized_pnl_usd": -526.5532399999938,
+      "position_return": -0.017644080710020438
     }
   ],
   "pending_orders": [],
@@ -110,8 +106,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-10-30.html",
-  "version": "2026-10-30-night-v1",
+  "latest_report": "reports/da-c-2026-11-03-recovery.html",
+  "version": "2026-11-03-recovery-v1",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -139,21 +135,16 @@
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
   },
-  "review": "大C轉為浮虧。CDNS與GEV買進理由是指引上修，但利多可能已反映在價格，估值與市場風險仍會壓過營運成長。這是待驗證的解釋，尚無市場/產業歸因模型證明。今天不因虧損改寫原成交，也不憑兩筆未平倉樣本調整風險參數；持續檢查CDNS利潤率與backlog轉化、GEV交付與現金品質。下一輪如有下修或達門檻，先固定賣單再取決策後報價。",
+  "review": "逾期排程已於11/3台灣22:22補觸發。本次恢復盤前估值：CDNS87股、GEV34股，正常盤尚未開市；採11/2正式收盤，不使用盤前價格假裝成交。10/31、11/1休市；11/2漏跑已揭露，未倒填買賣。兩股11/2收盤距成本約-3.41%與-1.76%，未到-10%風險線；這不證明漏跑期間曾執行檢查。",
   "previous_close": {
-    "session": "2026-10-29",
-    "type": "close-valuation-reconstructed-on-2026-10-30",
-    "nav_usd": 300483.84716000006,
-    "pnl_usd": 483.847160000063,
+    "session": "2026-11-02",
     "prices": {
-      "CDNS": 342.75,
-      "GEV": 887.85
+      "CDNS": 329.51,
+      "GEV": 862.25
     },
-    "sources": [
-      "https://stockanalysis.com/stocks/cdns/history/",
-      "https://stockanalysis.com/stocks/gev/history/"
-    ],
-    "limitations": "今日取得歷史收盤，以當前已保存持股估值；不代表10/29夜間曾執行風險或消息檢查。拆股調整來源，前收與當日overview一致；未另記未發生的股息。"
+    "nav_usd": 298461.56716000004,
+    "mode": "reconstructed-valuation-only",
+    "observed_at": "2026-11-03T14:25:49.058Z"
   },
   "latest_execution": {
     "ticker": "GEV",
@@ -170,22 +161,39 @@
     "fill_price": 877.7368599999999,
     "cost_usd": 29843.053239999994
   },
-  "valuation_note": "單一行情來源，CDNS22:51、GEV22:55；不是23:00同步或收盤淨值",
+  "valuation_note": "11/2美東16:00正常盤收盤；本次11/3盤前恢復，尚非當晚23:00執行",
   "realized_pnl_usd": 0,
   "performance": {
-    "return": -0.004069342799999868,
-    "exposure": 0.19513239393564208,
+    "return": -0.00512810946666655,
+    "exposure": 0.1942758344122607,
     "closed_trade_count": 0,
     "win_rate": null,
     "sharpe": null,
     "max_drawdown": null
   },
   "limitations": [
-    "單一行情來源，CDNS22:51、GEV22:55；不是23:00同步或收盤淨值",
-    "10/29晚間未完成：風險檢查有缺口，不回補假成交",
-    "沒有完整日淨值，不報精確最大回撤或Sharpe；已平倉勝率無樣本",
-    "SPY和同股買入持有對照尚未實作；與全現金小C曝險不同",
-    "GEV除息日10/27早於10/28買進，不給此筆股息；CDNS無已查得當期股息"
-  ]
+    "本次只完成盤前恢復，非今晚23:00交易批次完成",
+    "當日晨間訊號目前缺少；來源恢復後須核對真正封存時間",
+    "收盤價格單一來源、歷史序列可能按拆股調整；沒有確認公司行動時不增減股數",
+    "CDNS公告頁動態內容未載入、搜尋未核實新的規則內事件；GEV11/2教育/設備案例非具已披露金額重大合約，不生成BUY",
+    "歷史回測、SPY與同股買入持有對照尚未完成；無平倉樣本",
+    "本機排程補觸發不等於排程器故障原因已修復；不保證離線工作"
+  ],
+  "operational_status": {
+    "version": "2026-11-03-recovery-v1",
+    "started_at": "2026-11-03T14:25:49.058Z",
+    "trigger_received_at": "2026-11-03T14:22:25.976Z",
+    "run_type": "overdue-recovery",
+    "market_open_at": "2026-11-03T14:30:00Z",
+    "status": "evaluating",
+    "missing_normal_session_evaluations": [
+      "2026-10-29",
+      "2026-11-02"
+    ],
+    "weekend_dates": [
+      "2026-10-31",
+      "2026-11-01"
+    ]
+  }
 }
 
