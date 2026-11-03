@@ -1,41 +1,47 @@
 {
-  "updated_at": "2026-11-03 22:25:49 Asia/Taipei",
+  "updated_at": "2026-11-03 23:02:17 Asia/Taipei",
   "name": "大C",
-  "status": "排程已補觸發；盤前恢復估值，截至11/2收盤",
+  "status": "今晚正常盤評估完成；CDNS87股、GEV34股續持，無新成交",
   "capital_usd": 300000,
   "cash_usd": 240477.69716000004,
-  "nav_usd": 298461.56716000004,
-  "pnl_usd": -1538.432839999965,
+  "nav_usd": 299140.28716000007,
+  "pnl_usd": -859.7128399999347,
   "positions": [
     {
       "ticker": "CDNS",
       "shares": 87,
       "cost_usd": 29679.249599999996,
       "average_cost": 341.14079999999996,
-      "mark_price": 329.51,
-      "mark_at": "2026-11-02T21:00:00Z",
-      "price_session": "2026-11-02",
-      "price_type": "regular-close",
-      "source_url": "https://stockanalysis.com/stocks/cdns/history/",
-      "retrieved_at": "2026-11-03T14:25:49.058Z",
-      "market_value_usd": 28667.37,
-      "unrealized_pnl_usd": -1011.8795999999966,
-      "position_return": -0.03409384043186847
+      "mark_price": 321.39,
+      "mark_at": "2026-11-03T14:30:00Z",
+      "source_url": "https://stockanalysis.com/stocks/cdns/",
+      "retrieved_at": "2026-11-03T15:02:17.006Z",
+      "quote_quality": "正常盤9:30標價；較舊，尚無當日高低價核對，僅作指示性估值",
+      "delayed": true,
+      "market_value_usd": 27960.93,
+      "unrealized_pnl_usd": -1718.3195999999953,
+      "position_return": -0.0578963290230895,
+      "exit_reference": 307.02671999999995,
+      "partial_profit_reference": 409.36895999999996,
+      "action": "HOLD"
     },
     {
       "ticker": "GEV",
       "shares": 34,
       "cost_usd": 29843.053239999994,
       "average_cost": 877.7368599999999,
-      "mark_price": 862.25,
-      "mark_at": "2026-11-02T21:00:00Z",
-      "price_session": "2026-11-02",
-      "price_type": "regular-close",
+      "mark_price": 902.99,
+      "mark_at": "2026-11-03T14:53:00Z",
       "source_url": "https://stockanalysis.com/stocks/gev/history/",
-      "retrieved_at": "2026-11-03T14:25:49.058Z",
-      "market_value_usd": 29316.5,
-      "unrealized_pnl_usd": -526.5532399999938,
-      "position_return": -0.017644080710020438
+      "retrieved_at": "2026-11-03T15:02:17.006Z",
+      "quote_quality": "正常盤9:53，價格落於同列高低區間",
+      "delayed": true,
+      "market_value_usd": 30701.66,
+      "unrealized_pnl_usd": 858.606760000006,
+      "position_return": 0.02877074115356182,
+      "exit_reference": 789.9631739999999,
+      "partial_profit_reference": 1053.2842319999997,
+      "action": "HOLD"
     }
   ],
   "pending_orders": [],
@@ -106,8 +112,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-11-03-recovery.html",
-  "version": "2026-11-03-recovery-v1",
+  "latest_report": "reports/da-c-2026-11-03.html",
+  "version": "2026-11-03-night-v1",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -135,7 +141,7 @@
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
   },
-  "review": "逾期排程已於11/3台灣22:22補觸發。本次恢復盤前估值：CDNS87股、GEV34股，正常盤尚未開市；採11/2正式收盤，不使用盤前價格假裝成交。10/31、11/1休市；11/2漏跑已揭露，未倒填買賣。兩股11/2收盤距成本約-3.41%與-1.76%，未到-10%風險線；這不證明漏跑期間曾執行檢查。",
+  "review": "本次正常時段執行完成，無新成交。CDNS仍低於成本，GEV高於成本；指引上修能支持營運論點，但不能保證買入後股價上漲。CDNS估值/利潤率與市場風險是可能解釋，尚無模型證明損失歸因。僅兩筆未平倉，勝率與策略有效性無法判定；不追溯更改成本或風險參數。",
   "previous_close": {
     "session": "2026-11-02",
     "prices": {
@@ -161,39 +167,57 @@
     "fill_price": 877.7368599999999,
     "cost_usd": 29843.053239999994
   },
-  "valuation_note": "11/2美東16:00正常盤收盤；本次11/3盤前恢復，尚非當晚23:00執行",
+  "valuation_note": "混合時間盤中估值：CDNS台灣22:30、GEV22:53，並非同步23:00淨值或當日收盤",
   "realized_pnl_usd": 0,
   "performance": {
-    "return": -0.00512810946666655,
-    "exposure": 0.1942758344122607,
+    "return": -0.0028657094666664487,
+    "exposure": 0.19610394359427538,
     "closed_trade_count": 0,
     "win_rate": null,
     "sharpe": null,
     "max_drawdown": null
   },
   "limitations": [
-    "本次只完成盤前恢復，非今晚23:00交易批次完成",
-    "當日晨間訊號目前缺少；來源恢復後須核對真正封存時間",
-    "收盤價格單一來源、歷史序列可能按拆股調整；沒有確認公司行動時不增減股數",
-    "CDNS公告頁動態內容未載入、搜尋未核實新的規則內事件；GEV11/2教育/設備案例非具已披露金額重大合約，不生成BUY",
-    "歷史回測、SPY與同股買入持有對照尚未完成；無平倉樣本",
-    "本機排程補觸發不等於排程器故障原因已修復；不保證離線工作"
+    "混合時間盤中估值：CDNS台灣22:30、GEV22:53，並非同步23:00淨值或當日收盤",
+    "CDNS報價較舊且缺高低價，無法證明此後未觸及風險線；來源歷史頁9:14標成Market open且價格低於該列低點，已排除",
+    "單一行情提供者，固定10bps滑價模型；本次無新交易故無新增費用",
+    "10/29與11/2夜間評估仍有缺口；10/31與11/1休市。補估收盤不代表當時執行過",
+    "SPY、同股買入持有對照與完整歷史回測尚未實作；不報Sharpe或精確最大回撤",
+    "公司行動未新增：GEV10/27除息早於買入，未給息；未發現需變動股數的證據"
   ],
   "operational_status": {
-    "version": "2026-11-03-recovery-v1",
-    "started_at": "2026-11-03T14:25:49.058Z",
-    "trigger_received_at": "2026-11-03T14:22:25.976Z",
-    "run_type": "overdue-recovery",
-    "market_open_at": "2026-11-03T14:30:00Z",
-    "status": "evaluating",
-    "missing_normal_session_evaluations": [
-      "2026-10-29",
-      "2026-11-02"
-    ],
-    "weekend_dates": [
-      "2026-10-31",
-      "2026-11-01"
-    ]
-  }
+    "run_type": "regular-session",
+    "trigger_received_at": "2026-11-03T14:58:56.565Z",
+    "evaluated_at": "2026-11-03T15:02:17.006Z"
+  },
+  "news_decisions": [
+    {
+      "ticker": "CRWD",
+      "action": "WATCH",
+      "reason": "CoreWeave合作未披露新增收入/ARR合約金額；收購Fiddler與新產品不是本規則的指引上修或具金額客戶合約。",
+      "source_url": "https://www.crowdstrike.com/en-us/press-releases/coreweave-crowdstrike-secure-ai-workloads-at-scale/",
+      "verification": "CoreWeave公司頁讀取成功；Fiddler公司頁未能獨立載入，保留原研究來源，不據此交易"
+    },
+    {
+      "ticker": "GE",
+      "action": "WATCH",
+      "reason": "補產研究列8具海軍引擎訂單，但公司頁本次無法載入、未取得合約金額；不推算EPS或生成買單。GE與GEV不同。",
+      "source_url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-secures-orders-lm2500-marine-gas-turbines-power-next-generation-0"
+    },
+    {
+      "ticker": "CDNS",
+      "action": "HOLD",
+      "reason": "原指引上修消息已成交去重；加入研究聯盟公告未證明新增具金額重大合約。未核實新下修/重大取消，依可得報價尚未達門檻。"
+    },
+    {
+      "ticker": "GEV",
+      "action": "HOLD",
+      "reason": "既有指引上修事件已處理；11/2教育活動/設備案例不作新買入；搜尋結果2/3舊聯盟不當11/3新消息。9:32快照910.31高於同頁高點910.00，拒絕，改用9:53一致歷史列。"
+    },
+    {
+      "ticker": "AMD,ASML,MSFT,AMZN,LMT,JNJ,GOOGL",
+      "action": "WATCH",
+      "reason": "補產研究為既有財報/條件觀察；AMD本次正常盤尚未公布盤後財報，不使用未發生結果；其餘未核實符合規則的新事件。"
+    }
+  ]
 }
-
