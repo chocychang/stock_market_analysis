@@ -1,26 +1,25 @@
 {
-  "updated_at": "2026-11-03 23:02:17 Asia/Taipei",
+  "updated_at": "2026-11-04 23:09:45 Asia/Taipei",
   "name": "大C",
-  "status": "今晚正常盤評估完成；CDNS87股、GEV34股續持，無新成交",
+  "status": "今晚完成AMD模擬買進；CDNS、GEV續持",
   "capital_usd": 300000,
-  "cash_usd": 240477.69716000004,
-  "nav_usd": 299140.28716000007,
-  "pnl_usd": -859.7128399999347,
+  "cash_usd": 210501.75116000004,
+  "nav_usd": 297123.7211600001,
+  "pnl_usd": -2876.2788399999263,
   "positions": [
     {
       "ticker": "CDNS",
       "shares": 87,
       "cost_usd": 29679.249599999996,
       "average_cost": 341.14079999999996,
-      "mark_price": 321.39,
-      "mark_at": "2026-11-03T14:30:00Z",
+      "mark_price": 322.75,
+      "mark_at": "2026-11-04T14:57:00Z",
       "source_url": "https://stockanalysis.com/stocks/cdns/",
-      "retrieved_at": "2026-11-03T15:02:17.006Z",
-      "quote_quality": "正常盤9:30標價；較舊，尚無當日高低價核對，僅作指示性估值",
+      "retrieved_at": "2026-11-04T15:05:03Z",
       "delayed": true,
-      "market_value_usd": 27960.93,
-      "unrealized_pnl_usd": -1718.3195999999953,
-      "position_return": -0.0578963290230895,
+      "market_value_usd": 28079.25,
+      "unrealized_pnl_usd": -1599.9995999999956,
+      "position_return": -0.053909705318155865,
       "exit_reference": 307.02671999999995,
       "partial_profit_reference": 409.36895999999996,
       "action": "HOLD"
@@ -30,18 +29,34 @@
       "shares": 34,
       "cost_usd": 29843.053239999994,
       "average_cost": 877.7368599999999,
-      "mark_price": 902.99,
-      "mark_at": "2026-11-03T14:53:00Z",
+      "mark_price": 841.08,
+      "mark_at": "2026-11-04T15:02:00Z",
       "source_url": "https://stockanalysis.com/stocks/gev/history/",
-      "retrieved_at": "2026-11-03T15:02:17.006Z",
-      "quote_quality": "正常盤9:53，價格落於同列高低區間",
+      "retrieved_at": "2026-11-04T15:05:03Z",
       "delayed": true,
-      "market_value_usd": 30701.66,
-      "unrealized_pnl_usd": 858.606760000006,
-      "position_return": 0.02877074115356182,
+      "market_value_usd": 28596.72,
+      "unrealized_pnl_usd": -1246.3332399999927,
+      "position_return": -0.041762926533585265,
       "exit_reference": 789.9631739999999,
       "partial_profit_reference": 1053.2842319999997,
       "action": "HOLD"
+    },
+    {
+      "ticker": "AMD",
+      "shares": 60,
+      "cost_usd": 29975.945999999996,
+      "average_cost": 499.59909999999996,
+      "mark_price": 499.1,
+      "mark_at": "2026-11-04T15:09:00Z",
+      "source_url": "https://stockanalysis.com/stocks/amd/",
+      "retrieved_at": "2026-11-04T15:09:44.167Z",
+      "delayed": true,
+      "market_value_usd": 29946,
+      "unrealized_pnl_usd": -29.945999999996275,
+      "position_return": -0.0009990009990008542,
+      "exit_reference": 449.63919,
+      "partial_profit_reference": 599.51892,
+      "action": "BUY"
     }
   ],
   "pending_orders": [],
@@ -112,8 +127,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-11-03.html",
-  "version": "2026-11-03-night-v1",
+  "latest_report": "reports/da-c-2026-11-04.html",
+  "version": "2026-11-04-night-v1",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -141,83 +156,93 @@
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
   },
-  "review": "本次正常時段執行完成，無新成交。CDNS仍低於成本，GEV高於成本；指引上修能支持營運論點，但不能保證買入後股價上漲。CDNS估值/利潤率與市場風險是可能解釋，尚無模型證明損失歸因。僅兩筆未平倉，勝率與策略有效性無法判定；不追溯更改成本或風險參數。",
+  "review": "CDNS與GEV依本次可得報價均低於平均成本，尚未觸及-10%退出或+20%減半。昨天GEV收盤918.20，今早行情回落；指引上修與訂單成長不能保證股價報酬。市場、估值與個股影響尚未完成量化歸因，不能把跌幅全歸因推薦失誤。AMD以發布前封存的公司指引作比較，不宣稱市場共識beat；這個小幅超標訊號能否抵過估值與現金轉換風險，須由後續前瞻績效檢驗。",
   "previous_close": {
-    "session": "2026-11-02",
+    "session": "2026-11-03",
     "prices": {
-      "CDNS": 329.51,
-      "GEV": 862.25
+      "CDNS": 323.75,
+      "GEV": 918.2
     },
-    "nav_usd": 298461.56716000004,
-    "mode": "reconstructed-valuation-only",
-    "observed_at": "2026-11-03T14:25:49.058Z"
+    "nav_usd": 299862.74716,
+    "mode": "finalized-prior-session-valuation-only",
+    "observed_at": "2026-11-04T15:05:03Z"
   },
   "latest_execution": {
-    "ticker": "GEV",
-    "price": 876.86,
-    "quote_at": "2026-10-28T15:33:00Z",
-    "retrieved_at": "2026-10-28T15:48:33.519Z",
-    "source_url": "https://stockanalysis.com/stocks/gev/",
-    "delayed": true,
-    "session": "2026-10-28",
-    "day_low": 836.24,
-    "day_high": 883.49,
-    "decision_at": "2026-10-28T14:56:50Z",
-    "shares": 34,
-    "fill_price": 877.7368599999999,
-    "cost_usd": 29843.053239999994
+    "id": "AMD:2026-Q3-release:revenue-above-saved-company-guidance:fill",
+    "news_id": "AMD:2026-Q3-release:revenue-above-saved-company-guidance",
+    "ticker": "AMD",
+    "side": "BUY",
+    "shares": 60,
+    "signal_at": "2026-11-04T15:06:04.209Z",
+    "evidence_at": "2026-11-04T15:06:04.209Z",
+    "decision_at": "2026-11-04T15:06:04.209Z",
+    "session": "2026-11-04",
+    "open_at": "2026-11-04T15:09:00Z",
+    "open_price": 499.1,
+    "quote_at": "2026-11-04T15:09:00Z",
+    "retrieved_at": "2026-11-04T15:09:44.167Z",
+    "source_url": "https://stockanalysis.com/stocks/amd/",
+    "signal_source": "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/",
+    "execution_policy": "post-decision-quote",
+    "interface_note": "open_at/open_price are ledger interface names; actual price is post-decision intraday quote",
+    "expectation_type": "previous-company-guidance-not-consensus",
+    "fill_price": 499.59909999999996,
+    "fee": 0,
+    "realized": 0,
+    "cash_after": 210501.75116000004
   },
-  "valuation_note": "混合時間盤中估值：CDNS台灣22:30、GEV22:53，並非同步23:00淨值或當日收盤",
+  "valuation_note": "CDNS台灣22:57、GEV23:02、AMD23:09，為延遲且不同截點盤中估值；非同步淨值、非今日收盤",
   "realized_pnl_usd": 0,
   "performance": {
-    "return": -0.0028657094666664487,
-    "exposure": 0.19610394359427538,
+    "return": -0.009587596133333088,
+    "exposure": 0.2915350200307783,
     "closed_trade_count": 0,
     "win_rate": null,
     "sharpe": null,
     "max_drawdown": null
   },
   "limitations": [
-    "混合時間盤中估值：CDNS台灣22:30、GEV22:53，並非同步23:00淨值或當日收盤",
-    "CDNS報價較舊且缺高低價，無法證明此後未觸及風險線；來源歷史頁9:14標成Market open且價格低於該列低點，已排除",
-    "單一行情提供者，固定10bps滑價模型；本次無新交易故無新增費用",
-    "10/29與11/2夜間評估仍有缺口；10/31與11/1休市。補估收盤不代表當時執行過",
-    "SPY、同股買入持有對照與完整歷史回測尚未實作；不報Sharpe或精確最大回撤",
-    "公司行動未新增：GEV10/27除息早於買入，未給息；未發現需變動股數的證據"
+    "CDNS台灣22:57、GEV23:02、AMD23:09，為延遲且不同截點盤中估值；非同步淨值、非今日收盤",
+    "AMD報價僅採固定決策後首次合格資料；已拒絕過早或同頁高低價不一致快照，逐次來源保存",
+    "10/29與11/2晚間評估仍有歷史缺口；10/31與11/1休市；今天沒有新增漏跑，不倒填成交",
+    "僅單次每日檢查，不代表持續盤中監控；20個交易日檢視尚未到期，CDNS距買入6個交易日、GEV5日",
+    "SPY與同股買入持有對照、完整歷史回測仍未完成；已平倉樣本0，勝率/Sharpe/精確最大回撤不計",
+    "無本次需入帳的公司行動證據；GEV10/27除息早於買入，不給息；現金利息及額外稅費假設0"
   ],
   "operational_status": {
     "run_type": "regular-session",
-    "trigger_received_at": "2026-11-03T14:58:56.565Z",
-    "evaluated_at": "2026-11-03T15:02:17.006Z"
+    "trigger_received_at": "2026-11-04T15:03:45.890Z",
+    "evaluated_at": "2026-11-04T15:09:45.186Z"
   },
   "news_decisions": [
     {
-      "ticker": "CRWD",
-      "action": "WATCH",
-      "reason": "CoreWeave合作未披露新增收入/ARR合約金額；收購Fiddler與新產品不是本規則的指引上修或具金額客戶合約。",
-      "source_url": "https://www.crowdstrike.com/en-us/press-releases/coreweave-crowdstrike-secure-ai-workloads-at-scale/",
-      "verification": "CoreWeave公司頁讀取成功；Fiddler公司頁未能獨立載入，保留原研究來源，不據此交易"
-    },
-    {
-      "ticker": "GE",
-      "action": "WATCH",
-      "reason": "補產研究列8具海軍引擎訂單，但公司頁本次無法載入、未取得合約金額；不推算EPS或生成買單。GE與GEV不同。",
-      "source_url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-secures-orders-lm2500-marine-gas-turbines-power-next-generation-0"
+      "ticker": "AMD",
+      "action": "BUY",
+      "decision_at": "2026-11-04T15:06:04.209Z",
+      "reason": "Q3營收高於發布前已保存的公司指引上緣約0.58%，毛利達原指引；符合既有「財報超越事前同口徑預期」事件。本次明確採公司指引作比較，沒有市場共識beat之主張，也不把Q4首次指引當同季上修。大C接受估值/FCF未完全確認的風險，建立最多10%初始部位。",
+      "source_url": "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/"
     },
     {
       "ticker": "CDNS",
       "action": "HOLD",
-      "reason": "原指引上修消息已成交去重；加入研究聯盟公告未證明新增具金額重大合約。未核實新下修/重大取消，依可得報價尚未達門檻。"
+      "reason": "原財報事件已去重；歐洲主權AI運算擴建消息未核實具金額重大新客戶合約，不據此加碼。公司IR列表動態內容未完整提供，不能宣稱查無任何新公告。"
     },
     {
       "ticker": "GEV",
       "action": "HOLD",
-      "reason": "既有指引上修事件已處理；11/2教育活動/設備案例不作新買入；搜尋結果2/3舊聯盟不當11/3新消息。9:32快照910.31高於同頁高點910.00，拒絕，改用9:53一致歷史列。"
+      "reason": "正式媒體中心最新顯示11/2教育活動、10/28財報與Trench併購；沒有本次新增指引下修證據。今日轉載舊財報不作新買單。",
+      "source_url": "https://www.gevernova.com/news/media-hub"
     },
     {
-      "ticker": "AMD,ASML,MSFT,AMZN,LMT,JNJ,GOOGL",
+      "ticker": "CRWD",
       "action": "WATCH",
-      "reason": "補產研究為既有財報/條件觀察；AMD本次正常盤尚未公布盤後財報，不使用未發生結果；其餘未核實符合規則的新事件。"
+      "reason": "11/4 Agentic Adversary Emulation為產品公告；未披露新增收入指引或具金額客戶合約。收購成本不當客戶合約收入。",
+      "source_url": "https://crowdstrike.gcs-web.com/news-releases/news-release-details/crowdstrike-unveils-agentic-adversary-emulation-falcon-platform"
+    },
+    {
+      "ticker": "ASML,MSFT,AMZN,GE,LMT,JNJ,GOOGL",
+      "action": "WATCH",
+      "reason": "已讀今晨研究及有限正式來源搜尋，未核實符合既有事件條件的新觸發；不把搜尋未找到當成保證沒有新聞。"
     }
   ]
 }
