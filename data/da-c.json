@@ -1,62 +1,28 @@
 {
-  "updated_at": "2026-11-04 23:09:45 Asia/Taipei",
+  "updated_at": "2026-11-05 23:06:14 Asia/Taipei",
   "name": "大C",
-  "status": "今晚完成AMD模擬買進；CDNS、GEV續持",
+  "status": "今晚風險退出：AMD60股已賣出、GEV34股已賣出",
   "capital_usd": 300000,
-  "cash_usd": 210501.75116000004,
-  "nav_usd": 297123.7211600001,
-  "pnl_usd": -2876.2788399999263,
+  "cash_usd": 262955.96444000007,
+  "nav_usd": 290284.4044400001,
+  "pnl_usd": -9715.595559999929,
   "positions": [
     {
       "ticker": "CDNS",
       "shares": 87,
       "cost_usd": 29679.249599999996,
       "average_cost": 341.14079999999996,
-      "mark_price": 322.75,
-      "mark_at": "2026-11-04T14:57:00Z",
+      "mark_price": 314.12,
+      "mark_at": "2026-11-05T14:55:00Z",
       "source_url": "https://stockanalysis.com/stocks/cdns/",
-      "retrieved_at": "2026-11-04T15:05:03Z",
+      "retrieved_at": "2026-11-05T15:00:06Z",
       "delayed": true,
-      "market_value_usd": 28079.25,
-      "unrealized_pnl_usd": -1599.9995999999956,
-      "position_return": -0.053909705318155865,
+      "market_value_usd": 27328.44,
+      "unrealized_pnl_usd": -2350.809599999997,
+      "position_return": -0.07920717779872699,
       "exit_reference": 307.02671999999995,
       "partial_profit_reference": 409.36895999999996,
       "action": "HOLD"
-    },
-    {
-      "ticker": "GEV",
-      "shares": 34,
-      "cost_usd": 29843.053239999994,
-      "average_cost": 877.7368599999999,
-      "mark_price": 841.08,
-      "mark_at": "2026-11-04T15:02:00Z",
-      "source_url": "https://stockanalysis.com/stocks/gev/history/",
-      "retrieved_at": "2026-11-04T15:05:03Z",
-      "delayed": true,
-      "market_value_usd": 28596.72,
-      "unrealized_pnl_usd": -1246.3332399999927,
-      "position_return": -0.041762926533585265,
-      "exit_reference": 789.9631739999999,
-      "partial_profit_reference": 1053.2842319999997,
-      "action": "HOLD"
-    },
-    {
-      "ticker": "AMD",
-      "shares": 60,
-      "cost_usd": 29975.945999999996,
-      "average_cost": 499.59909999999996,
-      "mark_price": 499.1,
-      "mark_at": "2026-11-04T15:09:00Z",
-      "source_url": "https://stockanalysis.com/stocks/amd/",
-      "retrieved_at": "2026-11-04T15:09:44.167Z",
-      "delayed": true,
-      "market_value_usd": 29946,
-      "unrealized_pnl_usd": -29.945999999996275,
-      "position_return": -0.0009990009990008542,
-      "exit_reference": 449.63919,
-      "partial_profit_reference": 599.51892,
-      "action": "BUY"
     }
   ],
   "pending_orders": [],
@@ -127,8 +93,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-11-04.html",
-  "version": "2026-11-04-night-v1",
+  "latest_report": "reports/da-c-2026-11-05.html",
+  "version": "2026-11-05-night-v1",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -156,93 +122,209 @@
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
   },
-  "review": "CDNS與GEV依本次可得報價均低於平均成本，尚未觸及-10%退出或+20%減半。昨天GEV收盤918.20，今早行情回落；指引上修與訂單成長不能保證股價報酬。市場、估值與個股影響尚未完成量化歸因，不能把跌幅全歸因推薦失誤。AMD以發布前封存的公司指引作比較，不宣稱市場共識beat；這個小幅超標訊號能否抵過估值與現金轉換風險，須由後續前瞻績效檢驗。",
+  "review": "AMD、GEV依既定成本跌10%規則形成全數退出，實際成交與待處理狀態如下。10%是每日檢查時的觸發線，並非保證最大損失；隔夜跳空、到23:00才評估、延遲報價與10bps賣出滑價，會使成交損失超過10%。保留失敗交易與當時理由，不用事後價格改寫歷史。",
   "previous_close": {
-    "session": "2026-11-03",
+    "session": "2026-11-04",
     "prices": {
-      "CDNS": 323.75,
-      "GEV": 918.2
+      "AMD": 488.78,
+      "CDNS": 329.52,
+      "GEV": 832.83
     },
-    "nav_usd": 299862.74716,
-    "mode": "finalized-prior-session-valuation-only",
-    "observed_at": "2026-11-04T15:05:03Z"
+    "nav_usd": 296813.01116,
+    "observed_at": "2026-11-05T15:00:06Z",
+    "mode": "finalized-prior-session-valuation-only"
   },
   "latest_execution": {
-    "id": "AMD:2026-Q3-release:revenue-above-saved-company-guidance:fill",
-    "news_id": "AMD:2026-Q3-release:revenue-above-saved-company-guidance",
-    "ticker": "AMD",
-    "side": "BUY",
-    "shares": 60,
-    "signal_at": "2026-11-04T15:06:04.209Z",
-    "evidence_at": "2026-11-04T15:06:04.209Z",
-    "decision_at": "2026-11-04T15:06:04.209Z",
-    "session": "2026-11-04",
-    "open_at": "2026-11-04T15:09:00Z",
-    "open_price": 499.1,
-    "quote_at": "2026-11-04T15:09:00Z",
-    "retrieved_at": "2026-11-04T15:09:44.167Z",
-    "source_url": "https://stockanalysis.com/stocks/amd/",
-    "signal_source": "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/",
+    "id": "GEV:2026-10-28T15:33:00Z:risk-exit:fill",
+    "news_id": "GEV:2026-10-28T15:33:00Z:risk-exit",
+    "ticker": "GEV",
+    "side": "SELL",
+    "shares": 34,
+    "signal_at": "2026-11-05T15:01:17.151Z",
+    "evidence_at": "2026-11-05T15:01:17.151Z",
+    "decision_at": "2026-11-05T15:01:17.151Z",
+    "session": "2026-11-05",
+    "open_at": "2026-11-05T15:04:00Z",
+    "open_price": 793.98,
+    "quote_at": "2026-11-05T15:04:00Z",
+    "retrieved_at": "2026-11-05T15:05:31.517Z",
+    "source_url": "https://stockanalysis.com/stocks/gev/",
+    "signal_source": "decisions/2026-11-05-GEV-risk-exit.json",
     "execution_policy": "post-decision-quote",
-    "interface_note": "open_at/open_price are ledger interface names; actual price is post-decision intraday quote",
-    "expectation_type": "previous-company-guidance-not-consensus",
-    "fill_price": 499.59909999999996,
+    "interface_note": "open_at/open_price are ledger interface names for actual intraday quote; not market open",
+    "exit_reason": "cost-loss-10-percent-rule",
+    "trigger_quote": {
+      "price": 785.35,
+      "quote_at": "2026-11-05T14:59:00Z",
+      "retrieved_at": "2026-11-05T15:01:16.134Z",
+      "source_url": "https://stockanalysis.com/stocks/gev/",
+      "day_low": 785.35,
+      "day_high": 821.54,
+      "delayed": true
+    },
+    "trigger_return": -0.10525575968177958,
+    "fill_price": 793.18602,
     "fee": 0,
-    "realized": 0,
-    "cash_after": 210501.75116000004
+    "realized": -2874.728559999996,
+    "cash_after": 262955.96444000007,
+    "basis_usd": 29843.053239999994,
+    "net_proceeds_usd": 26968.324679999998,
+    "trade_return": -0.09632823213098274,
+    "sell_slippage_usd": 26.99532
   },
-  "valuation_note": "CDNS台灣22:57、GEV23:02、AMD23:09，為延遲且不同截點盤中估值；非同步淨值、非今日收盤",
-  "realized_pnl_usd": 0,
+  "valuation_note": "延遲、不同截點盤中估值；詳見各持倉mark_at與退出成交quote_at。",
+  "realized_pnl_usd": -7364.78595999999,
   "performance": {
-    "return": -0.009587596133333088,
-    "exposure": 0.2915350200307783,
-    "closed_trade_count": 0,
-    "win_rate": null,
+    "return": -0.032385318533333096,
+    "exposure": 0.09414367283258103,
+    "closed_trade_count": 2,
+    "win_rate": 0,
+    "winning_trade_count": 0,
     "sharpe": null,
     "max_drawdown": null
   },
   "limitations": [
-    "CDNS台灣22:57、GEV23:02、AMD23:09，為延遲且不同截點盤中估值；非同步淨值、非今日收盤",
-    "AMD報價僅採固定決策後首次合格資料；已拒絕過早或同頁高低價不一致快照，逐次來源保存",
-    "10/29與11/2晚間評估仍有歷史缺口；10/31與11/1休市；今天沒有新增漏跑，不倒填成交",
-    "僅單次每日檢查，不代表持續盤中監控；20個交易日檢視尚未到期，CDNS距買入6個交易日、GEV5日",
-    "SPY與同股買入持有對照、完整歷史回測仍未完成；已平倉樣本0，勝率/Sharpe/精確最大回撤不計",
-    "無本次需入帳的公司行動證據；GEV10/27除息早於買入，不給息；現金利息及額外稅費假設0"
+    "盤中且不同截點估值；每個價格、決策及成交時間單獨保存，非本日收盤。單一行情來源為指示性模擬，不是券商成交保證",
+    "今日沒有新增漏跑；10/29、11/2歷史夜間缺口保留，10/31與11/1休市，不倒填成交",
+    "SPY及同股買入持有對照、完整歷史回測尚未完成，不能證明主動退出優於繼續持有",
+    "只按本機任務實際觸發檢查，沒有持續盤中監控；虧損可超過10%，無法據此推算盤中最大回撤",
+    "本次公司行動未新增；GEV10/27除息早於買入不給息，現金利息與額外稅費假設0",
+    "兩個角色同期間截至本次：小C維持300000美元、大C按所列報價估值；曝險不同，不能把帳戶差直接叫選股alpha",
+    "GEV同來源較新頁面顯示的日內低點反而升高，累計區間欄位不適合作連續價格序列；本次成交價落在同頁區間，但僅作附品質限制的單一來源模擬。沒有據此估計盤中精確觸發時間",
+    "GEV觸發後首次合格報價已反彈到退出線上方，仍按原固定賣單成交；不因後續反彈撤單，也不回用較低觸發價"
   ],
   "operational_status": {
     "run_type": "regular-session",
-    "trigger_received_at": "2026-11-04T15:03:45.890Z",
-    "evaluated_at": "2026-11-04T15:09:45.186Z"
+    "trigger_received_at": "2026-11-05T14:58:34.838Z",
+    "evaluated_at": "2026-11-05T15:05:32.516Z"
   },
   "news_decisions": [
     {
       "ticker": "AMD",
-      "action": "BUY",
-      "decision_at": "2026-11-04T15:06:04.209Z",
-      "reason": "Q3營收高於發布前已保存的公司指引上緣約0.58%，毛利達原指引；符合既有「財報超越事前同口徑預期」事件。本次明確採公司指引作比較，沒有市場共識beat之主張，也不把Q4首次指引當同季上修。大C接受估值/FCF未完全確認的風險，建立最多10%初始部位。",
-      "source_url": "https://newsroom.amd.com/news/amd-reports-third-quarter-2026-earnings/"
+      "action": "SELL",
+      "reason": "成本跌10%規則觸發，原Q3事件已去重，不因量子研究平台消息同日重買；研究合作未核實新增具金額重大收入合約。",
+      "source_url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000191/amd-20260926.htm"
+    },
+    {
+      "ticker": "GEV",
+      "action": "SELL",
+      "reason": "執行既定價格風險退出；不是宣稱已核實公司指引下修。",
+      "source_url": "https://www.gevernova.com/news/media-hub"
     },
     {
       "ticker": "CDNS",
       "action": "HOLD",
-      "reason": "原財報事件已去重；歐洲主權AI運算擴建消息未核實具金額重大新客戶合約，不據此加碼。公司IR列表動態內容未完整提供，不能宣稱查無任何新公告。"
-    },
-    {
-      "ticker": "GEV",
-      "action": "HOLD",
-      "reason": "正式媒體中心最新顯示11/2教育活動、10/28財報與Trench併購；沒有本次新增指引下修證據。今日轉載舊財報不作新買單。",
-      "source_url": "https://www.gevernova.com/news/media-hub"
+      "reason": "依本次價格仍高於成本跌10%線；原財報事件已成交，未核實新的指引下修/重大取消。公司IR動態列表與搜尋有覆蓋限制。",
+      "source_url": "https://investor.cadence.com/news/default.aspx"
     },
     {
       "ticker": "CRWD",
       "action": "WATCH",
-      "reason": "11/4 Agentic Adversary Emulation為產品公告；未披露新增收入指引或具金額客戶合約。收購成本不當客戶合約收入。",
-      "source_url": "https://crowdstrike.gcs-web.com/news-releases/news-release-details/crowdstrike-unveils-agentic-adversary-emulation-falcon-platform"
+      "reason": "產品、主權雲與12/1財報日期公告不是已實現新增ARR或指引上修。",
+      "source_url": "https://ir.crowdstrike.com/node/18016/pdf"
     },
     {
       "ticker": "ASML,MSFT,AMZN,GE,LMT,JNJ,GOOGL",
       "action": "WATCH",
-      "reason": "已讀今晨研究及有限正式來源搜尋，未核實符合既有事件條件的新觸發；不把搜尋未找到當成保證沒有新聞。"
+      "reason": "已讀今晨封存研究及有限公司來源搜尋，未核實本次新增、符合v1的觸發。未找到不等於保證沒有新事件。"
+    }
+  ],
+  "unrealized_pnl_usd": -2350.809599999997,
+  "latest_executions": [
+    {
+      "id": "AMD:2026-11-04T15:09:00Z:risk-exit:fill",
+      "news_id": "AMD:2026-11-04T15:09:00Z:risk-exit",
+      "ticker": "AMD",
+      "side": "SELL",
+      "shares": 60,
+      "signal_at": "2026-11-05T15:00:41.552Z",
+      "evidence_at": "2026-11-05T15:00:41.552Z",
+      "decision_at": "2026-11-05T15:00:41.552Z",
+      "session": "2026-11-05",
+      "open_at": "2026-11-05T15:02:00Z",
+      "open_price": 425.19,
+      "quote_at": "2026-11-05T15:02:00Z",
+      "retrieved_at": "2026-11-05T15:02:43.923Z",
+      "source_url": "https://stockanalysis.com/stocks/amd/",
+      "signal_source": "decisions/2026-11-05-AMD-risk-exit.json",
+      "execution_policy": "post-decision-quote",
+      "interface_note": "open_at/open_price are ledger interface names for actual intraday quote; not market open",
+      "exit_reason": "cost-loss-10-percent-rule",
+      "trigger_quote": {
+        "price": 435.5,
+        "quote_at": "2026-11-05T14:46:00Z",
+        "source_url": "https://stockanalysis.com/stocks/amd/",
+        "day_low": 435.5,
+        "day_high": 453.8,
+        "delayed": true
+      },
+      "trigger_return": -0.12830107179936867,
+      "fill_price": 424.76481,
+      "fee": 0,
+      "realized": -4490.057399999994,
+      "cash_after": 235987.63976000005,
+      "basis_usd": 29975.945999999996,
+      "net_proceeds_usd": 25485.888600000002,
+      "trade_return": -0.1497886805640761,
+      "sell_slippage_usd": 25.511400000000002
+    },
+    {
+      "id": "GEV:2026-10-28T15:33:00Z:risk-exit:fill",
+      "news_id": "GEV:2026-10-28T15:33:00Z:risk-exit",
+      "ticker": "GEV",
+      "side": "SELL",
+      "shares": 34,
+      "signal_at": "2026-11-05T15:01:17.151Z",
+      "evidence_at": "2026-11-05T15:01:17.151Z",
+      "decision_at": "2026-11-05T15:01:17.151Z",
+      "session": "2026-11-05",
+      "open_at": "2026-11-05T15:04:00Z",
+      "open_price": 793.98,
+      "quote_at": "2026-11-05T15:04:00Z",
+      "retrieved_at": "2026-11-05T15:05:31.517Z",
+      "source_url": "https://stockanalysis.com/stocks/gev/",
+      "signal_source": "decisions/2026-11-05-GEV-risk-exit.json",
+      "execution_policy": "post-decision-quote",
+      "interface_note": "open_at/open_price are ledger interface names for actual intraday quote; not market open",
+      "exit_reason": "cost-loss-10-percent-rule",
+      "trigger_quote": {
+        "price": 785.35,
+        "quote_at": "2026-11-05T14:59:00Z",
+        "retrieved_at": "2026-11-05T15:01:16.134Z",
+        "source_url": "https://stockanalysis.com/stocks/gev/",
+        "day_low": 785.35,
+        "day_high": 821.54,
+        "delayed": true
+      },
+      "trigger_return": -0.10525575968177958,
+      "fill_price": 793.18602,
+      "fee": 0,
+      "realized": -2874.728559999996,
+      "cash_after": 262955.96444000007,
+      "basis_usd": 29843.053239999994,
+      "net_proceeds_usd": 26968.324679999998,
+      "trade_return": -0.09632823213098274,
+      "sell_slippage_usd": 26.99532
+    }
+  ],
+  "trade_reviews": [
+    {
+      "ticker": "AMD",
+      "original_thesis": "11/4依Q3營收高於事前封存公司指引上緣約0.58%、毛利達指引，投入約10%本金。明確不是市場共識beat。",
+      "new_evidence": "11/5價格已低於成本10%；今晨研究與本次核對的11/4 10-Q顯示九個月庫存、應收與供應預付款占用資金，另有客戶權證未認列金額將隨合格收入抵減收入。這些是獲利品質風險，不等於公司已下修Q4指引。",
+      "evidenced_weakness": "買因子只確認小幅超公司指引，沒有建立高估值是否已反映成長的檢驗；昨晚買單本就承認估值/FCF未完全確認。這是決策證據偏薄的設計弱點，不能用股價下跌反推財報數字錯誤。",
+      "attribution": "今日半導體與政策風險也可能影響；沒有同步市場/產業對照，無法量化分配損失。不能把全部跌幅都歸咎10-Q，也不能假裝昨晚已核對今天才讀到的細節。",
+      "future_proposal": "候選v2：把「超公司指引」與「超事前市場預期」分開，另檢查估值與現金轉換，再比較首次5%與10%部位。只作未來驗證提案，本次仍按v1成交與退出，不回改買價。",
+      "source_url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000191/amd-20260926.htm"
+    },
+    {
+      "ticker": "GEV",
+      "original_thesis": "10/28正式上修財務指引後買34股，預期訂單轉收入與現金流支持營運。",
+      "new_evidence": "今晨研究列政策/資料中心許可風險；本次公司媒體中心仍顯示既有財報與11/2教育活動，未核實新指引下修或重大取消。價格風險已觸發v1退出。",
+      "evidenced_weakness": "上修指引不是價格安全邊際。與AMD同時受AI資本支出與利率/政策題材影響，持有兩家公司不代表風險已充分分散。",
+      "attribution": "政策、估值與訂單可兌現性屬解釋假說；未完成因素歸因，不能宣稱某一新聞造成全部虧損。",
+      "future_proposal": "候選v2：新增共同題材曝險紀錄，先以前瞻小樣本觀察；不因兩筆虧損直接調出最佳停損比例。",
+      "source_url": "https://www.gevernova.com/news/media-hub"
     }
   ]
 }
