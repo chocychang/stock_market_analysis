@@ -200,7 +200,8 @@
     "完整歷史回測、SPY及相同買入不賣出的診斷帳戶尚未完成，無完整MDD/Sharpe，不由兩筆虧損推算長期勝率",
     "每日一次評估無法等同持續盤中止損；CDNS全日低點穿越只作事後監控診斷，不升格為當時交易訊號",
     "現金利息、佣金0；沒有本次新增經核實可入帳股息或拆股，美元報酬不含個人稅與台幣匯率",
-    "下次正常盤為11/9；本次週末WATCH不自動延續為週一買單，也不為休市重新查即時成交價"
+    "下次正常盤為11/9；本次週末WATCH不自動延續為週一買單，也不為休市重新查即時成交價",
+    "來源版本差異：今晨觀察室NET收盤快照268.67，本次較晚StockAnalysis與Google Finance皆顯示268.75，相差0.08美元，對107股估值影響8.56美元。本次以268.75估值，保留晨間版本與原成交，不宣稱已獨立核對交易所原始資料。"
   ],
   "operational_status": {
     "run_type": "weekend-close-finalization",
@@ -274,5 +275,14 @@
       "future_proposal": "候選v2：明確另立持續監控或高頻輪詢實驗；需可驗證時間序列與執行紀錄，未實作前不宣稱有即時停損。原v1成績保留。",
       "source_url": "https://investor.cadence.com/news/default.aspx"
     }
-  ]
+  ],
+  "valuation_source_reconciliation": {
+    "recorded_at": "2026-11-07T15:01:13.418Z",
+    "morning_snapshot_NET": 268.67,
+    "evening_NET": 268.75,
+    "position_valuation_difference_usd": 8.56,
+    "second_display_source": "https://www.google.com/finance/quote/NET:NYSE",
+    "second_display_CDNS": "https://www.google.com/finance/quote/CDNS:NASDAQ",
+    "cdns_day_low_confirmed": 306.93
+  }
 }
