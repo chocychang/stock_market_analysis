@@ -1,47 +1,47 @@
 {
-  "updated_at": "2026-11-10 07:21:17 Asia/Taipei",
+  "updated_at": "2026-11-10 22:03:23 Asia/Taipei",
   "name": "大C",
-  "status": "11/9收盤恢復評估（11/10早上補執行）；0筆新交易",
+  "status": "CPI手動評估：不新增買單；目前盤前，0筆成交",
   "capital_usd": 300000,
   "cash_usd": 233185.57379000008,
-  "nav_usd": 293939.14379000006,
-  "pnl_usd": -6060.85620999994,
+  "nav_usd": 292549.77379000006,
+  "pnl_usd": -7450.226209999935,
   "positions": [
     {
       "ticker": "CDNS",
       "shares": 87,
       "cost_usd": 29679.249599999996,
       "average_cost": 341.14079999999996,
-      "mark_price": 336.62,
-      "mark_at": "2026-11-09T21:00:00Z",
-      "retrieved_at": "2026-11-09T23:21:17.786Z",
-      "source_url": "https://stockanalysis.com/stocks/cdns/history/",
-      "valuation_type": "2026-11-09-regular-close",
-      "market_value_usd": 29285.94,
-      "unrealized_pnl_usd": -393.30959999999686,
-      "position_return": -0.013252006209752532,
+      "mark_price": 330.6,
+      "mark_at": "2026-11-10T13:42:00Z",
+      "retrieved_at": "2026-11-10T14:03:23.645Z",
+      "source_url": "https://stockanalysis.com/stocks/cdns/",
+      "delayed": true,
+      "valuation_type": "premarket-indicative-not-executable",
+      "market_value_usd": 28762.2,
+      "unrealized_pnl_usd": -917.0495999999948,
+      "position_return": -0.030898678786002498,
       "exit_reference": 307.02671999999995,
       "partial_profit_reference": 409.36895999999996,
-      "session_low": 321.93,
-      "action": "HOLD_POST_CLOSE"
+      "action": "HOLD_PREMARKET"
     },
     {
       "ticker": "NET",
       "shares": 107,
       "cost_usd": 29770.390649999998,
       "average_cost": 278.22794999999996,
-      "mark_price": 294.09,
-      "mark_at": "2026-11-09T21:00:00Z",
-      "retrieved_at": "2026-11-09T23:21:17.786Z",
-      "source_url": "https://stockanalysis.com/stocks/net/history/",
-      "valuation_type": "2026-11-09-regular-close",
-      "market_value_usd": 31467.629999999997,
-      "unrealized_pnl_usd": 1697.2393499999998,
-      "position_return": 0.057010986854483914,
+      "mark_price": 286,
+      "mark_at": "2026-11-10T13:45:00Z",
+      "retrieved_at": "2026-11-10T14:03:23.645Z",
+      "source_url": "https://stockanalysis.com/stocks/net/",
+      "delayed": true,
+      "valuation_type": "premarket-indicative-not-executable",
+      "market_value_usd": 30602,
+      "unrealized_pnl_usd": 831.6093500000025,
+      "position_return": 0.027934109423586095,
       "exit_reference": 250.40515499999998,
       "partial_profit_reference": 333.87353999999993,
-      "session_low": 274,
-      "action": "HOLD_POST_CLOSE"
+      "action": "HOLD_PREMARKET"
     }
   ],
   "pending_orders": [],
@@ -112,8 +112,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-11-09.html",
-  "version": "2026-11-09-recovery-v1",
+  "latest_report": "reports/da-c-2026-11-10-cpi.html",
+  "version": "2026-11-10-cpi-manual-v1",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -141,7 +141,7 @@
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
   },
-  "review": "11/9 23:00工作有觸發，但當次環境為唯讀，等待平台寫入權限；11/10台灣早上取得本回合權限後才實際評估。這是收盤恢復，不能當11/9晚間準時完成。未形成舊23:00買賣單，未重跑歷史成交腳本，也未用盤後價或收盤價補造正常盤成交。 小C當晨08:02已封存12檔WATCH、0配置。大C保留CDNS87股與NET107股；11/9正常收盤336.62與294.09，未達成本跌10%退出或漲20%半售線，無新成交。",
+  "review": "手動CPI評估結果：不因CPI新增買單（NO_ORDER），不是等報價的pending。整體CPI月增0.4%較前月0.6%放緩，核心仍0.3%；目前沒有事前封存市場預期可算surprise。現行大C雖風險承受度高，但實作為公司公告驅動，尚未定義總經觸發。這是策略覆蓋範圍的限制，不代表CPI交易無效。",
   "previous_close": {
     "session": "2026-11-09",
     "prices": {
@@ -178,55 +178,54 @@
     "cost_usd": 29770.390649999998,
     "slippage_usd": 29.74065
   },
-  "valuation_note": "11/9正常盤收盤；實際11/10早上補執行，非23:00盤中評估。",
+  "valuation_note": "11/10盤前指示性估值，詳見每檔報價時間；非正常盤成交或收盤。",
   "realized_pnl_usd": -7364.78595999999,
   "performance": {
-    "return": -0.020202854033333134,
-    "exposure": 0.20668757898881399,
+    "return": -0.024834087366666452,
+    "exposure": 0.2029199996668368,
     "closed_trade_count": 2,
-    "win_rate": 0,
     "winning_trade_count": 0,
+    "win_rate": 0,
     "turnover": 0,
     "sharpe": null,
     "max_drawdown": null
   },
   "limitations": [
-    "11/9 23:00工作有觸發，但當次環境為唯讀，等待平台寫入權限；11/10台灣早上取得本回合權限後才實際評估。這是收盤恢復，不能當11/9晚間準時完成。未形成舊23:00買賣單，未重跑歷史成交腳本，也未用盤後價或收盤價補造正常盤成交。",
-    "估值為11/9美東16:00正常收盤（台灣11/10 05:00），不是11/10交易日報價，盤後行情未混用",
-    "依既有StockAnalysis歷史Close欄政策估值。Google Finance同日顯示CDNS336.53、NET293.75，與主要來源336.62/294.09不一致；若用第二網站總資產少44.21美元。保留版本差異，不挑獲利較高價作成交",
-    "缺漏正常晚間評估10/29、11/2、11/9；11/9雖恢復收盤估值，原時段缺口仍不抹除。11/8週末無執行記錄，另標未留週末日報，不當作正常盤漏跑",
-    "前瞻紙上交易帳本6筆事件、已平倉2筆、獲利0筆；無新成交，勝率樣本極少。完整歷史回測、SPY與同股不退出診斷帳戶尚未完成，MDD與Sharpe不計",
-    "每日一次批次不等於盤中持續監控，10%觸發不是最大虧損保證。CDNS11/6穿越退出線不補單，不由日K棒推算精確觸發時間",
-    "來源新聞清單、動態網頁與搜尋覆蓋有限，未找到新事件不代表保證沒有公告；沒有本次新增可核實入帳股息或拆股。現金利息/佣金0，未含個人稅及台幣匯率",
-    "11/10晨間研究及今晚23:00應另行執行；本次收盤恢復不能算今晚正常盤已完成，排程未變更"
+    "本次實際執行於台灣22點後、正常盤22:30開盤前；是使用者額外要求的手動評估，不取代今晚23:00工作，也未改排程",
+    "盤前CDNS330.60（21:42）、NET286.00（21:45）僅為延遲指示性估值，不是成交價，兩股成本報酬均未達-10%退出或+20%半售參考",
+    "沒有CPI買因子就沒有等待開盤的買單；不能讓pending掩蓋NO_ORDER。若日後加入總經觸發，應先定義未來版本的預期來源、門檻、標的與風險配置",
+    "沒有發布前保存的CPI共識，無法驗證超預期或低於預期；BLS說明基期缺測，年增率缺項不補造",
+    "價格與CPI在時間上先後發生不等於因果；沒有事件研究、利率同步變動與對照組，不能把全部盤前跌幅歸因CPI",
+    "只核對現有持股與共同研究相關事件；CDNS/NET公司公告列表未核實新增負面財測，動態頁與搜尋覆蓋有限",
+    "原6筆成交及現金不變，未呼叫fill因本次沒有委託；無真實訂單。10bps滑價只在有合格正常盤成交時適用",
+    "完整歷史回測、SPY及同股不賣出對照尚未完成；2筆已平倉樣本不支持統計結論。未實現與盤前總資產不是收盤績效"
   ],
   "operational_status": {
-    "run_type": "post-close-permission-recovery",
-    "trigger_received_at": "2026-11-09T15:00:34.114Z",
-    "evaluated_at": "2026-11-09T23:21:17.786Z",
-    "scheduled_evaluation_completed": false,
-    "next_regular_session": "2026-11-10"
+    "run_type": "manual-cpi-preopen",
+    "evaluated_at": "2026-11-10T14:03:23.645Z",
+    "scheduled_2300_completed": false
   },
   "news_decisions": [
     {
+      "ticker": "CPI",
+      "action": "NO_ORDER",
+      "reason": "現行v1只定義公司上修財測、超過事前保存預期或具金額重大合約等買因子；CPI沒有指定驚喜門檻、交易標的或配置規則，不能由研究者看結果後臨時改成買單。",
+      "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+    },
+    {
       "ticker": "CDNS",
-      "action": "HOLD_POST_CLOSE",
-      "reason": "公司新聞清單本次可見最新仍為10/29研究聯盟；舊Q3事件去重，未核實新的財測下修或重大取消。",
+      "action": "HOLD_PREMARKET",
+      "reason": "盤前估值未達成本-10%/+20%參考，既有Q3事件去重，未核實新公司財測變更。",
       "source_url": "https://www.cadence.com/en_US/home/for-testing-only/press-releases.html"
     },
     {
       "ticker": "NET",
-      "action": "HOLD_POST_CLOSE",
-      "reason": "公司press overview可見11/5人事與財報；人事任命不是已量化財測上修。既有財報事件已成交，股價上漲不構成再次買入。",
+      "action": "HOLD_PREMARKET",
+      "reason": "盤前估值未達成本-10%/+20%參考，11/5財報事件已成交，不因CPI重複買進。",
       "source_url": "https://www.cloudflare.com/press/"
-    },
-    {
-      "ticker": "其餘晨間觀察股",
-      "action": "WATCH",
-      "reason": "讀取11/9完整封存研究；CRWD財報日期核實不是已公布ARR/EPS，GEV與LMT11/6公告仍缺合約金額，不自動產生追補委託。"
     }
   ],
-  "unrealized_pnl_usd": 1303.929750000003,
+  "unrealized_pnl_usd": -85.44024999999237,
   "latest_executions": [],
   "trade_reviews": [
     {
@@ -269,9 +268,45 @@
     }
   ],
   "valuation_source_reconciliation": {
-    "recorded_at": "2026-11-09T23:21:17.786Z",
-    "primary": "StockAnalysis historical Close",
-    "alternative": "Google Finance display",
-    "nav_difference_usd": -44.21
+    "recorded_at": "2026-11-10T14:03:57.473Z",
+    "context": "manual-premarket-assessment",
+    "cross_validated": false,
+    "note": "盤前估值採所列StockAnalysis延遲快照，未獨立核對交易所逐筆價格；非成交"
+  },
+  "latest_manual_assessment": {
+    "version": "2026-11-10-cpi-manual-v1",
+    "run_at": "2026-11-10T14:03:23.645Z",
+    "cpi": {
+      "event_id": "BLS:CPI:2026-10:2026-11-10",
+      "release_at": "2026-11-10T13:30:00Z",
+      "observed_at": "2026-11-10T14:03:23.645Z",
+      "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "release_id": "USDL-26-1685",
+      "reference_month": "2026-10",
+      "headline_mom_seasonally_adjusted": 0.004,
+      "prior_headline_mom_seasonally_adjusted": 0.006,
+      "core_mom_seasonally_adjusted": 0.003,
+      "prior_core_mom_seasonally_adjusted": 0.003,
+      "headline_yoy": null,
+      "core_yoy": null,
+      "yoy_note": "BLS指出2025年10月缺測，多數序列無法公布2026年10月年增率，未補造年增數字",
+      "saved_pre_release_consensus": null,
+      "interpretation": "整體月增幅從0.6%降至0.4%，核心維持0.3%；只可稱與前月比較，不可稱低於市場預期，也不保證降息。",
+      "market_open_at": "2026-11-10T14:30:00Z",
+      "macro_buy_trigger_in_current_strategy": false
+    },
+    "intent": {
+      "id": "BLS:CPI:2026-10:2026-11-10:assessment:v1",
+      "event_id": "BLS:CPI:2026-10:2026-11-10",
+      "decision_at": "2026-11-10T14:03:23.645Z",
+      "strategy_version": "news-aggressive-v1",
+      "action": "NO_ORDER",
+      "new_buy": false,
+      "reason": "現行v1只定義公司上修財測、超過事前保存預期或具金額重大合約等買因子；CPI沒有指定驚喜門檻、交易標的或配置規則，不能由研究者看結果後臨時改成買單。",
+      "not_pending_for_price": true,
+      "pending_orders_created": 0,
+      "scope": "User-requested manual assessment, separate from scheduled 23:00 run"
+    },
+    "scheduled_2300_completed": false
   }
 }
