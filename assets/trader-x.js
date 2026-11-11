@@ -134,7 +134,7 @@
       put('exit-rule', `初始停損距離為${rules.stop_atr_multiple}倍ATR${rules.atr_period}，獲利目標為${rules.target_r_multiple}倍初始風險，最長持有${rules.max_holding_sessions}個交易日。退出條件成立可提早賣出。`);
     }
     if (data.schedule?.entry_time && data.schedule?.review_time) {
-      put('schedule-rule', `台灣${data.schedule.entry_time}評估新進場與持股；${data.schedule.review_next_calendar_day ? '隔日' : ''}${data.schedule.review_time}管理持股及既有待成交單。同一美股交易日不重複計算持有天數或買進同一訊號。`);
+      put('schedule-rule', `台灣${data.schedule.entry_time}評估新進場與持股；${data.schedule.review_next_calendar_day ? '隔日' : ''}${data.schedule.review_time}${data.schedule.review_new_buys ? '也可獨立評估新買進、賣出與待成交單' : '管理持股及既有待成交單'}。同一美股交易日不重複計算持有天數或買進同一訊號。`);
     }
     if (data.review) put('review', data.review);
     const closedCount = numeric(performance.closed_trade_count) ? performance.closed_trade_count : 0;

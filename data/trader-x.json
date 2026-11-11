@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "version": "2026-11-11-recovery-v1-entry",
+  "version": "2026-11-12-dual-entry-v2",
   "name": "交易X",
   "strategy_version": "trader-x-breakout-v1",
-  "updated_at": "2026-11-11T23:37:27.615Z",
+  "updated_at": "2026-11-11T23:48:02.122Z",
   "activated_at": "2026-11-10T16:26:29.925Z",
   "status": "已建立；11/11晚間未完成，11/12收盤恢復、零成交",
   "capital_usd": 300000,
@@ -46,7 +46,9 @@
     "timezone": "Asia/Taipei",
     "entry_time": "23:00",
     "review_time": "01:00",
-    "review_next_calendar_day": true
+    "review_next_calendar_day": true,
+    "review_new_buys": true,
+    "review_new_buys_effective_at": "2026-11-11T23:48:02.122Z"
   },
   "universe": [
     "AMD",
@@ -70,7 +72,7 @@
     "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
   },
   "latest_report": "reports/trader-x-2026-11-11-recovery.html",
-  "review": "交易X角色與規則已建立；11/11 23:00及隔日01:00未完成正式評估，不能稱當時沒有買點。本次已收盤，不補造訊號或成交；下一次新進場評估為11/12台灣23:00。",
+  "review": "交易X角色與規則已建立；11/11 23:00及隔日01:00未完成正式評估，不能稱當時沒有買點。本次已收盤，不補造訊號或成交；下一次新進場評估為11/12台灣23:00。 使用者於11/12指定：23:00與隔日01:00均可獨立買賣；同一突破訊號不重複買進。此為前瞻規則更新，沒有執行交易或回改歷史結果。",
   "valuation_note": "正常盤不同截點指示性盤中估值，非收盤。",
   "limitations": [
     "原11/11台灣23:00工作沒有完成；平台寫入授權取得時已11/12早上。本次只補做11/11收盤恢復評估，不回填開盤、23:00或01:00成交。",
@@ -89,5 +91,8 @@
     "scheduled_evaluation_completed": false,
     "run_type": "post-close-recovery"
   },
-  "planned_risk_usd": 0
+  "planned_risk_usd": 0,
+  "configuration_revision": "2026-11-12-dual-entry-v2",
+  "configuration_updated_at": "2026-11-11T23:48:02.122Z",
+  "configuration_note": "使用者於11/12指定：23:00與隔日01:00均可獨立買賣；同一突破訊號不重複買進。此為前瞻規則更新，沒有執行交易或回改歷史結果。"
 }
