@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "version": "2026-11-11-recovery-v1-entry",
+  "name": "交易X",
+  "strategy_version": "trader-x-breakout-v1",
+  "updated_at": "2026-11-11T23:37:27.615Z",
+  "activated_at": "2026-11-10T16:26:29.925Z",
+  "status": "已建立；11/11晚間未完成，11/12收盤恢復、零成交",
+  "capital_usd": 300000,
+  "cash_usd": 300000,
+  "nav_usd": 300000,
+  "pnl_usd": 0,
+  "realized_pnl_usd": 0,
+  "unrealized_pnl_usd": 0,
+  "positions": [],
+  "pending_orders": [],
+  "latest_executions": [],
+  "scan_results": [
+    {
+      "ticker": "帳戶",
+      "action": "NO_TRADE",
+      "reason": "實際時鐘不在本次核實執行時段，不回填交易"
+    }
+  ],
+  "performance": {
+    "return": 0,
+    "exposure": 0,
+    "closed_trade_count": 0,
+    "winning_trade_count": 0,
+    "win_rate": null,
+    "max_drawdown": null,
+    "sharpe": null
+  },
+  "rules": {
+    "max_positions": 10,
+    "max_concentration": 0.15,
+    "per_trade_risk": 0.003,
+    "total_risk": 0.03,
+    "cash_reserve": 0,
+    "stop_atr_multiple": 2,
+    "atr_period": 14,
+    "target_r_multiple": 2,
+    "max_holding_sessions": 10
+  },
+  "schedule": {
+    "timezone": "Asia/Taipei",
+    "entry_time": "23:00",
+    "review_time": "01:00",
+    "review_next_calendar_day": true
+  },
+  "universe": [
+    "AMD",
+    "ASML",
+    "GEV",
+    "MSFT",
+    "AMZN",
+    "CRWD",
+    "GE",
+    "LMT",
+    "JNJ",
+    "GOOGL",
+    "CDNS",
+    "NET"
+  ],
+  "universe_source": {
+    "path": "outputs/xiao-c-sim/signals/2026-11-10.json",
+    "source_commit": "3c5476ec2c7f8ffd50336fb98531830a9fde6d28",
+    "source_content_sha256": "4bde8ddad5ba9db27711a13fad6d6fd83aee72de62df7b77de99ce2781b0f9cd",
+    "frozen_at": "2026-11-10T16:26:29.925Z",
+    "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
+  },
+  "latest_report": "reports/trader-x-2026-11-11-recovery.html",
+  "review": "交易X角色與規則已建立；11/11 23:00及隔日01:00未完成正式評估，不能稱當時沒有買點。本次已收盤，不補造訊號或成交；下一次新進場評估為11/12台灣23:00。",
+  "valuation_note": "正常盤不同截點指示性盤中估值，非收盤。",
+  "limitations": [
+    "原11/11台灣23:00工作沒有完成；平台寫入授權取得時已11/12早上。本次只補做11/11收盤恢復評估，不回填開盤、23:00或01:00成交。",
+    "前瞻模擬，尚無完整歷史回測、SPY共同期間對照、Sharpe或完整收盤最大回撤。",
+    "每天兩次觀察不等於持續盤中止損；跳空、滑價、行情延遲可能令損失超過計畫風險。",
+    "2ATR14停損、2R停利與10交易日退出是初版假設，沒有獲利保證。",
+    "固定12檔初始觀察池可能集中科技/成長因子，10檔不等於充分分散。",
+    "單邊10bps不利滑價、佣金0、現金利息0；未建模監管費用、個人稅費；公司行動需另核實處理。",
+    "runner需要執行者提供有來源與時間戳行情，不會自行抓價；本機排程未觸發不能宣稱已完成。"
+  ],
+  "operational_status": {
+    "status": "off-schedule-recovery",
+    "evaluated_at": "2026-11-11T23:37:27.615Z",
+    "published_at": null,
+    "pages_verified_at": null,
+    "scheduled_evaluation_completed": false,
+    "run_type": "post-close-recovery"
+  },
+  "planned_risk_usd": 0
+}
