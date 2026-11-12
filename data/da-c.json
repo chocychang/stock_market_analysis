@@ -1,71 +1,68 @@
 {
-  "updated_at": "2026-11-11T23:37:27.615Z",
+  "updated_at": "2026-11-12T16:19:05.647Z",
   "name": "大C",
-  "status": "11/11收盤恢復（11/12早上實際執行）；0筆新交易",
+  "status": "11/12正常盤延遲評估；3檔續抱、0筆新交易",
   "capital_usd": 300000,
   "cash_usd": 203364.49250000008,
-  "nav_usd": 296210.1425000001,
-  "pnl_usd": -3789.8574999999255,
+  "nav_usd": 297503.7275000001,
+  "pnl_usd": -2496.2724999999045,
   "positions": [
     {
       "ticker": "CDNS",
       "shares": 87,
       "cost_usd": 29679.249599999996,
       "average_cost": 341.14079999999996,
-      "mark_price": 329.26,
-      "mark_at": "2026-11-11T21:00:00.000Z",
-      "retrieved_at": "2026-11-11T23:33:45.949Z",
-      "source_url": "https://stockanalysis.com/stocks/cdns/history/",
-      "valuation_type": "regular-close",
-      "market_value_usd": 28645.62,
-      "unrealized_pnl_usd": -1033.6295999999966,
-      "position_return": -0.03482667567174602,
+      "mark_price": 333.93,
+      "mark_at": "2026-11-12T16:12:43.000Z",
+      "retrieved_at": "2026-11-12T16:12:45.459Z",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CDNS?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
+      "delayed": true,
+      "valuation_type": "intraday",
+      "market_value_usd": 29051.91,
+      "unrealized_pnl_usd": -627.3395999999957,
+      "position_return": -0.021137313390834356,
       "exit_reference": 307.02671999999995,
       "partial_profit_reference": 409.36895999999996,
-      "session_low": 328.23,
-      "session_high": 339.65,
-      "action": "HOLD_POST_CLOSE",
-      "risk_threshold_hit": false
+      "holding_sessions": 13,
+      "action": "HOLD"
     },
     {
       "ticker": "NET",
       "shares": 107,
       "cost_usd": 29770.390649999998,
       "average_cost": 278.22794999999996,
-      "mark_price": 315,
-      "mark_at": "2026-11-11T21:00:00.000Z",
-      "retrieved_at": "2026-11-11T23:33:45.975Z",
-      "source_url": "https://stockanalysis.com/stocks/net/history/",
-      "valuation_type": "regular-close",
-      "market_value_usd": 33705,
-      "unrealized_pnl_usd": 3934.6093500000025,
-      "position_return": 0.13216519044905461,
+      "mark_price": 318.645,
+      "mark_at": "2026-11-12T16:12:41.000Z",
+      "retrieved_at": "2026-11-12T16:12:45.499Z",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NET?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
+      "delayed": true,
+      "valuation_type": "intraday",
+      "market_value_usd": 34095.015,
+      "unrealized_pnl_usd": 4324.624350000002,
+      "position_return": 0.14526595908139361,
       "exit_reference": 250.40515499999998,
       "partial_profit_reference": 333.87353999999993,
-      "session_low": 311.12,
-      "session_high": 324.1,
-      "action": "HOLD_POST_CLOSE",
-      "risk_threshold_hit": false
+      "holding_sessions": 5,
+      "action": "HOLD"
     },
     {
       "ticker": "CEG",
       "shares": 111,
       "cost_usd": 29821.081289999995,
       "average_cost": 268.65838999999994,
-      "mark_price": 274.73,
-      "mark_at": "2026-11-11T21:00:00.000Z",
-      "retrieved_at": "2026-11-11T23:33:45.999Z",
-      "source_url": "https://stockanalysis.com/stocks/ceg/history/",
-      "valuation_type": "regular-close",
-      "market_value_usd": 30495.030000000002,
-      "unrealized_pnl_usd": 673.9487100000078,
-      "position_return": 0.022599740882836672,
+      "mark_price": 279.21,
+      "mark_at": "2026-11-12T16:12:42.000Z",
+      "retrieved_at": "2026-11-12T16:12:45.563Z",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CEG?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
+      "delayed": true,
+      "valuation_type": "intraday",
+      "market_value_usd": 30992.309999999998,
+      "unrealized_pnl_usd": 1171.228710000003,
+      "position_return": 0.03927519255959222,
       "exit_reference": 241.79255099999995,
       "partial_profit_reference": 322.3900679999999,
-      "session_low": 267.81,
-      "session_high": 276.67,
-      "action": "HOLD_POST_CLOSE",
-      "risk_threshold_hit": false
+      "holding_sessions": 3,
+      "action": "HOLD"
     }
   ],
   "pending_orders": [],
@@ -136,8 +133,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-11-11-recovery.html",
-  "version": "2026-11-11-recovery-v1",
+  "latest_report": "reports/da-c-2026-11-12.html",
+  "version": "2026-11-12-night-delayed-v1",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -165,21 +162,30 @@
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
   },
-  "review": "原11/11台灣23:00工作沒有完成；平台寫入授權取得時已11/12早上。本次只補做11/11收盤恢復評估，不回填開盤、23:00或01:00成交。 CDNS87股、NET107股、CEG111股續列帳本，三檔收盤均未達既有退出／半售線。",
+  "review": "11/12台灣23:00有觸發，但平台輸出目錄為唯讀，等待寫入權限至11/13 00:10才實際開始。小C與大C於正常盤內延遲完成；交易X錯過23時允許窗口，不能回填該時段交易。01:00仍是獨立可買賣評估，本次未提前宣稱已完成。 本次未查得新的合格消息，CDNS、NET、CEG依當下報價均未觸及退出或半售線。",
   "previous_close": {
-    "session": "2026-11-09",
-    "prices": {
-      "CDNS": 336.53,
-      "NET": 293.75
-    },
-    "nav_usd": 293894.9337900001,
-    "source_urls": [
-      "https://stockanalysis.com/stocks/cdns/history/",
-      "https://stockanalysis.com/stocks/net/history/"
-    ],
-    "revision_note": "同來源歷史表較早336.62/294.09修訂，原11/9恢復快照保留；本次估值修訂-44.21美元，不是交易損益修正",
-    "observed_at": "2026-11-10T15:28:37.587Z",
-    "mode": "revised-prior-close-valuation-only"
+    "session": "2026-11-11",
+    "nav_usd": 296210.1425000001,
+    "positions": [
+      {
+        "ticker": "CDNS",
+        "price": 329.26,
+        "source_url": "https://stockanalysis.com/stocks/cdns/history/",
+        "mark_at": "2026-11-11T21:00:00.000Z"
+      },
+      {
+        "ticker": "NET",
+        "price": 315,
+        "source_url": "https://stockanalysis.com/stocks/net/history/",
+        "mark_at": "2026-11-11T21:00:00.000Z"
+      },
+      {
+        "ticker": "CEG",
+        "price": 274.73,
+        "source_url": "https://stockanalysis.com/stocks/ceg/history/",
+        "mark_at": "2026-11-11T21:00:00.000Z"
+      }
+    ]
   },
   "latest_execution": {
     "id": "CEG:2026-Q3-release:guidance-raise:fill",
@@ -207,72 +213,94 @@
     "cost_usd": 29821.081289999995,
     "slippage_usd": 29.791289999999996
   },
-  "valuation_note": "11/11正常盤收盤估值；11/12早上恢復，未補造交易。",
+  "valuation_note": "11/12正常盤不同時間戳之指示性盤中估值，非收盤。",
   "realized_pnl_usd": -7364.78595999999,
   "performance": {
-    "return": -0.012632858333333085,
-    "exposure": 0.31344520891954253,
+    "return": -0.008320908333333016,
+    "exposure": 0.3164304386740834,
+    "turnover": 0,
     "closed_trade_count": 2,
     "winning_trade_count": 0,
     "win_rate": 0,
-    "turnover": 0,
-    "sharpe": null,
-    "max_drawdown": null
+    "max_drawdown": null,
+    "sharpe": null
   },
   "limitations": [
-    "原11/11台灣23:00工作沒有完成；平台寫入授權取得時已11/12早上。本次只補做11/11收盤恢復評估，不回填開盤、23:00或01:00成交。",
-    "估值採StockAnalysis歷史Close欄11/11美東16:00正常收盤，來源為第三方指示性行情；不是本次實際可成交報價，也不混入盤後價格。",
-    "缺漏正常晚間評估10/29、11/2、11/9、11/11仍保留；恢復產檔不抹除原時段缺口。",
-    "每日一次的消息評估不是持續盤中停損，無法由當日日K推算本應成交的時間與價位。",
-    "未完成完整歷史回測、SPY共同期間對照與收盤最大回撤／Sharpe；2筆已平倉、0筆獲利不足以驗證策略。",
-    "本次CDNS公司新聞頁403，新聞搜尋及其他公司動態頁有覆蓋缺口；未核實新事件不等於保證沒有公告。",
-    "佣金／現金利息假設0，10bps不利滑價沿用；個人稅費與監管費用未完整建模，公司行動另查證。"
+    "11/12台灣23:00有觸發，但平台輸出目錄為唯讀，等待寫入權限至11/13 00:10才實際開始。小C與大C於正常盤內延遲完成；交易X錯過23時允許窗口，不能回填該時段交易。01:00仍是獨立可買賣評估，本次未提前宣稱已完成。",
+    "本次盤中估值採Yahoo chart的regularMarketPrice及來源regularMarketTime，取得時間另列；正常盤仍未收盤。前日收盤對照採StockAnalysis，不混為同一資料截點。",
+    "事件去重沿用原帳本，不將舊財報、擴產投資、研發測試或獎項改成新營收合約。CDNS與GOOGL動態新聞列表有覆蓋缺口，未核實新事件不代表保證沒有公告。",
+    "已平倉樣本2筆、獲利0筆；完整歷史回測、SPY共同期間與同股不退出對照、完整收盤MDD及Sharpe尚未完成。",
+    "兩個角色的曝險、啟用日及進出場規則不同，帳戶差額不能直接視為風險調整後alpha。",
+    "10bps不利滑價、佣金及現金利息0是模擬假設；監管費用、個人稅與匯率未完整建模，股息與拆股須另記公司行動。"
   ],
   "operational_status": {
-    "run_type": "post-close-recovery",
-    "evaluated_at": "2026-11-11T23:37:27.615Z",
-    "scheduled_evaluation_completed": false,
-    "trigger_received_at": "2026-11-11T14:58:41.441Z",
-    "next_regular_session": "2026-11-12"
+    "run_type": "delayed-regular-session",
+    "trigger_received_at": "2026-11-12T14:58:00.397Z",
+    "evaluated_at": "2026-11-12T16:19:05.647Z",
+    "on_time_start": false,
+    "scheduled_evaluation_completed": true,
+    "regular_session": true
   },
   "news_decisions": [
     {
       "ticker": "CDNS",
-      "action": "HOLD_POST_CLOSE",
-      "reason": "未核實新財測上修／下修，原Q3事件已成交；公司新聞頁403，保留新聞覆蓋缺口。",
-      "source_url": "https://www.cadence.com/en_US/home/company/newsroom/press-releases.html"
+      "reason": "IR及公司新聞頁動態列表未完整回傳，定向查核未找到新合格財測／重大合約；原Q3事件去重，保留覆蓋缺口。",
+      "source_url": "https://investor.cadence.com/news/default.aspx"
     },
     {
       "ticker": "NET",
-      "action": "HOLD_POST_CLOSE",
-      "reason": "官方press overview可見最新11/5財報與人事公告；原財報事件去重，不因價格上漲重複買。",
-      "source_url": "https://www.cloudflare.com/press/"
+      "reason": "官方列表最新仍為11/5財報及人事任命；已成交Q3事件不重買。",
+      "source_url": "https://www.cloudflare.com/press/press-releases/"
     },
     {
       "ticker": "CEG",
-      "action": "HOLD_POST_CLOSE",
-      "reason": "官方newsroom最新財報仍為11/9，全年每股調整後營運獲利指引12.50–12.80美元已於11/10成交；不重複消費同一事件。",
-      "source_url": "https://www.constellationenergy.com/news.html"
+      "reason": "官方IR／申報主事件仍為11/9 Q3；Google、Amazon、DOE內容已包含原事件，不拆成新消息重買。",
+      "source_url": "https://investors.constellationenergy.com/"
+    },
+    {
+      "ticker": "CRWD",
+      "reason": "11/12職場與IDC身份安全排名屬獎項，非財測上修或量化營收合約。",
+      "source_url": "https://ir.crowdstrike.com/press-releases"
+    },
+    {
+      "ticker": "GEV",
+      "reason": "11/10的3450萬美元是公司擴產投資支出，不能當新增營收合約；氫能測試非財測。",
+      "source_url": "https://www.gevernova.com/news/media-hub?type%5Bpress_release%5D=press_release"
+    },
+    {
+      "ticker": "LMT",
+      "reason": "11/10 GMLRS產能／測試里程碑沒有新披露重大客戶合約金額。",
+      "source_url": "https://news.lockheedmartin.com/news-releases"
+    },
+    {
+      "ticker": "MSFT",
+      "reason": "11/10 Ohio State及IBM合作未披露交易金額或提高公司財測，不能把技術資產數換算收入。",
+      "source_url": "https://news.microsoft.com/source/tag/press-releases/"
+    },
+    {
+      "ticker": "其他觀察股",
+      "reason": "AMD/ASML原財報事件、GE公益、JNJ試驗與AMZN產品／培訓等未核實新合格財測或重大合約；GOOGL動態IR列表有覆蓋缺口。",
+      "source_url": "https://abc.xyz/investor/news/default.aspx"
     }
   ],
-  "unrealized_pnl_usd": 3574.9284600000137,
+  "unrealized_pnl_usd": 4868.513460000009,
   "latest_executions": [],
   "trade_reviews": [
     {
       "ticker": "CEG",
       "original_thesis": "公司正式公告上調全年調整後營運獲利指引中點、縮窄至每股12.50–12.80美元；使用明確上修事件，未以沒有事前封存的市場共識宣稱beat。",
-      "new_evidence": "11/11正常收盤274.73，持有111股，含買入成本之持倉報酬2.26%，未實現損益673.95美元；本次未成交。",
+      "new_evidence": "2026-11-12正常盤報價279.21（2026-11-12T16:12:42.000Z），持有111股，持倉報酬3.93%，未實現損益USD1171.23；本次未成交。",
       "evidenced_weakness": "買因子確認上修，尚未完整證明估值安全邊際；長期核電投資需許可、資本與建置時間，短期電價、政策與合併整合仍影響現金回收。",
-      "attribution": "收盤價格變動與公司獲利預測是不同證據；尚未完成大盤／產業因素歸因，浮盈或浮虧均不單獨證明推薦成敗。",
+      "attribution": "本次未做大盤／產業因子分解，價格變動不能單獨證明推薦有效；消息方向、價格與出場方式需分開檢驗。",
       "future_proposal": "沿用v1成本跌10%退出與漲20%先半售，20個交易日重新檢視。另以未來版本研究估值/共同AI資本支出曝險，不回調本次買價。",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000116/ceg-20261109991.htm"
     },
     {
       "ticker": "NET",
       "original_thesis": "正式上修全年營收至2963–2964百萬美元，前次2864–2870；non-GAAP EPS至1.35，前次1.25–1.26。使用公司指引上修，未宣稱共識beat。",
-      "new_evidence": "11/11正常收盤315.00，持有107股，含買入成本之持倉報酬13.22%，未實現損益3934.61美元；本次未成交。",
+      "new_evidence": "2026-11-12正常盤報價318.64（2026-11-12T16:12:41.000Z），持有107股，持倉報酬14.53%，未實現損益USD4324.62；本次未成交。",
       "evidenced_weakness": "GAAP毛利率由74.0%降至71.2%，FCF率由13%降至10%；成長加快仍不保證估值合理。沒有用收入成長取代獲利品質檢查。",
-      "attribution": "收盤價格變動與公司獲利預測是不同證據；尚未完成大盤／產業因素歸因，浮盈或浮虧均不單獨證明推薦成敗。",
+      "attribution": "本次未做大盤／產業因子分解，價格變動不能單獨證明推薦有效；消息方向、價格與出場方式需分開檢驗。",
       "future_proposal": "沿用v1；若測試毛利/FCF門檻或縮小首倉，另開未來版本，不回改本次成交。",
       "source_url": "https://www.cloudflare.com/es-la/press/press-releases/2026/cloudflare-announces-third-quarter-2026-financial-results/"
     },
@@ -284,7 +312,7 @@
       "attribution": "今日半導體與政策風險也可能影響；沒有同步市場/產業對照，無法量化分配損失。不能把全部跌幅都歸咎10-Q，也不能假裝昨晚已核對今天才讀到的細節。",
       "future_proposal": "候選v2：把「超公司指引」與「超事前市場預期」分開，另檢查估值與現金轉換，再比較首次5%與10%部位。只作未來驗證提案，本次仍按v1成交與退出，不回改買價。",
       "source_url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000191/amd-20260926.htm",
-      "review_note": "保留11/5已平倉交易原檢討，不由後來價格改寫既有成交。"
+      "review_note": "保留11/5已平倉檢討；後來反彈或下跌不改寫當時成交與損失。"
     },
     {
       "ticker": "GEV",
@@ -294,14 +322,14 @@
       "attribution": "政策、估值與訂單可兌現性屬解釋假說；未完成因素歸因，不能宣稱某一新聞造成全部虧損。",
       "future_proposal": "候選v2：新增共同題材曝險紀錄，先以前瞻小樣本觀察；不因兩筆虧損直接調出最佳停損比例。",
       "source_url": "https://www.gevernova.com/news/media-hub",
-      "review_note": "保留11/5已平倉交易原檢討，不由後來價格改寫既有成交。"
+      "review_note": "保留11/5已平倉檢討；後來反彈或下跌不改寫當時成交與損失。"
     },
     {
       "ticker": "CDNS",
       "original_thesis": "10/27因正式上修全年指引買入87股。",
-      "new_evidence": "11/11正常收盤329.26，持有87股，含買入成本之持倉報酬-3.48%，未實現損益-1033.63美元；本次未成交。",
+      "new_evidence": "2026-11-12正常盤報價333.93（2026-11-12T16:12:43.000Z），持有87股，持倉報酬-2.11%，未實現損益USD-627.34；本次未成交。",
       "evidenced_weakness": "指引上修仍伴隨高估值與共同科技題材風險。每日一次檢查不能限制最大虧損於10%。",
-      "attribution": "收盤價格變動與公司獲利預測是不同證據；尚未完成大盤／產業因素歸因，浮盈或浮虧均不單獨證明推薦成敗。",
+      "attribution": "本次未做大盤／產業因子分解，價格變動不能單獨證明推薦有效；消息方向、價格與出場方式需分開檢驗。",
       "future_proposal": "候選v2：明確另立持續監控或高頻輪詢實驗；需可驗證時間序列與執行紀錄，未實作前不宣稱有即時停損。原v1成績保留。",
       "source_url": "https://investor.cadence.com/news/default.aspx"
     }
