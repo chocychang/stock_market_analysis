@@ -6,21 +6,22 @@
   <meta name="description" content="交易X的獨立美股波段模擬帳戶：價格訊號、風險預算、持股與逐筆交易紀錄。">
   <title>交易X｜波段交易實驗室</title>
   <link rel="stylesheet" href="./assets/xiao-c.css">
-  <link rel="stylesheet" href="./assets/trader-x.css">
+  <link rel="stylesheet" href="./assets/trader-x.css?v=20261113-universe40">
 </head>
-<body>
+<body data-feed="./data/trader-x.json" data-strategy-kind="breakout">
 <main>
   <nav class="lab-nav" aria-label="實驗室導覽">
     <a href="./">← 美股觀察室</a>
     <a href="./xiao-c.html">小C帳戶</a>
     <a href="./da-c.html">大C帳戶</a>
     <span aria-current="page">交易X</span>
+    <a href="./trader-x-rebound.html">跌深反彈實驗</a>
   </nav>
 
   <header class="lab-hero">
-    <p class="eyebrow">TRADER X / 價格驅動的獨立虛擬人物</p>
-    <h1>交易X 波段交易實驗室</h1>
-    <p class="lab-lead">依事先固定的價格條件進場，先計算風險，再決定買幾股。每個交易日兩次檢查，各自留下可核對的紀錄。</p>
+    <p class="eyebrow" id="strategy-eyebrow">TRADER X / 順勢突破</p>
+    <h1 id="page-title">交易X 波段交易實驗室</h1>
+    <p class="lab-lead" id="strategy-intro">依事先固定的價格條件進場，先計算風險，再決定買幾股。每個交易日兩次檢查，各自留下可核對的紀錄。</p>
     <div class="lab-tags"><span>只做模擬</span><span>整股做多</span><span>無槓桿</span></div>
   </header>
 
@@ -29,7 +30,7 @@
     <p id="status-detail">帳戶資料載入後，會顯示實際評估時間與資料版本。</p>
     <dl class="lab-stamps">
       <div><dt>資料更新</dt><dd id="updated-at">—</dd></div>
-      <div><dt>最後評估</dt><dd id="evaluated-at">—</dd></div>
+      <div><dt>最後正式交易評估</dt><dd id="evaluated-at">—</dd></div>
       <div><dt>資料版本</dt><dd id="data-version">—</dd></div>
     </dl>
   </section>
@@ -37,6 +38,20 @@
   <div class="section-title"><h2>獨立前瞻模擬帳戶</h2><span id="strategy-version" class="muted">—</span></div>
   <p id="valuation-note" class="muted">估值時間與盤中／收盤狀態以當次資料為準。</p>
   <div id="metrics" class="grid" aria-label="帳戶指標"></div>
+
+  <section class="experiment-section">
+    <h2>兩個入場策略，兩份獨立帳本</h2>
+    <div class="experiment-grid">
+      <a class="experiment-card" href="./trader-x.html"><span>順勢突破帳本</span><strong>追蹤創高後的延續行情</strong><small>前一完成交易日收盤突破此前20日最高價。</small></a>
+      <a class="experiment-card" href="./trader-x-rebound.html"><span>跌深反彈實驗</span><strong>檢查下跌後的反轉訊號</strong><small>回撤至少15%、收盤站回前日高點，且成交量達20日均量。</small></a>
+    </div>
+    <p class="muted">兩份帳本各自以30萬美元虛擬本金記帳，持股與現金分開。新增實驗不會轉走原帳戶資金或重設原有交易，也不代表追加真實資金。</p>
+    <h3>共同期間比較</h3>
+    <p class="muted">反彈帳本的30萬美元為獨立模擬資金，不從原交易X挪用現金。共同期報酬各自從可核對的基準淨值起算，原帳戶基準以前的損益不混入比較。</p>
+    <p id="comparison-status" class="muted">尚未建立可核對的共同期間基準。</p>
+    <div id="comparison-table" class="table-wrap"></div>
+    <p class="muted" id="comparison-note">比較時須一併看共同期間、資金曝險與樣本數。尚未完成可比較的績效驗證，不能從短期盈虧判定哪種入場方式較好。</p>
+  </section>
 
   <section>
     <div class="section-title"><h2>目前持股</h2><span id="position-count" class="count-label">—</span></div>
@@ -51,13 +66,25 @@
   </section>
 
   <section>
-    <h2>最近訊號評估</h2>
+    <div class="section-title"><h2>選股池與逐檔檢查</h2><span id="pool-result-count" class="count-label">—</span></div>
+    <p id="pool-selection-note" class="muted">選股名單與生效版本以帳戶資料為準。</p>
+    <dl class="lab-stamps pool-stamps">
+      <div><dt>名單版本</dt><dd id="pool-revision">—</dd></div>
+      <div><dt>生效時間</dt><dd id="pool-effective-at">—</dd></div>
+      <div><dt>本次檢查截點</dt><dd id="pool-as-of">—</dd></div>
+    </dl>
+    <p id="pool-coverage" class="lab-note">尚未提供逐檔掃描覆蓋率；未掃描與未觸發會分開顯示。</p>
+    <div class="pool-controls">
+      <label>搜尋股票<input id="pool-search" type="search" placeholder="例如 GE、AMD" autocomplete="off"></label>
+      <label>檢查狀態<select id="pool-filter"><option value="all">全部股票</option><option value="scanned">已掃描</option><option value="not_scanned">未掃描</option><option value="matched">已觸發</option><option value="not_matched">已掃描、未觸發</option><option value="not_bought">有未買原因</option></select></label>
+    </div>
     <div id="scan-results" class="table-wrap"></div>
     <p id="universe" class="muted"></p>
+    <details><summary>其他本次執行紀錄</summary><div id="run-actions"></div></details>
   </section>
 
   <section>
-    <h2>最近模擬成交</h2>
+    <h2>本次模擬成交</h2>
     <div id="executions" class="table-wrap"></div>
   </section>
 
@@ -66,7 +93,7 @@
     <div class="lab-method-grid">
       <div>
         <h3>價格訊號</h3>
-        <p>檢查上一個完整正常交易日的收盤價，是否突破此前20個交易日最高價。股票名單與規則先固定，再觀察未來結果。</p>
+        <p id="entry-rule">檢查上一個完整正常交易日的收盤價，是否突破此前20個交易日最高價。股票名單與規則先固定，再觀察未來結果。</p>
       </div>
       <div>
         <h3>風險決定股數</h3>
@@ -95,10 +122,11 @@
     <div id="performance-notes" class="lab-note"></div>
     <ul id="limitations"></ul>
     <p><a id="latest-report" hidden>閱讀本次完整報告 →</a></p>
+    <p><a id="previous-trading-report" hidden>上一份正式交易報告 →</a><span id="previous-trading-at" class="muted"></span></p>
   </section>
 
   <footer>交易X為獨立虛擬帳戶，與小C、大C分開記帳。每日兩次檢查不等於持續盤中監控；滑價與跳空可能使損失超出計畫。前瞻模擬、歷史回測與真實交易的結果須分開閱讀。</footer>
 </main>
-<script src="./assets/trader-x.js" defer></script>
+<script src="./assets/trader-x.js?v=20261113-universe40" defer></script>
 </body>
 </html>

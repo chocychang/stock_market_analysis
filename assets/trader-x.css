@@ -37,5 +37,31 @@ details p{font-size:14px;color:#c3d2db}
 #pending .pending-item{padding:10px 0;border-bottom:1px solid #294352}
 #pending .pending-item:last-child{border-bottom:0}
 #pending .pending-item p{margin:3px 0;font-size:14px;color:#c3d2db}
+.experiment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.experiment-card{display:block;background:#10212d;border:1px solid #345565;border-radius:12px;padding:18px;text-decoration:none;transition:border-color .15s}
+.experiment-card:hover,.experiment-card:focus-visible{border-color:#72dcca}
+.experiment-card span,.experiment-card strong,.experiment-card small{display:block}
+.experiment-card span{color:#72dcca;font-size:12px}
+.experiment-card strong{margin:6px 0;color:#e6eef2;font-size:17px}
+.experiment-card small{color:#a3b5c1;font-size:13px}
+.pool-controls{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0}
+.pool-controls label{display:grid;gap:5px;font-size:12px;color:#a3b5c1;flex:1;min-width:180px}
+.pool-controls input,.pool-controls select{box-sizing:border-box;width:100%;font:14px system-ui,sans-serif;background:#10212d;color:#e6eef2;border:1px solid #3a5666;border-radius:8px;padding:11px 12px}
+.pool-controls input:focus,.pool-controls select:focus{outline:2px solid #72dcca;outline-offset:2px}
+.pool-stamps{margin-bottom:18px}
+#scan-results table{min-width:980px}
+#scan-results td:nth-child(4){min-width:170px;max-width:300px}
+#scan-results td:nth-child(5){min-width:260px;max-width:420px}
+.rule-lines{display:grid;gap:7px;font-size:12px;line-height:1.6}
+.rule-lines p{margin:0}
+.rule-lines .rule-meta{color:#a3b5c1}
+.scan-badge{display:inline-block;padding:2px 8px;margin-bottom:4px;background:#243a49;border-radius:99px;font-size:11px;white-space:nowrap}
+.scan-badge.matched{background:#143c35;color:#8ce3c9}
+#comparison-table table{min-width:760px}
+#comparison-table td:last-child{min-width:200px}
+.source-link{display:block;font-size:12px;overflow-wrap:anywhere;margin:3px 0}
+#run-actions{font-size:14px;color:#c3d2db}
+body[data-strategy-kind="rebound"] .lab-tags span{border-color:#635334;color:#ebd8a2;background:#332d21}
 @media(max-width:650px){main{padding:28px 18px}section{padding:20px}.lab-method-grid{grid-template-columns:1fr}.lab-hero{padding-top:24px}.lab-lead{font-size:16px}.lab-stamps{display:grid;gap:12px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}#metrics .metric{padding:15px}#metrics .metric b{font-size:20px}}
+@media(max-width:650px){.experiment-grid{grid-template-columns:1fr}.pool-controls{display:grid;grid-template-columns:1fr}.pool-controls label{min-width:0}}
 @media(max-width:370px){.grid{grid-template-columns:1fr}}
