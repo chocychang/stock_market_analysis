@@ -25,6 +25,7 @@
   const empty = (id, text) => byId(id).append(element('p', text, 'empty-state'));
   const sideText = value => ({ BUY: '買進', SELL: '賣出', HOLD: '持有', WATCH: '觀察', NO_TRADE: '不交易', NO_ORDER: '不下單', PENDING: '待處理' }[String(value).toUpperCase()] || value || '—');
   const signedClass = value => numeric(value) ? value > 0 ? 'positive' : value < 0 ? 'negative' : '' : '';
+  const valuationLabel = value => ['close', 'regular-session-close'].includes(value) ? '正常盤日K收盤估值' : value === 'intraday' ? '盤中估值，非收盤績效' : '估值口徑待核對';
   const reboundPage = document.body.dataset.strategyKind === 'rebound';
   const passText = value => value === true ? '通過' : value === false ? '未通過' : '未核實';
   const plain = value => value === null || value === undefined ? '未提供' : typeof value === 'object' ? JSON.stringify(value) : String(value);
@@ -91,7 +92,7 @@
       return;
     }
     const status = { 'baseline-only': '僅基準快照', updated: '共同期間已更新', incomplete: '資料不完整' }[comparison.status] || '狀態待核對';
-    put('comparison-status', `${status}｜共同起點：${comparison.started_at ? time(comparison.started_at) : '未核對'}｜資料截點：${comparison.as_of ? time(comparison.as_of) : '未核對'}｜${comparison.valuation_type === 'intraday' ? '盤中估值，非收盤績效' : '估值口徑待核對'}`);
+    put('comparison-status', `${status}｜共同起點：${comparison.started_at ? time(comparison.started_at) : '未核對'}｜資料截點：${comparison.as_of ? time(comparison.as_of) : '未核對'}｜${valuationLabel(comparison.valuation_type)}`);
     table('comparison-table', ['帳本', '基準NAV（USD）', '本次NAV（USD）', '共同期報酬', '本次曝險', '估值與持股'], comparison.accounts.map(account => {
       const node = element('div'), href = accountHref(account.href);
       if (href) { const link = element('a', account.name || '未命名帳本'); link.href = href; node.append(link); }
@@ -214,7 +215,7 @@
 
     put('status-title', data.status || '帳戶狀態尚未提供');
     put('status-detail', diagnosticOnly
-      ? `本次為設定更新與資料診斷，未新增模擬成交；診斷符合不等於買單。${op.evaluated_at ? '帳戶估值沿用上一份正式交易紀錄，請核對估值註記與報告。' : '尚未執行正式交易評估；已掃描數量與缺資料原因另列。'}`
+      ? `選股池中的資料診斷並非買單；帳戶估值截點請依下方估值註記與逐股時間核對。${op.evaluated_at ? '' : '尚未執行正式交易評估；已掃描數量與缺資料原因另列。'}`
       : op.evaluated_at
       ? '此處為正式前瞻模擬紀錄；盤中估值與已完成收盤估值請依資料註記區分。'
       : '角色已建立，等待首次正式評估。尚未執行訊號掃描，也沒有因此回補過去成交。');
@@ -266,7 +267,7 @@
 
     renderPool(data, scans, isRebound);
 
-    if (!fills.length) empty('executions', diagnosticOnly ? '本次設定與資料診斷沒有新增成交；既有交易請查看上一份正式交易報告。' : '本次沒有新增模擬成交；歷史紀錄以帳本與報告為準。');
+    if (!fills.length) empty('executions', diagnosticOnly ? '本次沒有新增模擬成交；既有交易請查看上一份正式交易報告。' : '本次沒有新增模擬成交；歷史紀錄以帳本與報告為準。');
     else table('executions', ['成交時間', '股票／動作', '股數', '模擬單價', '佣金', '已實現損益', '理由'], fills.map(fill => [
       time(fill.executed_at || fill.quote_at || fill.at),
       { text: fill.ticker || '—', note: sideText(fill.side) },
