@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2026-11-14-weekend-close-v1-trader-x-rebound",
+  "version": "2026-11-14-review-weekend-v1-trader-x-rebound",
   "name": "交易X跌深反彈",
   "strategy_kind": "rebound",
   "strategy_label": "跌深反彈實驗",
@@ -8,9 +8,9 @@
   "report_prefix": "trader-x-rebound",
   "configuration_revision": "2026-11-13-cross-sector-40-v1",
   "configuration_updated_at": "2026-11-13T15:52:05.661Z",
-  "updated_at": "2026-11-14T15:04:22.619Z",
+  "updated_at": "2026-11-14T17:00:13.268Z",
   "activated_at": "2026-11-13T15:52:05.661Z",
-  "status": "11/14週六休市；已完成11/13日K收盤估值，0筆新交易",
+  "status": "台灣11/15 01:00批次：美股11/14週六休市，0筆新交易",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
@@ -674,8 +674,8 @@
     "frozen_at": "2026-11-10T16:26:29.925Z",
     "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
   },
-  "latest_report": "reports/trader-x-rebound-2026-11-14-weekend.html",
-  "review": "本次NYSE當地日期11/14為週六休市。現金、股數、成本、已實現損益與成交事件完全保留；只把網站估值統一為11/13已完成日K Close，不依整日高低點回填停損或停利。不同策略的未實現盈虧不互相抵銷帳本。",
+  "latest_report": "reports/trader-x-rebound-2026-11-14-review-weekend.html",
+  "review": "本次在實際01時段獨立確認NYSE當地11/14為週六休市，沒有新增買賣決策、成交或持有交易日。沿用23時批次已核對的11/13日K Close估值與共同期比較；不把收盤價冒充現在的正常盤報價。",
   "valuation_note": "使用11/13正常盤日K Close，收盤時段端點21:00 UTC（台灣11/14 05:00）；資料於11/14實際取得。mark_at是日K時段端點，非來源逐筆成交時間。這是估值，不是新成交或即時報價。",
   "limitations": [
     "本次是2026-11-14休市與2026-11-13收盤估值，未回填交易或執行新訊號。",
@@ -688,13 +688,13 @@
     "runner需要執行者提供有來源與時間戳行情，不會自行抓價；本機排程未觸發不能宣稱已完成。"
   ],
   "operational_status": {
-    "status": "market-closed-close-valued",
-    "run_type": "weekend-no-trade-close-finalization",
+    "status": "review-market-closed",
+    "run_type": "actual-0100-market-closed-review",
     "market_closed": true,
     "regular_session": false,
     "market_date": "2026-11-14",
-    "trigger_received_at": "2026-11-14T14:57:37.699Z",
-    "market_closed_checked_at": "2026-11-14T15:04:22.619Z",
+    "trigger_received_at": "2026-11-14T16:56:39.563Z",
+    "market_closed_checked_at": "2026-11-14T17:00:13.268Z",
     "close_valuation_completed_at": "2026-11-14T15:04:22.619Z",
     "evaluated_at": "2026-11-13T17:24:43.948Z",
     "last_regular_session_evaluation": {
@@ -705,7 +705,12 @@
     "entry_phase_checked": true,
     "trades_executed": 0,
     "published_at": null,
-    "pages_verified_at": null
+    "pages_verified_at": null,
+    "schedule_phase": "review",
+    "requested_taipei": "2026-11-15 01:00",
+    "preliminary_checked_at": "2026-11-14T16:58:17.992Z",
+    "review_checked_at": "2026-11-14T17:00:13.268Z",
+    "review_closed_check_completed": true
   },
   "planned_risk_usd": 0,
   "strategy_comparison": {
