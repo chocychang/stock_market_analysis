@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -20,6 +21,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      PAGES_ARTIFACT_NAME: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,7 +31,36 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          name: ${{ env.PAGES_ARTIFACT_NAME }}
           path: .
+      - name: Wait for uploaded artifact metadata
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const name = process.env.PAGES_ARTIFACT_NAME;
+            for (let attempt = 1; attempt <= 10; attempt++) {
+              const { data } = await github.rest.actions.listWorkflowRunArtifacts({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                run_id: context.runId,
+                per_page: 100
+              });
+              const matches = data.artifacts.filter(artifact => artifact.name === name && !artifact.expired);
+              if (matches.length === 1) {
+                core.info(`Artifact ${name} is available (id ${matches[0].id}).`);
+                return;
+              }
+              if (matches.length > 1) {
+                throw new Error(`Expected one artifact named ${name}, found ${matches.length}.`);
+              }
+              if (attempt < 10) {
+                core.info(`Waiting for artifact metadata (${attempt}/10).`);
+                await new Promise(resolve => setTimeout(resolve, 3000));
+              }
+            }
+            throw new Error(`Artifact ${name} did not become available after 10 checks.`);
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ env.PAGES_ARTIFACT_NAME }}
