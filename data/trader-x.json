@@ -1,641 +1,1401 @@
 {
   "schema_version": 1,
-  "version": "2026-11-16-review-preopen-recovery-20261116140337403-trader-x",
+  "version": "2026-11-16-entry-intent-20261116152952574-final-trader-x",
   "name": "交易X",
   "strategy_kind": "breakout",
   "strategy_label": "順勢突破",
   "strategy_version": "trader-x-breakout-v1",
   "report_prefix": "trader-x",
   "configuration_revision": "2026-11-13-cross-sector-40-v1",
-  "configuration_updated_at": "2026-11-13T15:52:05.661Z",
-  "updated_at": "2026-11-16T14:03:37.403Z",
+  "configuration_updated_at": "2026-11-11T23:48:02.122Z",
+  "updated_at": "2026-11-16T15:29:52.574Z",
   "activated_at": "2026-11-10T16:26:29.925Z",
-  "status": "01:00工作時段異常；本次僅盤前恢復記錄，無成交",
+  "status": "23:00完成40檔掃描；5檔續抱、0筆新交易",
   "capital_usd": 300000,
   "cash_usd": 234978.048005,
-  "nav_usd": 299846.048005,
-  "pnl_usd": -153.95199500001036,
+  "nav_usd": 299302.848005,
+  "pnl_usd": -697.151995000022,
   "realized_pnl_usd": 0,
-  "unrealized_pnl_usd": -153.9519949999958,
+  "unrealized_pnl_usd": -697.1519950000074,
   "positions": [
     {
       "ticker": "GE",
       "shares": 37,
       "cost_usd": 12495.54306,
       "average_cost": 337.71738,
-      "mark_price": 331.81,
-      "mark_at": "2026-11-13T21:00:00.000Z",
-      "bar_ended_at": "2026-11-13T21:00:00.000Z",
-      "quote_at": null,
-      "retrieved_at": "2026-11-14T15:01:03.044Z",
-      "source_url": "https://stockanalysis.com/stocks/ge/history/",
-      "secondary_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GE?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
-      "price_type": "regular-session-daily-close",
-      "valuation_type": "close",
-      "market_value_usd": 12276.97,
-      "unrealized_pnl_usd": -218.57306000000062,
-      "position_return": -0.017492081692686456,
+      "mark_price": 329.12,
+      "mark_at": "2026-11-16T15:27:55.000Z",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GE?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
+      "retrieved_at": "2026-11-16T15:27:56.661Z",
+      "market_value_usd": 12177.44,
+      "unrealized_pnl_usd": -318.10305999999946,
       "stop_reference": 314.0002371428571,
       "target_reference": 385.1516657142856,
-      "exit_reference": 303.945642,
-      "partial_profit_reference": 405.260856,
       "entry_session": "2026-11-12",
       "entry_at": "2026-11-12T17:03:19.000Z",
-      "holding_sessions": 2,
+      "holding_sessions": 3,
       "entry_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "action": "HOLD_NO_TRADING_MARKET_CLOSED"
+      "valuation_type": "intraday"
     },
     {
       "ticker": "AMD",
       "shares": 10,
       "cost_usd": 5237.232,
       "average_cost": 523.7232,
-      "mark_price": 534.06,
-      "mark_at": "2026-11-13T21:00:00.000Z",
-      "bar_ended_at": "2026-11-13T21:00:00.000Z",
-      "quote_at": null,
-      "retrieved_at": "2026-11-14T15:01:01.964Z",
-      "source_url": "https://stockanalysis.com/stocks/amd/history/",
-      "secondary_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
-      "price_type": "regular-session-daily-close",
-      "valuation_type": "close",
-      "market_value_usd": 5340.599999999999,
-      "unrealized_pnl_usd": 103.36799999999948,
-      "position_return": 0.01973714359035461,
+      "mark_price": 507.19,
+      "mark_at": "2026-11-16T15:27:54.000Z",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
+      "retrieved_at": "2026-11-16T15:27:56.008Z",
+      "market_value_usd": 5071.9,
+      "unrealized_pnl_usd": -165.33200000000033,
       "stop_reference": 434.50034285714287,
       "target_reference": 702.1689142857143,
-      "exit_reference": 471.35088,
-      "partial_profit_reference": 628.46784,
       "entry_session": "2026-11-13",
       "entry_at": "2026-11-13T17:23:34.000Z",
-      "holding_sessions": 1,
+      "holding_sessions": 2,
       "entry_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "action": "HOLD_NO_TRADING_MARKET_CLOSED"
+      "valuation_type": "intraday"
     },
     {
       "ticker": "AVGO",
       "shares": 23,
       "cost_usd": 7930.617695,
       "average_cost": 344.809465,
-      "mark_price": 347.01,
-      "mark_at": "2026-11-13T21:00:00.000Z",
-      "bar_ended_at": "2026-11-13T21:00:00.000Z",
-      "quote_at": null,
-      "retrieved_at": "2026-11-14T15:01:01.974Z",
-      "source_url": "https://stockanalysis.com/stocks/avgo/history/",
-      "secondary_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
-      "price_type": "regular-session-daily-close",
-      "valuation_type": "close",
-      "market_value_usd": 7981.23,
-      "unrealized_pnl_usd": 50.61230499999965,
-      "position_return": 0.006381886877728116,
+      "mark_price": 329.72,
+      "mark_at": "2026-11-16T15:27:55.000Z",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
+      "retrieved_at": "2026-11-16T15:27:57.563Z",
+      "market_value_usd": 7583.56,
+      "unrealized_pnl_usd": -347.0576949999995,
       "stop_reference": 306.63517928571423,
       "target_reference": 421.15803642857134,
-      "exit_reference": 310.3285185,
-      "partial_profit_reference": 413.77135799999996,
       "entry_session": "2026-11-13",
       "entry_at": "2026-11-13T17:23:35.000Z",
-      "holding_sessions": 1,
+      "holding_sessions": 2,
       "entry_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "action": "HOLD_NO_TRADING_MARKET_CLOSED"
+      "valuation_type": "intraday"
     },
     {
       "ticker": "COST",
       "shares": 20,
       "cost_usd": 22173.3512,
       "average_cost": 1108.66756,
-      "mark_price": 1106.21,
-      "mark_at": "2026-11-13T21:00:00.000Z",
-      "bar_ended_at": "2026-11-13T21:00:00.000Z",
-      "quote_at": null,
-      "retrieved_at": "2026-11-14T15:01:02.492Z",
-      "source_url": "https://stockanalysis.com/stocks/cost/history/",
-      "secondary_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/COST?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
-      "price_type": "regular-session-daily-close",
-      "valuation_type": "close",
-      "market_value_usd": 22124.2,
-      "unrealized_pnl_usd": -49.151200000000244,
-      "position_return": -0.002216678911395209,
+      "mark_price": 1111.855,
+      "mark_at": "2026-11-16T15:27:55.000Z",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/COST?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
+      "retrieved_at": "2026-11-16T15:27:59.120Z",
+      "market_value_usd": 22237.1,
+      "unrealized_pnl_usd": 63.74879999999757,
       "stop_reference": 1065.6961314285713,
       "target_reference": 1194.610417142857,
-      "exit_reference": 997.8008040000001,
-      "partial_profit_reference": 1330.401072,
       "entry_session": "2026-11-13",
       "entry_at": "2026-11-13T17:23:35.000Z",
-      "holding_sessions": 1,
+      "holding_sessions": 2,
       "entry_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "action": "HOLD_NO_TRADING_MARKET_CLOSED"
+      "valuation_type": "intraday"
     },
     {
       "ticker": "JNJ",
       "shares": 60,
       "cost_usd": 17185.20804,
       "average_cost": 286.420134,
-      "mark_price": 285.75,
-      "mark_at": "2026-11-13T21:00:00.000Z",
-      "bar_ended_at": "2026-11-13T21:00:00.000Z",
-      "quote_at": null,
-      "retrieved_at": "2026-11-14T15:01:03.053Z",
-      "source_url": "https://stockanalysis.com/stocks/jnj/history/",
-      "secondary_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
-      "price_type": "regular-session-daily-close",
-      "valuation_type": "close",
-      "market_value_usd": 17145,
-      "unrealized_pnl_usd": -40.20804000000135,
-      "position_return": -0.0023396888711741948,
+      "mark_price": 287.58,
+      "mark_at": "2026-11-16T15:27:53.000Z",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?range=3mo&interval=1d&events=div%2Csplits&includePrePost=false",
+      "retrieved_at": "2026-11-16T15:27:56.871Z",
+      "market_value_usd": 17254.8,
+      "unrealized_pnl_usd": 69.59195999999793,
       "stop_reference": 271.85441971428565,
       "target_reference": 315.5515625714286,
-      "exit_reference": 257.7781206,
-      "partial_profit_reference": 343.7041608,
       "entry_session": "2026-11-13",
       "entry_at": "2026-11-13T17:24:10.000Z",
-      "holding_sessions": 1,
+      "holding_sessions": 2,
       "entry_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "action": "HOLD_NO_TRADING_MARKET_CLOSED"
+      "valuation_type": "intraday"
     }
   ],
   "pending_orders": [],
   "latest_executions": [],
   "scan_results": [
     {
-      "ticker": "AMD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "ASML",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "GEV",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "MSFT",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "AMZN",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "CRWD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "GE",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "LMT",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "JNJ",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "GOOGL",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "CDNS",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "NET",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "NVDA",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
       "ticker": "AAPL",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "AVGO",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "META",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "TSLA",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "ORCL",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "QCOM",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "PLD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "MU",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "LIN",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "JPM",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "BAC",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "GS",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "V",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "MA",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "UNH",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "LLY",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 356.27,
+          "prior20_high": 359.37,
+          "prior_close": 354.88,
+          "prior_high": 359.37,
+          "prior_drawdown_fraction": 0.012494086874252242,
+          "signal_volume": 40027467,
+          "prior20_average_volume": 48203269.4,
+          "atr14": 9.45571428571429,
+          "stop_distance": 18.91142857142858
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/aapl/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.884Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:AAPL:2026-11-13:breakout20"
     },
     {
       "ticker": "ABBV",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 295.03,
+          "prior20_high": 302.93,
+          "prior_close": 294.45,
+          "prior_high": 300.42,
+          "prior_drawdown_fraction": 0.027993265770970277,
+          "signal_volume": 3262104,
+          "prior20_average_volume": 5279490.05,
+          "atr14": 7.424285714285714,
+          "stop_distance": 14.848571428571429
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/abbv/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.412Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:ABBV:2026-11-13:breakout20"
     },
     {
-      "ticker": "XOM",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "ticker": "AMD",
+      "action": "HOLD",
+      "reason": "已持有，本版不加碼；本次訊號檢查另列",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "已持有，本版不加碼",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 534.06,
+          "prior20_high": 594,
+          "prior_close": 585.3,
+          "prior_high": 594,
+          "prior_drawdown_fraction": 0.014646464646464685,
+          "signal_volume": 49387598,
+          "prior20_average_volume": 33352234.8,
+          "atr14": 47.88285714285713,
+          "stop_distance": 95.76571428571425
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/amd/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.613Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:AMD:2026-11-13:breakout20"
     },
     {
-      "ticker": "CVX",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "ticker": "AMZN",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 266.66,
+          "prior20_high": 275.34,
+          "prior_close": 267.44,
+          "prior_high": 273.6,
+          "prior_drawdown_fraction": 0.028691799230042725,
+          "signal_volume": 31148510,
+          "prior20_average_volume": 50501433.4,
+          "atr14": 10.745000000000001,
+          "stop_distance": 21.490000000000002
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/amzn/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.688Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:AMZN:2026-11-13:breakout20"
     },
     {
-      "ticker": "COST",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "ticker": "ASML",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 1495.16,
+          "prior20_high": 1690.1,
+          "prior_close": 1497.12,
+          "prior_high": 1530.95,
+          "prior_drawdown_fraction": 0.11418259274599141,
+          "signal_volume": 1365713,
+          "prior20_average_volume": 1710262.8,
+          "atr14": 72.04285714285716,
+          "stop_distance": 144.08571428571432
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/asml/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.646Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:ASML:2026-11-13:breakout20"
     },
     {
-      "ticker": "WMT",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "ticker": "AVGO",
+      "action": "HOLD",
+      "reason": "已持有，本版不加碼；本次訊號檢查另列",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "已持有，本版不加碼",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 347.01,
+          "prior20_high": 369.82,
+          "prior_close": 364.36,
+          "prior_high": 369.82,
+          "prior_drawdown_fraction": 0.014763939213671473,
+          "signal_volume": 31654184,
+          "prior20_average_volume": 26761205.8,
+          "atr14": 20.24785714285714,
+          "stop_distance": 40.49571428571428
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/avgo/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.938Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:AVGO:2026-11-13:breakout20"
     },
     {
-      "ticker": "HD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
-    },
-    {
-      "ticker": "MCD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "ticker": "BAC",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 51.02,
+          "prior20_high": 53.03,
+          "prior_close": 50.51,
+          "prior_high": 50.93,
+          "prior_drawdown_fraction": 0.047520271544408854,
+          "signal_volume": 20008105,
+          "prior20_average_volume": 37279753.7,
+          "atr14": 1.1678571428571425,
+          "stop_distance": 2.335714285714285
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/bac/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.332Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:BAC:2026-11-13:breakout20"
     },
     {
       "ticker": "CAT",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 600.2,
+          "prior20_high": 745,
+          "prior_close": 605.28,
+          "prior_high": 613.57,
+          "prior_drawdown_fraction": 0.18754362416107384,
+          "signal_volume": 2293033,
+          "prior20_average_volume": 3857919.8,
+          "atr14": 31.68,
+          "stop_distance": 63.36
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/cat/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.488Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:CAT:2026-11-13:breakout20"
     },
     {
-      "ticker": "HON",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "ticker": "CDNS",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 323.01,
+          "prior20_high": 348.8,
+          "prior_close": 333.32,
+          "prior_high": 334.55,
+          "prior_drawdown_fraction": 0.04438073394495423,
+          "signal_volume": 1547475,
+          "prior20_average_volume": 2454346.6,
+          "atr14": 15.315714285714279,
+          "stop_distance": 30.631428571428557
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/cdns/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.223Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:CDNS:2026-11-13:breakout20"
     },
     {
-      "ticker": "NEE",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "ticker": "COST",
+      "action": "HOLD",
+      "reason": "已持有，本版不加碼；本次訊號檢查另列",
+      "scanned": true,
+      "signal_matched": true,
+      "not_bought_reason": "已持有，本版不加碼",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 1106.21,
+          "prior20_high": 1102.84,
+          "prior_close": 1092.21,
+          "prior_high": 1102.84,
+          "prior_drawdown_fraction": 0.009638750861412193,
+          "signal_volume": 1875259,
+          "prior20_average_volume": 2385142.1,
+          "atr14": 21.573571428571395,
+          "stop_distance": 43.14714285714279
+        },
+        "conditions": {
+          "close_above_prior20_high": true
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/cost/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.416Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:COST:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "CRWD",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 226.61,
+          "prior20_high": 272.29,
+          "prior_close": 229.87,
+          "prior_high": 230.62,
+          "prior_drawdown_fraction": 0.15578978295199974,
+          "signal_volume": 6575059,
+          "prior20_average_volume": 9503619.5,
+          "atr14": 14.842142857142862,
+          "stop_distance": 29.684285714285725
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/crwd/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.700Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:CRWD:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "CVX",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 219.89,
+          "prior20_high": 236.48,
+          "prior_close": 216.35,
+          "prior_high": 218.09,
+          "prior_drawdown_fraction": 0.08512347767253048,
+          "signal_volume": 7579317,
+          "prior20_average_volume": 8354024.3,
+          "atr14": 5.300714285714286,
+          "stop_distance": 10.601428571428572
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/cvx/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.438Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:CVX:2026-11-13:breakout20"
     },
     {
       "ticker": "DUK",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
-      "scanned": false,
-      "signal_matched": null,
-      "decision_at": null,
-      "signal_session": null,
-      "rule_checks": null,
-      "reason": "非01:00執行時段且仍在正常盤開盤前，未作本次訊號判斷。",
-      "not_bought_reason": "本次未評估；不能解讀成未符合買點。",
-      "source_url": null
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 129.16,
+          "prior20_high": 132.99,
+          "prior_close": 128.59,
+          "prior_high": 129.97,
+          "prior_drawdown_fraction": 0.033085194375517046,
+          "signal_volume": 7585597,
+          "prior20_average_volume": 4332090.6,
+          "atr14": 2.2635714285714266,
+          "stop_distance": 4.527142857142853
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/duk/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.994Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:DUK:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "GE",
+      "action": "HOLD",
+      "reason": "已持有，本版不加碼；本次訊號檢查另列",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "已持有，本版不加碼",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 331.81,
+          "prior20_high": 343.59,
+          "prior_close": 330.86,
+          "prior_high": 343.59,
+          "prior_drawdown_fraction": 0.03704997235076679,
+          "signal_volume": 3375782,
+          "prior20_average_volume": 5656811.65,
+          "atr14": 11.715714285714276,
+          "stop_distance": 23.43142857142855
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/ge/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.715Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:GE:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "GEV",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 803.13,
+          "prior20_high": 951,
+          "prior_close": 818.49,
+          "prior_high": 842,
+          "prior_drawdown_fraction": 0.13933753943217664,
+          "signal_volume": 3002010,
+          "prior20_average_volume": 4287195.45,
+          "atr14": 62.68500000000002,
+          "stop_distance": 125.37000000000003
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/gev/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.658Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:GEV:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 295.77,
+          "prior20_high": 350.66,
+          "prior_close": 298.7,
+          "prior_high": 302.56,
+          "prior_drawdown_fraction": 0.14817772200992418,
+          "signal_volume": 30798617,
+          "prior20_average_volume": 40687928.95,
+          "atr14": 11.910714285714294,
+          "stop_distance": 23.821428571428587
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/googl/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.812Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:GOOGL:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "GS",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 916.56,
+          "prior20_high": 939.38,
+          "prior_close": 913.6,
+          "prior_high": 931,
+          "prior_drawdown_fraction": 0.02744363303455466,
+          "signal_volume": 1266300,
+          "prior20_average_volume": 2095799.75,
+          "atr14": 28.972857142857144,
+          "stop_distance": 57.94571428571429
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/gs/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.335Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:GS:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "HD",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 348.69,
+          "prior20_high": 362.44,
+          "prior_close": 348.26,
+          "prior_high": 356.46,
+          "prior_drawdown_fraction": 0.039123717029025507,
+          "signal_volume": 4473578,
+          "prior20_average_volume": 4538944.95,
+          "atr14": 9.943571428571422,
+          "stop_distance": 19.887142857142845
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/hd/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.461Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:HD:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "HON",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 222.46,
+          "prior20_high": 232.58,
+          "prior_close": 223.45,
+          "prior_high": 228.19,
+          "prior_drawdown_fraction": 0.03925531000086002,
+          "signal_volume": 2364694,
+          "prior20_average_volume": 2825245.3,
+          "atr14": 6.233571428571428,
+          "stop_distance": 12.467142857142855
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/hon/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.515Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:HON:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "JNJ",
+      "action": "HOLD",
+      "reason": "已持有，本版不加碼；本次訊號檢查另列",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "已持有，本版不加碼",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 285.75,
+          "prior20_high": 286.08,
+          "prior_close": 283.52,
+          "prior_high": 286.08,
+          "prior_drawdown_fraction": 0.008948545861297563,
+          "signal_volume": 6291244,
+          "prior20_average_volume": 7463818.3,
+          "atr14": 7.131428571428578,
+          "stop_distance": 14.262857142857156
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/jnj/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.742Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:JNJ:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "JPM",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 346.19,
+          "prior20_high": 359.8,
+          "prior_close": 342.82,
+          "prior_high": 347.2,
+          "prior_drawdown_fraction": 0.04719288493607565,
+          "signal_volume": 4201040,
+          "prior20_average_volume": 6629647.95,
+          "atr14": 7.780714285714282,
+          "stop_distance": 15.561428571428564
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/jpm/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.308Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:JPM:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "LIN",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 526.06,
+          "prior20_high": 533.39,
+          "prior_close": 522.49,
+          "prior_high": 530.2,
+          "prior_drawdown_fraction": 0.020435328746320702,
+          "signal_volume": 1251113,
+          "prior20_average_volume": 2091659.65,
+          "atr14": 9.922142857142868,
+          "stop_distance": 19.844285714285736
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/lin/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.303Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:LIN:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "LLY",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 1443.5,
+          "prior20_high": 1460,
+          "prior_close": 1427.28,
+          "prior_high": 1460,
+          "prior_drawdown_fraction": 0.0224109589041096,
+          "signal_volume": 2084331,
+          "prior20_average_volume": 3003239.65,
+          "atr14": 51.03142857142864,
+          "stop_distance": 102.06285714285728
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/lly/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.393Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:LLY:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "LMT",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 596.04,
+          "prior20_high": 657,
+          "prior_close": 604.09,
+          "prior_high": 619.5,
+          "prior_drawdown_fraction": 0.08053272450532722,
+          "signal_volume": 914667,
+          "prior20_average_volume": 1705346.6,
+          "atr14": 20.179285714285715,
+          "stop_distance": 40.35857142857143
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/lmt/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.723Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:LMT:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "MA",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 661.19,
+          "prior20_high": 681.99,
+          "prior_close": 652.6,
+          "prior_high": 667.51,
+          "prior_drawdown_fraction": 0.043094473526004706,
+          "signal_volume": 1936383,
+          "prior20_average_volume": 3339227.75,
+          "atr14": 16.873571428571445,
+          "stop_distance": 33.74714285714289
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/ma/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.367Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:MA:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "MCD",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 271.97,
+          "prior20_high": 283.53,
+          "prior_close": 273.63,
+          "prior_high": 279.8,
+          "prior_drawdown_fraction": 0.034916940006348485,
+          "signal_volume": 4672732,
+          "prior20_average_volume": 5643064.35,
+          "atr14": 7.028571428571423,
+          "stop_distance": 14.057142857142846
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/mcd/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.491Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:MCD:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "META",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 641.69,
+          "prior20_high": 738.49,
+          "prior_close": 623.61,
+          "prior_high": 630.32,
+          "prior_drawdown_fraction": 0.15556067109913474,
+          "signal_volume": 15150951,
+          "prior20_average_volume": 24035763.15,
+          "atr14": 20.958571428571435,
+          "stop_distance": 41.91714285714287
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/meta/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.910Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:META:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "MSFT",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 523.88,
+          "prior20_high": 559.15,
+          "prior_close": 523,
+          "prior_high": 529.66,
+          "prior_drawdown_fraction": 0.06465170347849414,
+          "signal_volume": 26189242,
+          "prior20_average_volume": 26173095.2,
+          "atr14": 17.553571428571416,
+          "stop_distance": 35.10714285714283
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/msft/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.669Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:MSFT:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "MU",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 778.31,
+          "prior20_high": 990,
+          "prior_close": 798.44,
+          "prior_high": 799.7,
+          "prior_drawdown_fraction": 0.1934949494949494,
+          "signal_volume": 27921006,
+          "prior20_average_volume": 30791853.85,
+          "atr14": 64.86071428571428,
+          "stop_distance": 129.72142857142856
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/mu/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.253Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:MU:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "NEE",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 85.12,
+          "prior20_high": 90.04,
+          "prior_close": 85.29,
+          "prior_high": 87.08,
+          "prior_drawdown_fraction": 0.05275433140826302,
+          "signal_volume": 11748220,
+          "prior20_average_volume": 13410208.45,
+          "atr14": 1.7907142857142873,
+          "stop_distance": 3.5814285714285745
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/nee/history/",
+      "history_retrieved_at": "2026-11-16T15:28:10.042Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:NEE:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "NET",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 305.81,
+          "prior20_high": 337,
+          "prior_close": 318.5,
+          "prior_high": 322.61,
+          "prior_drawdown_fraction": 0.054896142433234374,
+          "signal_volume": 4172380,
+          "prior20_average_volume": 4304616.85,
+          "atr14": 22.731428571428577,
+          "stop_distance": 45.46285714285715
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/net/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.838Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": null,
+      "signal_id": "trader-x-breakout-v1:NET:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "NVDA",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 162.85,
+          "prior20_high": 222.19,
+          "prior_close": 166.19,
+          "prior_high": 167.14,
+          "prior_drawdown_fraction": 0.2520365452990684,
+          "signal_volume": 365796552,
+          "prior20_average_volume": 196617350,
+          "atr14": 11.004999999999995,
+          "stop_distance": 22.00999999999999
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/nvda/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.863Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:NVDA:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "ORCL",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 125.35,
+          "prior20_high": 148.48,
+          "prior_close": 127.11,
+          "prior_high": 129.06,
+          "prior_drawdown_fraction": 0.14392510775862066,
+          "signal_volume": 22590355,
+          "prior20_average_volume": 42532557.7,
+          "atr14": 9.455714285714285,
+          "stop_distance": 18.91142857142857
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/orcl/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.987Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:ORCL:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "PLD",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 128.67,
+          "prior20_high": 132.6,
+          "prior_close": 128.55,
+          "prior_high": 130.06,
+          "prior_drawdown_fraction": 0.030542986425339258,
+          "signal_volume": 2919092,
+          "prior20_average_volume": 3854756.05,
+          "atr14": 2.5214285714285745,
+          "stop_distance": 5.042857142857149
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/pld/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.281Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:PLD:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "QCOM",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 172.47,
+          "prior20_high": 185.59,
+          "prior_close": 177.14,
+          "prior_high": 183.4,
+          "prior_drawdown_fraction": 0.045530470391723754,
+          "signal_volume": 10425341,
+          "prior20_average_volume": 13859667.05,
+          "atr14": 10.49357142857143,
+          "stop_distance": 20.98714285714286
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/qcom/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.279Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:QCOM:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "TSLA",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 390.22,
+          "prior20_high": 414.23,
+          "prior_close": 397.45,
+          "prior_high": 401.22,
+          "prior_drawdown_fraction": 0.04050889602394814,
+          "signal_volume": 32392965,
+          "prior20_average_volume": 40913833.5,
+          "atr14": 18.162857142857153,
+          "stop_distance": 36.325714285714305
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/tsla/history/",
+      "history_retrieved_at": "2026-11-16T15:28:08.963Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:TSLA:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "UNH",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 407.46,
+          "prior20_high": 426.55,
+          "prior_close": 405.13,
+          "prior_high": 406.19,
+          "prior_drawdown_fraction": 0.050216856171609425,
+          "signal_volume": 3472017,
+          "prior20_average_volume": 5154131.45,
+          "atr14": 10.812857142857139,
+          "stop_distance": 21.625714285714277
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/unh/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.389Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:UNH:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "V",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 425.76,
+          "prior20_high": 442.23,
+          "prior_close": 420.31,
+          "prior_high": 430.18,
+          "prior_drawdown_fraction": 0.04956696741514599,
+          "signal_volume": 4642475,
+          "prior20_average_volume": 7084284.4,
+          "atr14": 10.373571428571422,
+          "stop_distance": 20.747142857142844
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/v/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.365Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:V:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "WMT",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 128.09,
+          "prior20_high": 131.82,
+          "prior_close": 126.19,
+          "prior_high": 127.66,
+          "prior_drawdown_fraction": 0.042709755727507126,
+          "signal_volume": 16639010,
+          "prior20_average_volume": 22018578.2,
+          "atr14": 3.0242857142857127,
+          "stop_distance": 6.048571428571425
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/wmt/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.466Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:WMT:2026-11-13:breakout20"
+    },
+    {
+      "ticker": "XOM",
+      "action": "NO_SIGNAL",
+      "reason": "收盤未嚴格高於此前20日最高價",
+      "scanned": true,
+      "signal_matched": false,
+      "not_bought_reason": "收盤未嚴格高於此前20日最高價",
+      "rule_checks": {
+        "strategy_kind": "breakout",
+        "metrics": {
+          "signal_close": 170.59,
+          "prior20_high": 188.5,
+          "prior_close": 169.78,
+          "prior_high": 170.92,
+          "prior_drawdown_fraction": 0.09931034482758616,
+          "signal_volume": 11480103,
+          "prior20_average_volume": 14270890.15,
+          "atr14": 4.782142857142858,
+          "stop_distance": 9.564285714285717
+        },
+        "conditions": {
+          "close_above_prior20_high": false
+        }
+      },
+      "source_url": "https://stockanalysis.com/stocks/xom/history/",
+      "history_retrieved_at": "2026-11-16T15:28:09.435Z",
+      "signal_session": "2026-11-13",
+      "expected_signal_session": "2026-11-13",
+      "decision_at": "2026-11-16T15:29:52.574Z",
+      "universe_effective_at": "2026-11-13T15:52:05.661Z",
+      "signal_id": "trader-x-breakout-v1:XOM:2026-11-13:breakout20"
     }
   ],
   "universe_evaluation": {
@@ -684,17 +1444,16 @@
       "NEE",
       "DUK"
     ],
-    "as_of": "2026-11-16T14:03:37.403Z",
+    "as_of": "2026-11-16T15:29:52.574Z",
     "coverage": {
       "total": 40,
-      "scanned": 0,
-      "not_scanned": 40
-    },
-    "evaluation_type": "off-schedule-recovery"
+      "scanned": 40,
+      "not_scanned": 0
+    }
   },
   "performance": {
-    "return": -0.0005131733166667012,
-    "exposure": 0.2163376853942004,
+    "return": -0.0023238399833334067,
+    "exposure": 0.21491542906710134,
     "closed_trade_count": 0,
     "winning_trade_count": 0,
     "win_rate": null,
@@ -770,63 +1529,49 @@
     "frozen_at": "2026-11-10T16:26:29.925Z",
     "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
   },
-  "latest_report": "reports/trader-x-2026-11-16-review-preopen-recovery-20261116140337403.html",
-  "review": "01:00工作在台灣22:00之後實際收到觸發；本次於2026-11-16T14:03:37.403Z記錄恢復狀態，紐約2026-11-16尚未到正常盤開盤2026-11-16T14:30:00.000Z。不回填01:00交易，不形成新買賣意圖，也不算今晚23:00或隔日01:00已完成。最近一個已過的01:00時段為2026-11-1601:00（紐約2026-11-15，休市）；此時段由日期推定，非系統提供的排程執行時間。",
-  "valuation_note": "使用11/13正常盤日K Close，收盤時段端點21:00 UTC（台灣11/14 05:00）；資料於11/14實際取得。mark_at是日K時段端點，非來源逐筆成交時間。這是估值，不是新成交或即時報價。",
+  "latest_report": "reports/trader-x-2026-11-16-entry-intent-20261116152952574-reviewed.html",
+  "review": "40檔以11/13已完成日K評估，只有COST突破此前20日高點，但已持有且本版不加碼。5檔均未到2ATR停損、2R停利或第10交易日退出，故本次0筆新買賣。GE為第3交易日，其餘第2日。 這是前瞻紙上實驗；突破或反彈條件不保證後市上漲。尚未分解市場／產業因子；持股浮虧不能單獨證明某個新聞或訊號必然錯誤。未來可另立版本測試大盤趨勢與跳空限制，現有v1不回調參數或成本。今晚完成不代表隔日01:00已完成。",
+  "valuation_note": "正常盤不同截點指示性盤中估值，非收盤。",
   "limitations": [
-    "01:00工作在台灣22:00之後實際收到觸發；本次於2026-11-16T14:03:37.403Z記錄恢復狀態，紐約2026-11-16尚未到正常盤開盤2026-11-16T14:30:00.000Z。不回填01:00交易，不形成新買賣意圖，也不算今晚23:00或隔日01:00已完成。最近一個已過的01:00時段為2026-11-1601:00（紐約2026-11-15，休市）；此時段由日期推定，非系統提供的排程執行時間。",
-    "日K端點不是逐筆成交時間；資料原取得時間保留，不把舊價格改標為即時。",
-    "沒有完整歷史回測、完整收盤MDD／Sharpe／SPY對照；零成交與全現金不能驗證策略有效。",
-    "歷史缺漏交易日另存health，週末不列為漏跑。"
+    "前瞻模擬，尚無完整歷史回測、SPY共同期間對照、Sharpe或完整收盤最大回撤。",
+    "每天兩次觀察不等於持續盤中止損；跳空、滑價、行情延遲可能令損失超過計畫風險。",
+    "2ATR14停損、2R停利與10交易日退出是初版假設，沒有獲利保證。",
+    "目前40檔觀察池仍可能有共同產業/風格因子，持有10檔不等於充分分散。",
+    "單邊10bps不利滑價、佣金0、現金利息0；未建模監管費用、個人稅費；公司行動需另核實處理。",
+    "runner需要執行者提供有來源與時間戳行情，不會自行抓價；本機排程未觸發不能宣稱已完成。",
+    "行情與價格口徑已用兩來源核對；歷史none-in-lookback僅表示無拆股，現金股息另列，並非沒有任何公司行動。",
+    "COST10/30一般股息資格早於本帳戶11/13買入，不補發；新30美元特別股息及JNJ未來股息尚未到資格／支付日，不加入現金。",
+    "訊號資料為11/13最後完整正常盤；今日11/16尚未收盤，不用尚未完成日K形成買點。"
   ],
   "operational_status": {
-    "status": "off-schedule-preopen-recovery",
-    "run_type": "off-schedule-preopen-recovery",
-    "market_date": "2026-11-16",
-    "market_closed": false,
-    "regular_session": false,
-    "schedule_phase": "review",
-    "trigger_received_at": "2026-11-16T14:00:44.705Z",
-    "market_closed_checked_at": "2026-11-15T15:02:44.942Z",
-    "evaluated_at": "2026-11-13T17:24:43.948Z",
-    "last_regular_session_evaluation": {
-      "evaluated_at": "2026-11-13T17:24:43.948Z",
-      "regular_session": true,
-      "report": "reports/trader-x-2026-11-13-0100.html"
-    },
-    "close_valuation_completed_at": "2026-11-14T15:04:22.619Z",
-    "last_regular_close_session": "2026-11-13",
-    "trades_executed": 0,
+    "status": "evaluated",
+    "evaluated_at": "2026-11-16T15:29:52.574Z",
     "published_at": null,
     "pages_verified_at": null,
-    "recovery_checked_at": "2026-11-16T14:03:37.403Z",
-    "open_at": "2026-11-16T14:30:00.000Z",
-    "close_at": "2026-11-16T21:00:00.000Z",
-    "requested_schedule_time": "01:00 Asia/Taipei",
-    "scheduled_slot_inferred": true,
-    "last_elapsed_scheduled_slot": "2026-11-16T01:00:00+08:00",
-    "last_elapsed_slot_market_date": "2026-11-15",
-    "last_elapsed_slot_market_closed": true,
+    "run_type": "regular-session-forward-paper-evaluation",
+    "schedule_phase": "entry",
+    "regular_session": true,
+    "market_date": "2026-11-16",
+    "scheduled_evaluation_completed": true,
     "scheduled_review_completed": false,
-    "entry_2300_completed": false
+    "trigger_received_at": "2026-11-16T15:05:15.766Z"
   },
   "planned_risk_usd": 4441.78366628,
   "strategy_comparison": {
     "status": "updated",
     "started_at": "2026-11-13T15:52:05.661Z",
-    "as_of": "2026-11-13T21:00:00.000Z",
-    "retrieved_at": "2026-11-14T15:01:03.263Z",
-    "valuation_type": "close",
-    "note": "兩帳戶以同一11/13日K收盤估值比較，從11/13 15:52:05.661Z生效基準起算；原突破帳戶期初已有GE，反彈為全現金，曝險不同。整戶損益與共同期報酬分開，尚未完成完整收盤MDD、Sharpe或SPY對照；全現金0%不代表策略成功。",
+    "as_of": "2026-11-16T15:29:52.574Z",
+    "valuation_type": "intraday",
+    "note": "共同期報酬自各帳戶生效基準NAV計算；原突破帳戶保留GE期初持股，反彈帳戶從獨立虛擬USD300000全現金開始，起點曝險不同。資料截點不同時不排名。這是前瞻盤中模擬，尚無完整收盤MDD、SPY對照或策略有效性結論。",
     "accounts": [
       {
         "name": "順勢突破",
         "href": "./trader-x.html",
         "baseline_nav_usd": 299766.81194,
-        "nav_usd": 299846.048005,
-        "return_fraction": 0.00026432567530476625,
-        "exposure": 0.2163376853942004,
-        "valuation_at": "2026-11-13T21:00:00.000Z",
+        "nav_usd": 299302.848005,
+        "return_fraction": -0.001547749505682039,
+        "exposure": 0.21491542906710134,
+        "valuation_at": "2026-11-16T15:29:52.574Z",
         "position_count": 5,
         "baseline_positions": [
           {
@@ -843,107 +1588,23 @@
         "nav_usd": 300000,
         "return_fraction": 0,
         "exposure": 0,
-        "valuation_at": "2026-11-13T21:00:00.000Z",
+        "valuation_at": "2026-11-16T15:29:52.574Z",
         "position_count": 0,
         "baseline_positions": []
       }
     ]
   },
-  "trade_reviews": [
-    {
-      "ticker": "GE",
-      "shares": 37,
-      "signal_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "new_evidence": "2026-11-13T17:23:58.000Z價格331.51；持有第2美股交易日，未實現損益USD-229.67。",
-      "interpretation": "已持有後走弱，尚未到2ATR停損；v1只看前日突破、未要求進場時仍站上突破價，是待未來版本驗證的弱點。",
-      "next_review": "下次正式時段檢查停損、2R停利與10交易日退出；未實作持續盤中停損。"
-    },
-    {
-      "ticker": "AMD",
-      "shares": 10,
-      "signal_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "new_evidence": "2026-11-13T17:24:25.000Z價格522.8；持有第1美股交易日，未實現損益USD-9.23。",
-      "interpretation": "剛建倉損益含滑價，尚不足以判定突破交易有效。",
-      "next_review": "下次正式時段檢查停損、2R停利與10交易日退出；未實作持續盤中停損。"
-    },
-    {
-      "ticker": "AVGO",
-      "shares": 23,
-      "signal_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "new_evidence": "2026-11-13T17:24:25.000Z價格344.345；持有第1美股交易日，未實現損益USD-10.68。",
-      "interpretation": "剛建倉損益含滑價，尚不足以判定突破交易有效。",
-      "next_review": "下次正式時段檢查停損、2R停利與10交易日退出；未實作持續盤中停損。"
-    },
-    {
-      "ticker": "COST",
-      "shares": 20,
-      "signal_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "new_evidence": "2026-11-13T17:24:24.000Z價格1107.735；持有第1美股交易日，未實現損益USD-18.65。",
-      "interpretation": "剛建倉損益含滑價，尚不足以判定突破交易有效。",
-      "next_review": "下次正式時段檢查停損、2R停利與10交易日退出；未實作持續盤中停損。"
-    },
-    {
-      "ticker": "JNJ",
-      "shares": 60,
-      "signal_reason": "上一完整正常盤收盤突破此前20交易日最高價",
-      "new_evidence": "2026-11-13T17:24:10.000Z價格286.134；持有第1美股交易日，未實現損益USD-17.17。",
-      "interpretation": "剛建倉損益含滑價，尚不足以判定突破交易有效。",
-      "next_review": "下次正式時段檢查停損、2R停利與10交易日退出；未實作持續盤中停損。"
-    }
-  ],
-  "valuation_type": "close",
-  "valuation_session": "2026-11-13",
-  "valuation_ended_at": "2026-11-13T21:00:00.000Z",
-  "valuation_retrieved_at": "2026-11-14T15:01:03.263Z",
+  "valuation_type": "intraday",
+  "valuation_session": "2026-11-16",
+  "valuation_ended_at": null,
+  "valuation_retrieved_at": "2026-11-16T15:27:59.120Z",
+  "previous_operational_report": "reports/trader-x-2026-11-16-review-preopen-recovery-20261116140337403.html",
   "previous_trading_report": "reports/trader-x-2026-11-13-0100.html",
   "previous_trading_evaluated_at": "2026-11-13T17:24:43.948Z",
   "last_completed_signal_evaluation": {
-    "effective_at": "2026-11-13T15:52:05.661Z",
-    "revision": "2026-11-13-cross-sector-40-v1",
-    "selection_note": "前瞻固定的跨產業大型股觀察名單：保留原12檔，補充28檔常見美股標的，包括NVDA。這是人工擴大覆蓋的實驗名單，並非全市場市值或流動性排名；不依後續報酬增刪，不承諾充分分散。後續更動另存版本與實際生效時間。",
-    "tickers": [
-      "AMD",
-      "ASML",
-      "GEV",
-      "MSFT",
-      "AMZN",
-      "CRWD",
-      "GE",
-      "LMT",
-      "JNJ",
-      "GOOGL",
-      "CDNS",
-      "NET",
-      "NVDA",
-      "AAPL",
-      "AVGO",
-      "META",
-      "TSLA",
-      "ORCL",
-      "QCOM",
-      "PLD",
-      "MU",
-      "LIN",
-      "JPM",
-      "BAC",
-      "GS",
-      "V",
-      "MA",
-      "UNH",
-      "LLY",
-      "ABBV",
-      "XOM",
-      "CVX",
-      "COST",
-      "WMT",
-      "HD",
-      "MCD",
-      "CAT",
-      "HON",
-      "NEE",
-      "DUK"
-    ],
-    "as_of": "2026-11-13T17:24:43.948Z",
+    "as_of": "2026-11-16T15:29:52.574Z",
+    "session": "2026-11-16",
+    "signal_session": "2026-11-13",
     "coverage": {
       "total": 40,
       "scanned": 40,
@@ -960,27 +1621,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 354.88,
-            "prior20_high": 355.91,
-            "prior_close": 355.63,
-            "prior_high": 355.91,
-            "prior_drawdown_fraction": 0.0007867157427440263,
-            "signal_volume": 31874979,
-            "prior20_average_volume": 48597883.3,
-            "atr14": 9.509285714285722,
-            "stop_distance": 19.018571428571445
+            "signal_close": 356.27,
+            "prior20_high": 359.37,
+            "prior_close": 354.88,
+            "prior_high": 359.37,
+            "prior_drawdown_fraction": 0.012494086874252242,
+            "signal_volume": 40027467,
+            "prior20_average_volume": 48203269.4,
+            "atr14": 9.45571428571429,
+            "stop_distance": 18.91142857142858
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/aapl/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.090Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.884Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:AAPL:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:AAPL:2026-11-13:breakout20"
       },
       {
         "ticker": "ABBV",
@@ -992,59 +1653,59 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 294.45,
+            "signal_close": 295.03,
             "prior20_high": 302.93,
-            "prior_close": 294.98,
-            "prior_high": 295.46,
-            "prior_drawdown_fraction": 0.026243686660284538,
-            "signal_volume": 4826816,
-            "prior20_average_volume": 5419235.75,
-            "atr14": 7.475714285714283,
-            "stop_distance": 14.951428571428567
+            "prior_close": 294.45,
+            "prior_high": 300.42,
+            "prior_drawdown_fraction": 0.027993265770970277,
+            "signal_volume": 3262104,
+            "prior20_average_volume": 5279490.05,
+            "atr14": 7.424285714285714,
+            "stop_distance": 14.848571428571429
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/abbv/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.435Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.412Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:ABBV:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:ABBV:2026-11-13:breakout20"
       },
       {
         "ticker": "AMD",
         "action": "HOLD",
         "reason": "已持有，本版不加碼；本次訊號檢查另列",
         "scanned": true,
-        "signal_matched": true,
+        "signal_matched": false,
         "not_bought_reason": "已持有，本版不加碼",
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 585.3,
-            "prior20_high": 579.18,
-            "prior_close": 552.9,
-            "prior_high": 567.65,
-            "prior_drawdown_fraction": 0.045374494975655155,
-            "signal_volume": 55411495,
-            "prior20_average_volume": 32023388.9,
-            "atr14": 44.61142857142857,
-            "stop_distance": 89.22285714285714
+            "signal_close": 534.06,
+            "prior20_high": 594,
+            "prior_close": 585.3,
+            "prior_high": 594,
+            "prior_drawdown_fraction": 0.014646464646464685,
+            "signal_volume": 49387598,
+            "prior20_average_volume": 33352234.8,
+            "atr14": 47.88285714285713,
+            "stop_distance": 95.76571428571425
           },
           "conditions": {
-            "close_above_prior20_high": true
+            "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/amd/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.700Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.613Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:AMD:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:AMD:2026-11-13:breakout20"
       },
       {
         "ticker": "AMZN",
@@ -1056,27 +1717,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 267.44,
+            "signal_close": 266.66,
             "prior20_high": 275.34,
-            "prior_close": 266.17,
-            "prior_high": 274.87,
-            "prior_drawdown_fraction": 0.03330427834677108,
-            "signal_volume": 34501547,
-            "prior20_average_volume": 50504565.7,
-            "atr14": 10.560714285714287,
-            "stop_distance": 21.121428571428574
+            "prior_close": 267.44,
+            "prior_high": 273.6,
+            "prior_drawdown_fraction": 0.028691799230042725,
+            "signal_volume": 31148510,
+            "prior20_average_volume": 50501433.4,
+            "atr14": 10.745000000000001,
+            "stop_distance": 21.490000000000002
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/amzn/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.748Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.688Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:AMZN:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:AMZN:2026-11-13:breakout20"
       },
       {
         "ticker": "ASML",
@@ -1088,59 +1749,59 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 1497.12,
+            "signal_close": 1495.16,
             "prior20_high": 1690.1,
-            "prior_close": 1534.42,
-            "prior_high": 1563.46,
-            "prior_drawdown_fraction": 0.09211289272824086,
-            "signal_volume": 1831324,
-            "prior20_average_volume": 1718093.2,
-            "atr14": 71.75785714285715,
-            "stop_distance": 143.5157142857143
+            "prior_close": 1497.12,
+            "prior_high": 1530.95,
+            "prior_drawdown_fraction": 0.11418259274599141,
+            "signal_volume": 1365713,
+            "prior20_average_volume": 1710262.8,
+            "atr14": 72.04285714285716,
+            "stop_distance": 144.08571428571432
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/asml/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.694Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.646Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:ASML:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:ASML:2026-11-13:breakout20"
       },
       {
         "ticker": "AVGO",
         "action": "HOLD",
         "reason": "已持有，本版不加碼；本次訊號檢查另列",
         "scanned": true,
-        "signal_matched": true,
+        "signal_matched": false,
         "not_bought_reason": "已持有，本版不加碼",
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 364.36,
-            "prior20_high": 356.85,
-            "prior_close": 345.22,
-            "prior_high": 356.85,
-            "prior_drawdown_fraction": 0.03259072439400301,
-            "signal_volume": 43768053,
-            "prior20_average_volume": 25995590.85,
-            "atr14": 19.087142857142855,
-            "stop_distance": 38.17428571428571
+            "signal_close": 347.01,
+            "prior20_high": 369.82,
+            "prior_close": 364.36,
+            "prior_high": 369.82,
+            "prior_drawdown_fraction": 0.014763939213671473,
+            "signal_volume": 31654184,
+            "prior20_average_volume": 26761205.8,
+            "atr14": 20.24785714285714,
+            "stop_distance": 40.49571428571428
           },
           "conditions": {
-            "close_above_prior20_high": true
+            "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/avgo/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.110Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.938Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:AVGO:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:AVGO:2026-11-13:breakout20"
       },
       {
         "ticker": "BAC",
@@ -1152,27 +1813,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 50.51,
+            "signal_close": 51.02,
             "prior20_high": 53.03,
-            "prior_close": 50.67,
-            "prior_high": 50.91,
-            "prior_drawdown_fraction": 0.04450311144635111,
-            "signal_volume": 19612501,
-            "prior20_average_volume": 38593875.1,
-            "atr14": 1.1978571428571425,
-            "stop_distance": 2.395714285714285
+            "prior_close": 50.51,
+            "prior_high": 50.93,
+            "prior_drawdown_fraction": 0.047520271544408854,
+            "signal_volume": 20008105,
+            "prior20_average_volume": 37279753.7,
+            "atr14": 1.1678571428571425,
+            "stop_distance": 2.335714285714285
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/bac/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.290Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.332Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:BAC:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:BAC:2026-11-13:breakout20"
       },
       {
         "ticker": "CAT",
@@ -1184,27 +1845,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 605.28,
+            "signal_close": 600.2,
             "prior20_high": 745,
-            "prior_close": 601.61,
-            "prior_high": 610.5,
-            "prior_drawdown_fraction": 0.19246979865771807,
-            "signal_volume": 2510621,
-            "prior20_average_volume": 3957612.75,
-            "atr14": 31.326428571428576,
-            "stop_distance": 62.65285714285715
+            "prior_close": 605.28,
+            "prior_high": 613.57,
+            "prior_drawdown_fraction": 0.18754362416107384,
+            "signal_volume": 2293033,
+            "prior20_average_volume": 3857919.8,
+            "atr14": 31.68,
+            "stop_distance": 63.36
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/cat/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.626Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.488Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:CAT:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:CAT:2026-11-13:breakout20"
       },
       {
         "ticker": "CDNS",
@@ -1216,27 +1877,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 333.32,
+            "signal_close": 323.01,
             "prior20_high": 348.8,
-            "prior_close": 329.26,
-            "prior_high": 339.65,
-            "prior_drawdown_fraction": 0.05602064220183489,
-            "signal_volume": 1682164,
-            "prior20_average_volume": 2499189.75,
-            "atr14": 15.398571428571419,
-            "stop_distance": 30.797142857142838
+            "prior_close": 333.32,
+            "prior_high": 334.55,
+            "prior_drawdown_fraction": 0.04438073394495423,
+            "signal_volume": 1547475,
+            "prior20_average_volume": 2454346.6,
+            "atr14": 15.315714285714279,
+            "stop_distance": 30.631428571428557
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/cdns/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.184Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.223Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:CDNS:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:CDNS:2026-11-13:breakout20"
       },
       {
         "ticker": "COST",
@@ -1248,27 +1909,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 1092.21,
-            "prior20_high": 1091.92,
-            "prior_close": 1087.61,
-            "prior_high": 1091.92,
-            "prior_drawdown_fraction": 0.003947175617261545,
-            "signal_volume": 2206417,
-            "prior20_average_volume": 2424868.3,
-            "atr14": 21.48571428571425,
-            "stop_distance": 42.9714285714285
+            "signal_close": 1106.21,
+            "prior20_high": 1102.84,
+            "prior_close": 1092.21,
+            "prior_high": 1102.84,
+            "prior_drawdown_fraction": 0.009638750861412193,
+            "signal_volume": 1875259,
+            "prior20_average_volume": 2385142.1,
+            "atr14": 21.573571428571395,
+            "stop_distance": 43.14714285714279
           },
           "conditions": {
             "close_above_prior20_high": true
           }
         },
         "source_url": "https://stockanalysis.com/stocks/cost/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.494Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.416Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:COST:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:COST:2026-11-13:breakout20"
       },
       {
         "ticker": "CRWD",
@@ -1280,27 +1941,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 229.87,
+            "signal_close": 226.61,
             "prior20_high": 272.29,
-            "prior_close": 229.06,
-            "prior_high": 238.5,
-            "prior_drawdown_fraction": 0.15876455249917376,
-            "signal_volume": 6253894,
-            "prior20_average_volume": 9730523.45,
-            "atr14": 14.37928571428572,
-            "stop_distance": 28.75857142857144
+            "prior_close": 229.87,
+            "prior_high": 230.62,
+            "prior_drawdown_fraction": 0.15578978295199974,
+            "signal_volume": 6575059,
+            "prior20_average_volume": 9503619.5,
+            "atr14": 14.842142857142862,
+            "stop_distance": 29.684285714285725
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/crwd/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.772Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.700Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:CRWD:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:CRWD:2026-11-13:breakout20"
       },
       {
         "ticker": "CVX",
@@ -1312,27 +1973,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 216.35,
+            "signal_close": 219.89,
             "prior20_high": 236.48,
-            "prior_close": 213.28,
-            "prior_high": 213.44,
-            "prior_drawdown_fraction": 0.09810554803788896,
-            "signal_volume": 9048441,
-            "prior20_average_volume": 8256770.65,
-            "atr14": 5.299285714285716,
-            "stop_distance": 10.598571428571432
+            "prior_close": 216.35,
+            "prior_high": 218.09,
+            "prior_drawdown_fraction": 0.08512347767253048,
+            "signal_volume": 7579317,
+            "prior20_average_volume": 8354024.3,
+            "atr14": 5.300714285714286,
+            "stop_distance": 10.601428571428572
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/cvx/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.521Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.438Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:CVX:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:CVX:2026-11-13:breakout20"
       },
       {
         "ticker": "DUK",
@@ -1344,27 +2005,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 128.59,
+            "signal_close": 129.16,
             "prior20_high": 132.99,
-            "prior_close": 128.77,
-            "prior_high": 128.95,
-            "prior_drawdown_fraction": 0.031731709151063936,
-            "signal_volume": 3516372,
-            "prior20_average_volume": 4395942.25,
-            "atr14": 2.2285714285714255,
-            "stop_distance": 4.457142857142851
+            "prior_close": 128.59,
+            "prior_high": 129.97,
+            "prior_drawdown_fraction": 0.033085194375517046,
+            "signal_volume": 7585597,
+            "prior20_average_volume": 4332090.6,
+            "atr14": 2.2635714285714266,
+            "stop_distance": 4.527142857142853
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/duk/history/",
-        "history_retrieved_at": "2026-11-13T15:48:24.167Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.994Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:DUK:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:DUK:2026-11-13:breakout20"
       },
       {
         "ticker": "GE",
@@ -1376,27 +2037,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 330.86,
-            "prior20_high": 342.9,
-            "prior_close": 342.75,
-            "prior_high": 342.9,
-            "prior_drawdown_fraction": 0.00043744531933498365,
-            "signal_volume": 4550930,
-            "prior20_average_volume": 5619784.85,
-            "atr14": 11.774285714285709,
-            "stop_distance": 23.548571428571417
+            "signal_close": 331.81,
+            "prior20_high": 343.59,
+            "prior_close": 330.86,
+            "prior_high": 343.59,
+            "prior_drawdown_fraction": 0.03704997235076679,
+            "signal_volume": 3375782,
+            "prior20_average_volume": 5656811.65,
+            "atr14": 11.715714285714276,
+            "stop_distance": 23.43142857142855
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/ge/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.801Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.715Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:GE:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:GE:2026-11-13:breakout20"
       },
       {
         "ticker": "GEV",
@@ -1408,27 +2069,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 818.49,
+            "signal_close": 803.13,
             "prior20_high": 951,
-            "prior_close": 808.24,
-            "prior_high": 845,
-            "prior_drawdown_fraction": 0.1501156677181914,
-            "signal_volume": 2927455,
-            "prior20_average_volume": 4329239.35,
-            "atr14": 62.3507142857143,
-            "stop_distance": 124.7014285714286
+            "prior_close": 818.49,
+            "prior_high": 842,
+            "prior_drawdown_fraction": 0.13933753943217664,
+            "signal_volume": 3002010,
+            "prior20_average_volume": 4287195.45,
+            "atr14": 62.68500000000002,
+            "stop_distance": 125.37000000000003
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/gev/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.020Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.658Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:GEV:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:GEV:2026-11-13:breakout20"
       },
       {
         "ticker": "GOOGL",
@@ -1440,27 +2101,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 298.7,
-            "prior20_high": 352.15,
-            "prior_close": 293.45,
-            "prior_high": 295.74,
-            "prior_drawdown_fraction": 0.16669033082493256,
-            "signal_volume": 35527474,
-            "prior20_average_volume": 39977962.9,
-            "atr14": 11.435714285714292,
-            "stop_distance": 22.871428571428584
+            "signal_close": 295.77,
+            "prior20_high": 350.66,
+            "prior_close": 298.7,
+            "prior_high": 302.56,
+            "prior_drawdown_fraction": 0.14817772200992418,
+            "signal_volume": 30798617,
+            "prior20_average_volume": 40687928.95,
+            "atr14": 11.910714285714294,
+            "stop_distance": 23.821428571428587
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/googl/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.880Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.812Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:GOOGL:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:GOOGL:2026-11-13:breakout20"
       },
       {
         "ticker": "GS",
@@ -1472,27 +2133,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 913.6,
+            "signal_close": 916.56,
             "prior20_high": 939.38,
-            "prior_close": 926.81,
-            "prior_high": 932.49,
-            "prior_drawdown_fraction": 0.013381166301177472,
-            "signal_volume": 1547792,
-            "prior20_average_volume": 2137916.25,
-            "atr14": 29.315000000000005,
-            "stop_distance": 58.63000000000001
+            "prior_close": 913.6,
+            "prior_high": 931,
+            "prior_drawdown_fraction": 0.02744363303455466,
+            "signal_volume": 1266300,
+            "prior20_average_volume": 2095799.75,
+            "atr14": 28.972857142857144,
+            "stop_distance": 57.94571428571429
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/gs/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.316Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.335Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:GS:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:GS:2026-11-13:breakout20"
       },
       {
         "ticker": "HD",
@@ -1504,27 +2165,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 348.26,
+            "signal_close": 348.69,
             "prior20_high": 362.44,
-            "prior_close": 351.31,
-            "prior_high": 351.53,
-            "prior_drawdown_fraction": 0.030708531067211164,
-            "signal_volume": 3675695,
-            "prior20_average_volume": 4683962.55,
-            "atr14": 9.891428571428564,
-            "stop_distance": 19.78285714285713
+            "prior_close": 348.26,
+            "prior_high": 356.46,
+            "prior_drawdown_fraction": 0.039123717029025507,
+            "signal_volume": 4473578,
+            "prior20_average_volume": 4538944.95,
+            "atr14": 9.943571428571422,
+            "stop_distance": 19.887142857142845
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/hd/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.572Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.461Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:HD:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:HD:2026-11-13:breakout20"
       },
       {
         "ticker": "HON",
@@ -1536,61 +2197,59 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 223.45,
+            "signal_close": 222.46,
             "prior20_high": 232.58,
-            "prior_close": 227.64,
-            "prior_high": 229.06,
-            "prior_drawdown_fraction": 0.021240003439676802,
-            "signal_volume": 1525051,
-            "prior20_average_volume": 2865153.8,
-            "atr14": 6.383571428571429,
-            "stop_distance": 12.767142857142858
+            "prior_close": 223.45,
+            "prior_high": 228.19,
+            "prior_drawdown_fraction": 0.03925531000086002,
+            "signal_volume": 2364694,
+            "prior20_average_volume": 2825245.3,
+            "atr14": 6.233571428571428,
+            "stop_distance": 12.467142857142855
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/hon/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.651Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.515Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:HON:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:HON:2026-11-13:breakout20"
       },
       {
         "ticker": "JNJ",
-        "action": "BUY",
-        "reason": "上一完整正常盤收盤突破此前20交易日最高價",
+        "action": "HOLD",
+        "reason": "已持有，本版不加碼；本次訊號檢查另列",
         "scanned": true,
-        "signal_matched": true,
-        "not_bought_reason": null,
+        "signal_matched": false,
+        "not_bought_reason": "已持有，本版不加碼",
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 283.52,
-            "prior20_high": 283.25,
-            "prior_close": 280.41,
-            "prior_high": 281.16,
-            "prior_drawdown_fraction": 0.010026478375992798,
-            "signal_volume": 8806506,
-            "prior20_average_volume": 7478049.95,
-            "atr14": 7.282857142857149,
-            "stop_distance": 14.565714285714298
+            "signal_close": 285.75,
+            "prior20_high": 286.08,
+            "prior_close": 283.52,
+            "prior_high": 286.08,
+            "prior_drawdown_fraction": 0.008948545861297563,
+            "signal_volume": 6291244,
+            "prior20_average_volume": 7463818.3,
+            "atr14": 7.131428571428578,
+            "stop_distance": 14.262857142857156
           },
           "conditions": {
-            "close_above_prior20_high": true
+            "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/jnj/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.854Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.742Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:JNJ:2026-11-12:breakout20",
-        "execution_id": "trader-x-breakout-v1:JNJ:2026-11-12:breakout20:buy:fill",
-        "decision_source_url": "https://stockanalysis.com/stocks/jnj/history/"
+        "signal_id": "trader-x-breakout-v1:JNJ:2026-11-13:breakout20"
       },
       {
         "ticker": "JPM",
@@ -1602,27 +2261,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 342.82,
+            "signal_close": 346.19,
             "prior20_high": 359.8,
-            "prior_close": 343.39,
-            "prior_high": 345,
-            "prior_drawdown_fraction": 0.045608671484157925,
-            "signal_volume": 4151880,
-            "prior20_average_volume": 6854457.85,
-            "atr14": 7.844999999999999,
-            "stop_distance": 15.689999999999998
+            "prior_close": 342.82,
+            "prior_high": 347.2,
+            "prior_drawdown_fraction": 0.04719288493607565,
+            "signal_volume": 4201040,
+            "prior20_average_volume": 6629647.95,
+            "atr14": 7.780714285714282,
+            "stop_distance": 15.561428571428564
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/jpm/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.268Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.308Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:JPM:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:JPM:2026-11-13:breakout20"
       },
       {
         "ticker": "LIN",
@@ -1634,27 +2293,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 522.49,
+            "signal_close": 526.06,
             "prior20_high": 533.39,
-            "prior_close": 526.55,
-            "prior_high": 526.75,
-            "prior_drawdown_fraction": 0.012823637488516892,
-            "signal_volume": 1675996,
-            "prior20_average_volume": 2135236.8,
-            "atr14": 9.802857142857151,
-            "stop_distance": 19.605714285714303
+            "prior_close": 522.49,
+            "prior_high": 530.2,
+            "prior_drawdown_fraction": 0.020435328746320702,
+            "signal_volume": 1251113,
+            "prior20_average_volume": 2091659.65,
+            "atr14": 9.922142857142868,
+            "stop_distance": 19.844285714285736
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/lin/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.246Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.303Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:LIN:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:LIN:2026-11-13:breakout20"
       },
       {
         "ticker": "LLY",
@@ -1666,27 +2325,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 1427.28,
-            "prior20_high": 1453,
-            "prior_close": 1437.29,
-            "prior_high": 1440.47,
-            "prior_drawdown_fraction": 0.01081211286992434,
-            "signal_volume": 2412050,
-            "prior20_average_volume": 3070399.2,
-            "atr14": 50.57214285714292,
-            "stop_distance": 101.14428571428584
+            "signal_close": 1443.5,
+            "prior20_high": 1460,
+            "prior_close": 1427.28,
+            "prior_high": 1460,
+            "prior_drawdown_fraction": 0.0224109589041096,
+            "signal_volume": 2084331,
+            "prior20_average_volume": 3003239.65,
+            "atr14": 51.03142857142864,
+            "stop_distance": 102.06285714285728
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/lly/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.410Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.393Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:LLY:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:LLY:2026-11-13:breakout20"
       },
       {
         "ticker": "LMT",
@@ -1698,27 +2357,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 604.09,
+            "signal_close": 596.04,
             "prior20_high": 657,
-            "prior_close": 610.05,
-            "prior_high": 610.08,
-            "prior_drawdown_fraction": 0.07146118721461192,
-            "signal_volume": 1002457,
-            "prior20_average_volume": 1726446.55,
-            "atr14": 21.268571428571427,
-            "stop_distance": 42.537142857142854
+            "prior_close": 604.09,
+            "prior_high": 619.5,
+            "prior_drawdown_fraction": 0.08053272450532722,
+            "signal_volume": 914667,
+            "prior20_average_volume": 1705346.6,
+            "atr14": 20.179285714285715,
+            "stop_distance": 40.35857142857143
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/lmt/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.829Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.723Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:LMT:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:LMT:2026-11-13:breakout20"
       },
       {
         "ticker": "MA",
@@ -1730,27 +2389,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 652.6,
+            "signal_close": 661.19,
             "prior20_high": 681.99,
-            "prior_close": 660.73,
-            "prior_high": 661.27,
-            "prior_drawdown_fraction": 0.031173477616973866,
-            "signal_volume": 1965479,
-            "prior20_average_volume": 3449962.55,
-            "atr14": 17.022142857142878,
-            "stop_distance": 34.044285714285756
+            "prior_close": 652.6,
+            "prior_high": 667.51,
+            "prior_drawdown_fraction": 0.043094473526004706,
+            "signal_volume": 1936383,
+            "prior20_average_volume": 3339227.75,
+            "atr14": 16.873571428571445,
+            "stop_distance": 33.74714285714289
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/ma/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.362Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.367Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:MA:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:MA:2026-11-13:breakout20"
       },
       {
         "ticker": "MCD",
@@ -1762,27 +2421,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 273.63,
+            "signal_close": 271.97,
             "prior20_high": 283.53,
-            "prior_close": 274.8,
-            "prior_high": 279.41,
-            "prior_drawdown_fraction": 0.030790392551052648,
-            "signal_volume": 4274760,
-            "prior20_average_volume": 5760061.9,
-            "atr14": 7.091428571428567,
-            "stop_distance": 14.182857142857134
+            "prior_close": 273.63,
+            "prior_high": 279.8,
+            "prior_drawdown_fraction": 0.034916940006348485,
+            "signal_volume": 4672732,
+            "prior20_average_volume": 5643064.35,
+            "atr14": 7.028571428571423,
+            "stop_distance": 14.057142857142846
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/mcd/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.600Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.491Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:MCD:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:MCD:2026-11-13:breakout20"
       },
       {
         "ticker": "META",
@@ -1794,27 +2453,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 623.61,
-            "prior20_high": 743.97,
-            "prior_close": 628.77,
-            "prior_high": 648.45,
-            "prior_drawdown_fraction": 0.1548449534255414,
-            "signal_volume": 10341835,
-            "prior20_average_volume": 24363246.95,
-            "atr14": 20.92928571428573,
-            "stop_distance": 41.85857142857146
+            "signal_close": 641.69,
+            "prior20_high": 738.49,
+            "prior_close": 623.61,
+            "prior_high": 630.32,
+            "prior_drawdown_fraction": 0.15556067109913474,
+            "signal_volume": 15150951,
+            "prior20_average_volume": 24035763.15,
+            "atr14": 20.958571428571435,
+            "stop_distance": 41.91714285714287
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/meta/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.135Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.910Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:META:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:META:2026-11-13:breakout20"
       },
       {
         "ticker": "MSFT",
@@ -1826,27 +2485,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 523,
+            "signal_close": 523.88,
             "prior20_high": 559.15,
-            "prior_close": 521.13,
-            "prior_high": 534.76,
-            "prior_drawdown_fraction": 0.06799606545649639,
-            "signal_volume": 18644018,
-            "prior20_average_volume": 26448454.9,
-            "atr14": 17.479285714285705,
-            "stop_distance": 34.95857142857141
+            "prior_close": 523,
+            "prior_high": 529.66,
+            "prior_drawdown_fraction": 0.06465170347849414,
+            "signal_volume": 26189242,
+            "prior20_average_volume": 26173095.2,
+            "atr14": 17.553571428571416,
+            "stop_distance": 35.10714285714283
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/msft/history/",
-        "history_retrieved_at": "2026-11-13T15:48:22.726Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.669Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:MSFT:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:MSFT:2026-11-13:breakout20"
       },
       {
         "ticker": "MU",
@@ -1858,27 +2517,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 798.44,
+            "signal_close": 778.31,
             "prior20_high": 990,
-            "prior_close": 811.3,
-            "prior_high": 827.58,
-            "prior_drawdown_fraction": 0.1805050505050505,
-            "signal_volume": 27638419,
-            "prior20_average_volume": 31364689.25,
-            "atr14": 64.14714285714285,
-            "stop_distance": 128.2942857142857
+            "prior_close": 798.44,
+            "prior_high": 799.7,
+            "prior_drawdown_fraction": 0.1934949494949494,
+            "signal_volume": 27921006,
+            "prior20_average_volume": 30791853.85,
+            "atr14": 64.86071428571428,
+            "stop_distance": 129.72142857142856
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/mu/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.221Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.253Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:MU:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:MU:2026-11-13:breakout20"
       },
       {
         "ticker": "NEE",
@@ -1890,27 +2549,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 85.29,
+            "signal_close": 85.12,
             "prior20_high": 90.04,
-            "prior_close": 85.99,
-            "prior_high": 86.23,
-            "prior_drawdown_fraction": 0.04498000888494014,
-            "signal_volume": 10357173,
-            "prior20_average_volume": 13555556.65,
-            "atr14": 1.777857142857145,
-            "stop_distance": 3.55571428571429
+            "prior_close": 85.29,
+            "prior_high": 87.08,
+            "prior_drawdown_fraction": 0.05275433140826302,
+            "signal_volume": 11748220,
+            "prior20_average_volume": 13410208.45,
+            "atr14": 1.7907142857142873,
+            "stop_distance": 3.5814285714285745
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/nee/history/",
-        "history_retrieved_at": "2026-11-13T15:48:24.139Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:10.042Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:NEE:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:NEE:2026-11-13:breakout20"
       },
       {
         "ticker": "NET",
@@ -1922,27 +2581,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 318.5,
+            "signal_close": 305.81,
             "prior20_high": 337,
-            "prior_close": 315,
-            "prior_high": 324.1,
-            "prior_drawdown_fraction": 0.06528189910979232,
-            "signal_volume": 3466108,
-            "prior20_average_volume": 4353047.5,
-            "atr14": 22.265000000000004,
-            "stop_distance": 44.53000000000001
+            "prior_close": 318.5,
+            "prior_high": 322.61,
+            "prior_drawdown_fraction": 0.054896142433234374,
+            "signal_volume": 4172380,
+            "prior20_average_volume": 4304616.85,
+            "atr14": 22.731428571428577,
+            "stop_distance": 45.46285714285715
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/net/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.043Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.838Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": null,
-        "signal_id": "trader-x-breakout-v1:NET:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:NET:2026-11-13:breakout20"
       },
       {
         "ticker": "NVDA",
@@ -1954,27 +2613,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 166.19,
+            "signal_close": 162.85,
             "prior20_high": 222.19,
-            "prior_close": 173.73,
-            "prior_high": 177.54,
-            "prior_drawdown_fraction": 0.2181016247355867,
-            "signal_volume": 747707648,
-            "prior20_average_volume": 165586360.3,
-            "atr14": 10.66071428571428,
-            "stop_distance": 21.32142857142856
+            "prior_close": 166.19,
+            "prior_high": 167.14,
+            "prior_drawdown_fraction": 0.2520365452990684,
+            "signal_volume": 365796552,
+            "prior20_average_volume": 196617350,
+            "atr14": 11.004999999999995,
+            "stop_distance": 22.00999999999999
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/nvda/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.069Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.863Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:NVDA:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:NVDA:2026-11-13:breakout20"
       },
       {
         "ticker": "ORCL",
@@ -1986,27 +2645,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 127.11,
+            "signal_close": 125.35,
             "prior20_high": 148.48,
-            "prior_close": 128.38,
-            "prior_high": 130.77,
-            "prior_drawdown_fraction": 0.13537176724137923,
-            "signal_volume": 22594185,
-            "prior20_average_volume": 42904437.95,
-            "atr14": 9.312857142857142,
-            "stop_distance": 18.625714285714285
+            "prior_close": 127.11,
+            "prior_high": 129.06,
+            "prior_drawdown_fraction": 0.14392510775862066,
+            "signal_volume": 22590355,
+            "prior20_average_volume": 42532557.7,
+            "atr14": 9.455714285714285,
+            "stop_distance": 18.91142857142857
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/orcl/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.180Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.987Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:ORCL:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:ORCL:2026-11-13:breakout20"
       },
       {
         "ticker": "PLD",
@@ -2018,27 +2677,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 128.55,
+            "signal_close": 128.67,
             "prior20_high": 132.6,
-            "prior_close": 130.03,
-            "prior_high": 130.58,
-            "prior_drawdown_fraction": 0.01938159879336343,
-            "signal_volume": 3451054,
-            "prior20_average_volume": 4023441.55,
-            "atr14": 2.537142857142861,
-            "stop_distance": 5.074285714285722
+            "prior_close": 128.55,
+            "prior_high": 130.06,
+            "prior_drawdown_fraction": 0.030542986425339258,
+            "signal_volume": 2919092,
+            "prior20_average_volume": 3854756.05,
+            "atr14": 2.5214285714285745,
+            "stop_distance": 5.042857142857149
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/pld/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.667Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.281Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:PLD:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:PLD:2026-11-13:breakout20"
       },
       {
         "ticker": "QCOM",
@@ -2050,27 +2709,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 177.14,
+            "signal_close": 172.47,
             "prior20_high": 185.59,
-            "prior_close": 176.57,
-            "prior_high": 182.17,
-            "prior_drawdown_fraction": 0.048601756560159526,
-            "signal_volume": 8983164,
-            "prior20_average_volume": 14000078.6,
-            "atr14": 10.150000000000002,
-            "stop_distance": 20.300000000000004
+            "prior_close": 177.14,
+            "prior_high": 183.4,
+            "prior_drawdown_fraction": 0.045530470391723754,
+            "signal_volume": 10425341,
+            "prior20_average_volume": 13859667.05,
+            "atr14": 10.49357142857143,
+            "stop_distance": 20.98714285714286
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/qcom/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.200Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.279Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:QCOM:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:QCOM:2026-11-13:breakout20"
       },
       {
         "ticker": "TSLA",
@@ -2082,27 +2741,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 397.45,
+            "signal_close": 390.22,
             "prior20_high": 414.23,
-            "prior_close": 390.84,
-            "prior_high": 395.43,
-            "prior_drawdown_fraction": 0.05646621442193955,
-            "signal_volume": 29186256,
-            "prior20_average_volume": 40790936.45,
-            "atr14": 18.62571428571429,
-            "stop_distance": 37.25142857142858
+            "prior_close": 397.45,
+            "prior_high": 401.22,
+            "prior_drawdown_fraction": 0.04050889602394814,
+            "signal_volume": 32392965,
+            "prior20_average_volume": 40913833.5,
+            "atr14": 18.162857142857153,
+            "stop_distance": 36.325714285714305
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/tsla/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.158Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:08.963Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:TSLA:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:TSLA:2026-11-13:breakout20"
       },
       {
         "ticker": "UNH",
@@ -2114,27 +2773,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 405.13,
+            "signal_close": 407.46,
             "prior20_high": 426.55,
-            "prior_close": 402.94,
-            "prior_high": 404.74,
-            "prior_drawdown_fraction": 0.055351072558902814,
-            "signal_volume": 3918136,
-            "prior20_average_volume": 5464789.4,
-            "atr14": 11.13071428571428,
-            "stop_distance": 22.26142857142856
+            "prior_close": 405.13,
+            "prior_high": 406.19,
+            "prior_drawdown_fraction": 0.050216856171609425,
+            "signal_volume": 3472017,
+            "prior20_average_volume": 5154131.45,
+            "atr14": 10.812857142857139,
+            "stop_distance": 21.625714285714277
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/unh/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.389Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.389Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:UNH:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:UNH:2026-11-13:breakout20"
       },
       {
         "ticker": "V",
@@ -2146,27 +2805,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 420.31,
+            "signal_close": 425.76,
             "prior20_high": 442.23,
-            "prior_close": 425.55,
-            "prior_high": 425.76,
-            "prior_drawdown_fraction": 0.0377179295841531,
-            "signal_volume": 5638895,
-            "prior20_average_volume": 7231394.7,
-            "atr14": 10.239999999999997,
-            "stop_distance": 20.479999999999993
+            "prior_close": 420.31,
+            "prior_high": 430.18,
+            "prior_drawdown_fraction": 0.04956696741514599,
+            "signal_volume": 4642475,
+            "prior20_average_volume": 7084284.4,
+            "atr14": 10.373571428571422,
+            "stop_distance": 20.747142857142844
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/v/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.338Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.365Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:V:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:V:2026-11-13:breakout20"
       },
       {
         "ticker": "WMT",
@@ -2178,27 +2837,27 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 126.19,
+            "signal_close": 128.09,
             "prior20_high": 131.82,
-            "prior_close": 125.67,
-            "prior_high": 126.07,
-            "prior_drawdown_fraction": 0.04665452890304955,
-            "signal_volume": 17222430,
-            "prior20_average_volume": 22759770.25,
-            "atr14": 3.0335714285714253,
-            "stop_distance": 6.0671428571428505
+            "prior_close": 126.19,
+            "prior_high": 127.66,
+            "prior_drawdown_fraction": 0.042709755727507126,
+            "signal_volume": 16639010,
+            "prior20_average_volume": 22018578.2,
+            "atr14": 3.0242857142857127,
+            "stop_distance": 6.048571428571425
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/wmt/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.547Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.466Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:WMT:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:WMT:2026-11-13:breakout20"
       },
       {
         "ticker": "XOM",
@@ -2210,30 +2869,28 @@
         "rule_checks": {
           "strategy_kind": "breakout",
           "metrics": {
-            "signal_close": 169.78,
+            "signal_close": 170.59,
             "prior20_high": 188.5,
-            "prior_close": 166.71,
-            "prior_high": 166.75,
-            "prior_drawdown_fraction": 0.11559681697612723,
-            "signal_volume": 12243811,
-            "prior20_average_volume": 14220335.3,
-            "atr14": 4.822857142857144,
-            "stop_distance": 9.645714285714288
+            "prior_close": 169.78,
+            "prior_high": 170.92,
+            "prior_drawdown_fraction": 0.09931034482758616,
+            "signal_volume": 11480103,
+            "prior20_average_volume": 14270890.15,
+            "atr14": 4.782142857142858,
+            "stop_distance": 9.564285714285717
           },
           "conditions": {
             "close_above_prior20_high": false
           }
         },
         "source_url": "https://stockanalysis.com/stocks/xom/history/",
-        "history_retrieved_at": "2026-11-13T15:48:23.464Z",
-        "signal_session": "2026-11-12",
-        "expected_signal_session": "2026-11-12",
-        "decision_at": "2026-11-13T17:24:43.948Z",
+        "history_retrieved_at": "2026-11-16T15:28:09.435Z",
+        "signal_session": "2026-11-13",
+        "expected_signal_session": "2026-11-13",
+        "decision_at": "2026-11-16T15:29:52.574Z",
         "universe_effective_at": "2026-11-13T15:52:05.661Z",
-        "signal_id": "trader-x-breakout-v1:XOM:2026-11-12:breakout20"
+        "signal_id": "trader-x-breakout-v1:XOM:2026-11-13:breakout20"
       }
     ]
-  },
-  "close_risk_reference_breaches": [],
-  "previous_operational_report": "reports/trader-x-2026-11-15-entry-closed-20261115150244942.html"
+  }
 }
