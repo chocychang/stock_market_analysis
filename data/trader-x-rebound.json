@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2026-11-16-entry-intent-20261116152952574-final-trader-x-rebound",
+  "version": "2026-11-19-entry-recovery-20261119134800892-trader-x-rebound-r2",
   "name": "交易X跌深反彈",
   "strategy_kind": "rebound",
   "strategy_label": "跌深反彈實驗",
@@ -8,9 +8,9 @@
   "report_prefix": "trader-x-rebound",
   "configuration_revision": "2026-11-13-cross-sector-40-v1",
   "configuration_updated_at": "2026-11-13T15:52:05.661Z",
-  "updated_at": "2026-11-16T15:29:52.574Z",
+  "updated_at": "2026-11-19T13:48:00.892Z",
   "activated_at": "2026-11-13T15:52:05.661Z",
-  "status": "23:00完成評估；31檔資料合格、9檔量能缺口，0筆新交易",
+  "status": "延遲盤前恢復；0筆新交易，估值截止11/18收盤",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
@@ -22,1260 +22,444 @@
   "latest_executions": [],
   "scan_results": [
     {
-      "ticker": "AAPL",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 356.27,
-          "prior20_high": 359.37,
-          "prior_close": 354.88,
-          "prior_high": 359.37,
-          "prior_drawdown_fraction": 0.012494086874252242,
-          "signal_volume": 40027467,
-          "prior20_average_volume": 48203269.4,
-          "atr14": 9.45571428571429,
-          "stop_distance": 18.91142857142858
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/aapl/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.884Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:AAPL:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "ABBV",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 295.03,
-          "prior20_high": 302.93,
-          "prior_close": 294.45,
-          "prior_high": 300.42,
-          "prior_drawdown_fraction": 0.027993265770970277,
-          "signal_volume": 3262104,
-          "prior20_average_volume": 5279490.05,
-          "atr14": 7.424285714285714,
-          "stop_distance": 14.848571428571429
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/abbv/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.412Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:ABBV:2026-11-13:rebound15"
-    },
-    {
       "ticker": "AMD",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 534.06,
-          "prior20_high": 594,
-          "prior_close": 585.3,
-          "prior_high": 594,
-          "prior_drawdown_fraction": 0.014646464646464685,
-          "signal_volume": 49387598,
-          "prior20_average_volume": 33352234.8,
-          "atr14": 47.88285714285713,
-          "stop_distance": 95.76571428571425
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": true
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/amd/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.613Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:AMD:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "AMZN",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 266.66,
-          "prior20_high": 275.34,
-          "prior_close": 267.44,
-          "prior_high": 273.6,
-          "prior_drawdown_fraction": 0.028691799230042725,
-          "signal_volume": 31148510,
-          "prior20_average_volume": 50501433.4,
-          "atr14": 10.745000000000001,
-          "stop_distance": 21.490000000000002
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/amzn/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.688Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:AMZN:2026-11-13:rebound15"
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
       "ticker": "ASML",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 1495.16,
-          "prior20_high": 1690.1,
-          "prior_close": 1497.12,
-          "prior_high": 1530.95,
-          "prior_drawdown_fraction": 0.11418259274599141,
-          "signal_volume": 1365713,
-          "prior20_average_volume": 1710262.8,
-          "atr14": 72.04285714285716,
-          "stop_distance": 144.08571428571432
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/asml/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.646Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:ASML:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "AVGO",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 347.01,
-          "prior20_high": 369.82,
-          "prior_close": 364.36,
-          "prior_high": 369.82,
-          "prior_drawdown_fraction": 0.014763939213671473,
-          "signal_volume": 31654184,
-          "prior20_average_volume": 26761205.8,
-          "atr14": 20.24785714285714,
-          "stop_distance": 40.49571428571428
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": true
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/avgo/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.938Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:AVGO:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "BAC",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 51.02,
-          "prior20_high": 53.03,
-          "prior_close": 50.51,
-          "prior_high": 50.93,
-          "prior_drawdown_fraction": 0.047520271544408854,
-          "signal_volume": 20008105,
-          "prior20_average_volume": 37279753.7,
-          "atr14": 1.1678571428571425,
-          "stop_distance": 2.335714285714285
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": true,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/bac/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.332Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:BAC:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "CAT",
-      "action": "NO_SIGNAL",
-      "reason": "收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 600.2,
-          "prior20_high": 745,
-          "prior_close": 605.28,
-          "prior_high": 613.57,
-          "prior_drawdown_fraction": 0.18754362416107384,
-          "signal_volume": 2293033,
-          "prior20_average_volume": 3857919.8,
-          "atr14": 31.68,
-          "stop_distance": 63.36
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": true,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/cat/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.488Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:CAT:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "CDNS",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 323.01,
-          "prior20_high": 348.8,
-          "prior_close": 333.32,
-          "prior_high": 334.55,
-          "prior_drawdown_fraction": 0.04438073394495423,
-          "signal_volume": 1547475,
-          "prior20_average_volume": 2454346.6,
-          "atr14": 15.315714285714279,
-          "stop_distance": 30.631428571428557
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/cdns/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.223Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:CDNS:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "COST",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 1106.21,
-          "prior20_high": 1102.84,
-          "prior_close": 1092.21,
-          "prior_high": 1102.84,
-          "prior_drawdown_fraction": 0.009638750861412193,
-          "signal_volume": 1875259,
-          "prior20_average_volume": 2385142.1,
-          "atr14": 21.573571428571395,
-          "stop_distance": 43.14714285714279
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": true,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/cost/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.416Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:COST:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "CRWD",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
       "scanned": false,
       "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/crwd/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.700Z",
+      "decision_at": null,
       "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
-    },
-    {
-      "ticker": "CVX",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 219.89,
-          "prior20_high": 236.48,
-          "prior_close": 216.35,
-          "prior_high": 218.09,
-          "prior_drawdown_fraction": 0.08512347767253048,
-          "signal_volume": 7579317,
-          "prior20_average_volume": 8354024.3,
-          "atr14": 5.300714285714286,
-          "stop_distance": 10.601428571428572
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": true,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/cvx/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.438Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:CVX:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "DUK",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 129.16,
-          "prior20_high": 132.99,
-          "prior_close": 128.59,
-          "prior_high": 129.97,
-          "prior_drawdown_fraction": 0.033085194375517046,
-          "signal_volume": 7585597,
-          "prior20_average_volume": 4332090.6,
-          "atr14": 2.2635714285714266,
-          "stop_distance": 4.527142857142853
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": true
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/duk/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.994Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:DUK:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "GE",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 331.81,
-          "prior20_high": 343.59,
-          "prior_close": 330.86,
-          "prior_high": 343.59,
-          "prior_drawdown_fraction": 0.03704997235076679,
-          "signal_volume": 3375782,
-          "prior20_average_volume": 5656811.65,
-          "atr14": 11.715714285714276,
-          "stop_distance": 23.43142857142855
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/ge/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.715Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:GE:2026-11-13:rebound15"
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
       "ticker": "GEV",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 803.13,
-          "prior20_high": 951,
-          "prior_close": 818.49,
-          "prior_high": 842,
-          "prior_drawdown_fraction": 0.13933753943217664,
-          "signal_volume": 3002010,
-          "prior20_average_volume": 4287195.45,
-          "atr14": 62.68500000000002,
-          "stop_distance": 125.37000000000003
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/gev/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.658Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:GEV:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "GOOGL",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 295.77,
-          "prior20_high": 350.66,
-          "prior_close": 298.7,
-          "prior_high": 302.56,
-          "prior_drawdown_fraction": 0.14817772200992418,
-          "signal_volume": 30798617,
-          "prior20_average_volume": 40687928.95,
-          "atr14": 11.910714285714294,
-          "stop_distance": 23.821428571428587
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/googl/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.812Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:GOOGL:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "GS",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
       "scanned": false,
       "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/gs/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.335Z",
+      "decision_at": null,
       "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
-    },
-    {
-      "ticker": "HD",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 348.69,
-          "prior20_high": 362.44,
-          "prior_close": 348.26,
-          "prior_high": 356.46,
-          "prior_drawdown_fraction": 0.039123717029025507,
-          "signal_volume": 4473578,
-          "prior20_average_volume": 4538944.95,
-          "atr14": 9.943571428571422,
-          "stop_distance": 19.887142857142845
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/hd/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.461Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:HD:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "HON",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "scanned": false,
-      "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/hon/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.515Z",
-      "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
-    },
-    {
-      "ticker": "JNJ",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "scanned": false,
-      "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/jnj/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.742Z",
-      "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
-    },
-    {
-      "ticker": "JPM",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "scanned": false,
-      "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/jpm/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.308Z",
-      "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
-    },
-    {
-      "ticker": "LIN",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 526.06,
-          "prior20_high": 533.39,
-          "prior_close": 522.49,
-          "prior_high": 530.2,
-          "prior_drawdown_fraction": 0.020435328746320702,
-          "signal_volume": 1251113,
-          "prior20_average_volume": 2091659.65,
-          "atr14": 9.922142857142868,
-          "stop_distance": 19.844285714285736
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/lin/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.303Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:LIN:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "LLY",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 1443.5,
-          "prior20_high": 1460,
-          "prior_close": 1427.28,
-          "prior_high": 1460,
-          "prior_drawdown_fraction": 0.0224109589041096,
-          "signal_volume": 2084331,
-          "prior20_average_volume": 3003239.65,
-          "atr14": 51.03142857142864,
-          "stop_distance": 102.06285714285728
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/lly/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.393Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:LLY:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "LMT",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "scanned": false,
-      "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/lmt/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.723Z",
-      "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
-    },
-    {
-      "ticker": "MA",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "scanned": false,
-      "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/ma/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.367Z",
-      "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
-    },
-    {
-      "ticker": "MCD",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 271.97,
-          "prior20_high": 283.53,
-          "prior_close": 273.63,
-          "prior_high": 279.8,
-          "prior_drawdown_fraction": 0.034916940006348485,
-          "signal_volume": 4672732,
-          "prior20_average_volume": 5643064.35,
-          "atr14": 7.028571428571423,
-          "stop_distance": 14.057142857142846
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/mcd/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.491Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:MCD:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "META",
-      "action": "NO_SIGNAL",
-      "reason": "成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 641.69,
-          "prior20_high": 738.49,
-          "prior_close": 623.61,
-          "prior_high": 630.32,
-          "prior_drawdown_fraction": 0.15556067109913474,
-          "signal_volume": 15150951,
-          "prior20_average_volume": 24035763.15,
-          "atr14": 20.958571428571435,
-          "stop_distance": 41.91714285714287
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": true,
-          "close_above_prior_high": true,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/meta/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.910Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:META:2026-11-13:rebound15"
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
       "ticker": "MSFT",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 523.88,
-          "prior20_high": 559.15,
-          "prior_close": 523,
-          "prior_high": 529.66,
-          "prior_drawdown_fraction": 0.06465170347849414,
-          "signal_volume": 26189242,
-          "prior20_average_volume": 26173095.2,
-          "atr14": 17.553571428571416,
-          "stop_distance": 35.10714285714283
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": true
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/msft/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.669Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:MSFT:2026-11-13:rebound15"
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
-      "ticker": "MU",
-      "action": "NO_SIGNAL",
-      "reason": "收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 778.31,
-          "prior20_high": 990,
-          "prior_close": 798.44,
-          "prior_high": 799.7,
-          "prior_drawdown_fraction": 0.1934949494949494,
-          "signal_volume": 27921006,
-          "prior20_average_volume": 30791853.85,
-          "atr14": 64.86071428571428,
-          "stop_distance": 129.72142857142856
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": true,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/mu/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.253Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:MU:2026-11-13:rebound15"
+      "ticker": "AMZN",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
-      "ticker": "NEE",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 85.12,
-          "prior20_high": 90.04,
-          "prior_close": 85.29,
-          "prior_high": 87.08,
-          "prior_drawdown_fraction": 0.05275433140826302,
-          "signal_volume": 11748220,
-          "prior20_average_volume": 13410208.45,
-          "atr14": 1.7907142857142873,
-          "stop_distance": 3.5814285714285745
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/nee/history/",
-      "history_retrieved_at": "2026-11-16T15:28:10.042Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:NEE:2026-11-13:rebound15"
+      "ticker": "CRWD",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "GE",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "LMT",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "JNJ",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "GOOGL",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "CDNS",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
       "ticker": "NET",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 305.81,
-          "prior20_high": 337,
-          "prior_close": 318.5,
-          "prior_high": 322.61,
-          "prior_drawdown_fraction": 0.054896142433234374,
-          "signal_volume": 4172380,
-          "prior20_average_volume": 4304616.85,
-          "atr14": 22.731428571428577,
-          "stop_distance": 45.46285714285715
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/net/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.838Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:NET:2026-11-13:rebound15"
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
       "ticker": "NVDA",
-      "action": "NO_SIGNAL",
-      "reason": "收盤未嚴格高於前日最高價",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "收盤未嚴格高於前日最高價",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 162.85,
-          "prior20_high": 222.19,
-          "prior_close": 166.19,
-          "prior_high": 167.14,
-          "prior_drawdown_fraction": 0.2520365452990684,
-          "signal_volume": 365796552,
-          "prior20_average_volume": 196617350,
-          "atr14": 11.004999999999995,
-          "stop_distance": 22.00999999999999
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": true,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": true
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/nvda/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.863Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:NVDA:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "ORCL",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
       "scanned": false,
       "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/orcl/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.987Z",
+      "decision_at": null,
       "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
-      "ticker": "PLD",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 128.67,
-          "prior20_high": 132.6,
-          "prior_close": 128.55,
-          "prior_high": 130.06,
-          "prior_drawdown_fraction": 0.030542986425339258,
-          "signal_volume": 2919092,
-          "prior20_average_volume": 3854756.05,
-          "atr14": 2.5214285714285745,
-          "stop_distance": 5.042857142857149
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/pld/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.281Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:PLD:2026-11-13:rebound15"
+      "ticker": "AAPL",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
-      "ticker": "QCOM",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 172.47,
-          "prior20_high": 185.59,
-          "prior_close": 177.14,
-          "prior_high": 183.4,
-          "prior_drawdown_fraction": 0.045530470391723754,
-          "signal_volume": 10425341,
-          "prior20_average_volume": 13859667.05,
-          "atr14": 10.49357142857143,
-          "stop_distance": 20.98714285714286
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/qcom/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.279Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:QCOM:2026-11-13:rebound15"
+      "ticker": "AVGO",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "META",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
       "ticker": "TSLA",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 390.22,
-          "prior20_high": 414.23,
-          "prior_close": 397.45,
-          "prior_high": 401.22,
-          "prior_drawdown_fraction": 0.04050889602394814,
-          "signal_volume": 32392965,
-          "prior20_average_volume": 40913833.5,
-          "atr14": 18.162857142857153,
-          "stop_distance": 36.325714285714305
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/tsla/history/",
-      "history_retrieved_at": "2026-11-16T15:28:08.963Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:TSLA:2026-11-13:rebound15"
-    },
-    {
-      "ticker": "UNH",
-      "action": "DATA_MISSING",
-      "reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
       "scanned": false,
       "signal_matched": null,
-      "not_bought_reason": "反彈成交量跨來源比對缺少、未匹配或晚於決策，尚不可評估訊號",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": null,
-        "conditions": null
-      },
-      "source_url": "https://stockanalysis.com/stocks/unh/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.389Z",
+      "decision_at": null,
       "signal_session": null,
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z"
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "ORCL",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "QCOM",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "PLD",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "MU",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "LIN",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "JPM",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "BAC",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "GS",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
       "ticker": "V",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 425.76,
-          "prior20_high": 442.23,
-          "prior_close": 420.31,
-          "prior_high": 430.18,
-          "prior_drawdown_fraction": 0.04956696741514599,
-          "signal_volume": 4642475,
-          "prior20_average_volume": 7084284.4,
-          "atr14": 10.373571428571422,
-          "stop_distance": 20.747142857142844
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/v/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.365Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:V:2026-11-13:rebound15"
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
-      "ticker": "WMT",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 128.09,
-          "prior20_high": 131.82,
-          "prior_close": 126.19,
-          "prior_high": 127.66,
-          "prior_drawdown_fraction": 0.042709755727507126,
-          "signal_volume": 16639010,
-          "prior20_average_volume": 22018578.2,
-          "atr14": 3.0242857142857127,
-          "stop_distance": 6.048571428571425
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": true,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/wmt/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.466Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:WMT:2026-11-13:rebound15"
+      "ticker": "MA",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "UNH",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "LLY",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "ABBV",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     },
     {
       "ticker": "XOM",
-      "action": "NO_SIGNAL",
-      "reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "scanned": true,
-      "signal_matched": false,
-      "not_bought_reason": "前收較此前20日高點回落不足15%；收盤未嚴格高於前日最高價；成交量未達有效此前20日均量",
-      "rule_checks": {
-        "strategy_kind": "rebound",
-        "metrics": {
-          "signal_close": 170.59,
-          "prior20_high": 188.5,
-          "prior_close": 169.78,
-          "prior_high": 170.92,
-          "prior_drawdown_fraction": 0.09931034482758616,
-          "signal_volume": 11480103,
-          "prior20_average_volume": 14270890.15,
-          "atr14": 4.782142857142858,
-          "stop_distance": 9.564285714285717
-        },
-        "conditions": {
-          "prior_drawdown_at_least_15_percent": false,
-          "close_above_prior_high": false,
-          "positive_prior20_average_volume": true,
-          "volume_at_least_prior20_average": false
-        }
-      },
-      "source_url": "https://stockanalysis.com/stocks/xom/history/",
-      "history_retrieved_at": "2026-11-16T15:28:09.435Z",
-      "signal_session": "2026-11-13",
-      "expected_signal_session": "2026-11-13",
-      "decision_at": "2026-11-16T15:29:52.574Z",
-      "universe_effective_at": "2026-11-13T15:52:05.661Z",
-      "signal_id": "trader-x-rebound-v1:XOM:2026-11-13:rebound15"
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "CVX",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "COST",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "WMT",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "HD",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "MCD",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "CAT",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "HON",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "NEE",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+    },
+    {
+      "ticker": "DUK",
+      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "scanned": false,
+      "signal_matched": null,
+      "decision_at": null,
+      "signal_session": null,
+      "source_url": null,
+      "rule_checks": null,
+      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
     }
   ],
   "universe_evaluation": {
@@ -1324,12 +508,13 @@
       "NEE",
       "DUK"
     ],
-    "as_of": "2026-11-16T15:29:52.574Z",
+    "as_of": "2026-11-19T13:48:00.892Z",
     "coverage": {
       "total": 40,
-      "scanned": 31,
-      "not_scanned": 9
-    }
+      "scanned": 0,
+      "not_scanned": 40
+    },
+    "evaluation_type": "off-schedule-recovery"
   },
   "performance": {
     "return": 0,
@@ -1409,49 +594,55 @@
     "frozen_at": "2026-11-10T16:26:29.925Z",
     "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
   },
-  "latest_report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html",
-  "review": "31檔量能跨來源核對合格、無反彈買點；另9檔為資料缺口，不能說成已確認未觸發。NVDA前收相對20日高點回撤約25.20%，量能達標，但11/13收盤162.85未高於11/12高點167.14，故不買進。 這是前瞻紙上實驗；突破或反彈條件不保證後市上漲。尚未分解市場／產業因子；持股浮虧不能單獨證明某個新聞或訊號必然錯誤。未來可另立版本測試大盤趨勢與跳空限制，現有v1不回調參數或成本。今晚完成不代表隔日01:00已完成。",
-  "valuation_note": "正常盤不同截點指示性盤中估值，非收盤。",
+  "latest_report": "reports/trader-x-rebound-2026-11-19-entry-recovery-20261119134800892-r2.html",
+  "review": "原觸發2026-11-18T19:14:56Z已錯過23:00窗口；平台寫入權限等待後，實際可寫恢復開始為2026-11-19T13:45:37Z（台灣21:45），此時仍在11/19美股正常盤開盤前。當前恢復不形成新買賣、不補填漏跑成交，也不算今晚23:00或隔日01:00已完成。 缺少NY11/17、11/18晚間正常評估；兩個交易X另缺NY11/16、11/17、11/18的01:00評估。既有10/29、11/2、11/9、11/11缺漏仍保留。 原11/16正式40檔訊號檢查與報告保留；今天沒有重新掃描或以新行情回填缺漏訊號。持有交易日按日曆截至11/18推算，不代表漏跑期間已檢查退出。",
+  "valuation_note": "以11/18正常盤日K Close估值，收盤時段端點21:00Z；資料於11/19 13:45–13:47Z實際取得。mark_at是日K端點，quote_at為null，不能當作可成交的逐筆報價。",
   "limitations": [
-    "前瞻模擬，尚無完整歷史回測、SPY共同期間對照、Sharpe或完整收盤最大回撤。",
-    "每天兩次觀察不等於持續盤中止損；跳空、滑價、行情延遲可能令損失超過計畫風險。",
-    "2ATR14停損、2R停利與10交易日退出是初版假設，沒有獲利保證。",
-    "目前40檔觀察池仍可能有共同產業/風格因子，持有10檔不等於充分分散。",
-    "單邊10bps不利滑價、佣金0、現金利息0；未建模監管費用、個人稅費；公司行動需另核實處理。",
-    "runner需要執行者提供有來源與時間戳行情，不會自行抓價；本機排程未觸發不能宣稱已完成。",
-    "行情與價格口徑已用兩來源核對；歷史none-in-lookback僅表示無拆股，現金股息另列，並非沒有任何公司行動。",
-    "COST10/30一般股息資格早於本帳戶11/13買入，不補發；新30美元特別股息及JNJ未來股息尚未到資格／支付日，不加入現金。",
-    "訊號資料為11/13最後完整正常盤；今日11/16尚未收盤，不用尚未完成日K形成買點。"
+    "原觸發2026-11-18T19:14:56Z已錯過23:00窗口；平台寫入權限等待後，實際可寫恢復開始為2026-11-19T13:45:37Z（台灣21:45），此時仍在11/19美股正常盤開盤前。當前恢復不形成新買賣、不補填漏跑成交，也不算今晚23:00或隔日01:00已完成。",
+    "缺少NY11/17、11/18晚間正常評估；兩個交易X另缺NY11/16、11/17、11/18的01:00評估。既有10/29、11/2、11/9、11/11缺漏仍保留。",
+    "以11/18正常盤日K Close估值，收盤時段端點21:00Z；資料於11/19 13:45–13:47Z實際取得。mark_at是日K端點，quote_at為null，不能當作可成交的逐筆報價。",
+    "缺漏日期只有恢復紀錄，沒有重建當時行情與買賣；本機排程需要主機／app可執行及實際觸發。",
+    "完整歷史回測、Sharpe、SPY對照及完整收盤MDD未完成；目前是帳本持股的收盤價格估值。",
+    "股息尚未完整自動入帳；各帳戶分帳，本次不憑未到期股息增加現金。"
   ],
   "operational_status": {
-    "status": "evaluated",
-    "evaluated_at": "2026-11-16T15:29:52.574Z",
-    "published_at": null,
-    "pages_verified_at": null,
-    "run_type": "regular-session-forward-paper-evaluation",
+    "status": "off-schedule-preopen-recovery",
+    "run_type": "off-schedule-recovery",
     "schedule_phase": "entry",
-    "regular_session": true,
-    "market_date": "2026-11-16",
-    "scheduled_evaluation_completed": true,
+    "market_date": "2026-11-19",
+    "intended_market_session": "2026-11-18",
+    "regular_session": false,
+    "market_closed": false,
+    "trigger_received_at": "2026-11-18T19:14:56.554Z",
+    "recovery_evaluated_at": "2026-11-19T13:48:00.892Z",
+    "evaluated_at": "2026-11-16T15:29:52.574Z",
+    "last_regular_session_evaluation": {
+      "evaluated_at": "2026-11-16T15:29:52.574Z",
+      "report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html"
+    },
+    "scheduled_evaluation_completed": false,
     "scheduled_review_completed": false,
-    "trigger_received_at": "2026-11-16T15:05:15.766Z"
+    "open_at": "2026-11-19T14:30:00.000Z",
+    "close_at": "2026-11-19T21:00:00.000Z",
+    "published_at": null,
+    "pages_verified_at": null
   },
   "planned_risk_usd": 0,
   "strategy_comparison": {
     "status": "updated",
     "started_at": "2026-11-13T15:52:05.661Z",
-    "as_of": "2026-11-16T15:29:52.574Z",
-    "valuation_type": "intraday",
-    "note": "共同期報酬自各帳戶生效基準NAV計算；原突破帳戶保留GE期初持股，反彈帳戶從獨立虛擬USD300000全現金開始，起點曝險不同。資料截點不同時不排名。這是前瞻盤中模擬，尚無完整收盤MDD、SPY對照或策略有效性結論。",
+    "as_of": "2026-11-18T21:00:00.000Z",
+    "valuation_type": "close",
+    "note": "同一11/18 Close估值；從已封存共同基準NAV起算，原突破帳戶期初已有GE、反彈全現金，曝險不同。缺漏交易不回填，並非完整含息回測或風險調整後alpha。",
     "accounts": [
       {
         "name": "順勢突破",
         "href": "./trader-x.html",
         "baseline_nav_usd": 299766.81194,
-        "nav_usd": 299302.848005,
-        "return_fraction": -0.001547749505682039,
-        "exposure": 0.21491542906710134,
-        "valuation_at": "2026-11-16T15:29:52.574Z",
+        "nav_usd": 298856.698005,
+        "return_fraction": -0.0030360730366046917,
+        "exposure": 0.21374341089364265,
+        "valuation_at": "2026-11-18T21:00:00.000Z",
         "position_count": 5,
         "baseline_positions": [
           {
@@ -1468,19 +659,19 @@
         "nav_usd": 300000,
         "return_fraction": 0,
         "exposure": 0,
-        "valuation_at": "2026-11-16T15:29:52.574Z",
+        "valuation_at": "2026-11-18T21:00:00.000Z",
         "position_count": 0,
         "baseline_positions": []
       }
     ]
   },
-  "valuation_type": "intraday",
-  "valuation_session": "2026-11-16",
-  "valuation_ended_at": null,
-  "valuation_retrieved_at": "2026-11-16T15:29:52.574Z",
-  "previous_operational_report": "reports/trader-x-rebound-2026-11-16-review-preopen-recovery-20261116140337403.html",
-  "previous_trading_report": "reports/trader-x-rebound-2026-11-13-0100.html",
-  "previous_trading_evaluated_at": "2026-11-13T17:24:43.948Z",
+  "valuation_type": "close",
+  "valuation_session": "2026-11-18",
+  "valuation_ended_at": "2026-11-18T21:00:00.000Z",
+  "valuation_retrieved_at": "2026-11-19T13:47:19.941Z",
+  "previous_operational_report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html",
+  "previous_trading_report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html",
+  "previous_trading_evaluated_at": "2026-11-16T15:29:52.574Z",
   "last_completed_signal_evaluation": {
     "as_of": "2026-11-16T15:29:52.574Z",
     "session": "2026-11-16",
@@ -2748,5 +1939,7 @@
         "signal_id": "trader-x-rebound-v1:XOM:2026-11-13:rebound15"
       }
     ]
-  }
+  },
+  "trades": [],
+  "close_risk_reference_breaches": []
 }
