@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2026-11-19-entry-recovery-20261119134800892-trader-x-rebound-r2",
+  "version": "2026-11-20-c-blocked-readonly-20261120150452-trader-x-rebound",
   "name": "交易X跌深反彈",
   "strategy_kind": "rebound",
   "strategy_label": "跌深反彈實驗",
@@ -8,9 +8,9 @@
   "report_prefix": "trader-x-rebound",
   "configuration_revision": "2026-11-13-cross-sector-40-v1",
   "configuration_updated_at": "2026-11-13T15:52:05.661Z",
-  "updated_at": "2026-11-19T13:48:00.892Z",
+  "updated_at": "2026-11-20T15:04:52Z",
   "activated_at": "2026-11-13T15:52:05.661Z",
-  "status": "延遲盤前恢復；0筆新交易，估值截止11/18收盤",
+  "status": "11/20執行受阻：本機帳本唯讀；最後估值11/18，未完成交易評估",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
@@ -23,443 +23,443 @@
   "scan_results": [
     {
       "ticker": "AMD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "ASML",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "GEV",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "MSFT",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "AMZN",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "CRWD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "GE",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "LMT",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "JNJ",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "GOOGL",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "CDNS",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "NET",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "NVDA",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "AAPL",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "AVGO",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "META",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "TSLA",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "ORCL",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "QCOM",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "PLD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "MU",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "LIN",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "JPM",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "BAC",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "GS",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "V",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "MA",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "UNH",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "LLY",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "ABBV",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "XOM",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "CVX",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "COST",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "WMT",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "HD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "MCD",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "CAT",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "HON",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "NEE",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     },
     {
       "ticker": "DUK",
-      "action": "NOT_EVALUATED_OUT_OF_WINDOW",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
-      "decision_at": null,
       "signal_session": null,
+      "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "實際盤前且不在23:00或01:00，未執行新進場規則；不把未評估當未觸發。"
+      "not_bought_reason": "本機無法保存決策／原子帳本，未執行本次訊號及停損停利評估；不是規則未通過。"
     }
   ],
   "universe_evaluation": {
@@ -508,13 +508,13 @@
       "NEE",
       "DUK"
     ],
-    "as_of": "2026-11-19T13:48:00.892Z",
+    "as_of": "2026-11-20T15:04:52Z",
     "coverage": {
       "total": 40,
       "scanned": 0,
       "not_scanned": 40
     },
-    "evaluation_type": "off-schedule-recovery"
+    "evaluation_type": "not-run-persistence-blocked"
   },
   "performance": {
     "return": 0,
@@ -594,10 +594,14 @@
     "frozen_at": "2026-11-10T16:26:29.925Z",
     "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
   },
-  "latest_report": "reports/trader-x-rebound-2026-11-19-entry-recovery-20261119134800892-r2.html",
-  "review": "原觸發2026-11-18T19:14:56Z已錯過23:00窗口；平台寫入權限等待後，實際可寫恢復開始為2026-11-19T13:45:37Z（台灣21:45），此時仍在11/19美股正常盤開盤前。當前恢復不形成新買賣、不補填漏跑成交，也不算今晚23:00或隔日01:00已完成。 缺少NY11/17、11/18晚間正常評估；兩個交易X另缺NY11/16、11/17、11/18的01:00評估。既有10/29、11/2、11/9、11/11缺漏仍保留。 原11/16正式40檔訊號檢查與報告保留；今天沒有重新掃描或以新行情回填缺漏訊號。持有交易日按日曆截至11/18推算，不代表漏跑期間已檢查退出。",
-  "valuation_note": "以11/18正常盤日K Close估值，收盤時段端點21:00Z；資料於11/19 13:45–13:47Z實際取得。mark_at是日K端點，quote_at為null，不能當作可成交的逐筆報價。",
+  "latest_report": "reports/trader-x-rebound-2026-11-20-c-blocked-readonly-20261120150452.html",
+  "review": "本次在台灣11/20 23:00準時觸發，但環境僅允許讀取本機專案，且沒有可用的寫入授權工具，無法保存started_at、決策意圖、原始行情與原子帳本，因此交易評估未完成。沒有模擬成交，也沒有將執行受阻記成策略不買；網站只發布失敗狀態，沒有改寫帳本現金、股數或歷史事件。",
+  "valuation_note": "最後成功保存的估值截止2026-11-18正常盤收盤；本次沒有更新11/20行情或執行買賣。以下金額沿用舊估值，不能當作今天即時績效。",
   "limitations": [
+    "本頁是本次執行失敗狀態，不能視為已完成正常交易評估、已檢查即時停損或已更新績效。",
+    "估值保留原11/18來源與取得時間，沒有把舊價格重新標成11/20行情。",
+    "NY11/17、11/18、11/19晚間評估仍缺漏；交易X另缺NY11/16至11/19的01:00檢查。既有歷史缺漏不刪除、不回填成交。",
+    "當前11/20正在23:00窗口內遇到阻擋，未提前標成歷史漏跑；下一次台灣11/21 01:00尚未執行。",
     "原觸發2026-11-18T19:14:56Z已錯過23:00窗口；平台寫入權限等待後，實際可寫恢復開始為2026-11-19T13:45:37Z（台灣21:45），此時仍在11/19美股正常盤開盤前。當前恢復不形成新買賣、不補填漏跑成交，也不算今晚23:00或隔日01:00已完成。",
     "缺少NY11/17、11/18晚間正常評估；兩個交易X另缺NY11/16、11/17、11/18的01:00評估。既有10/29、11/2、11/9、11/11缺漏仍保留。",
     "以11/18正常盤日K Close估值，收盤時段端點21:00Z；資料於11/19 13:45–13:47Z實際取得。mark_at是日K端點，quote_at為null，不能當作可成交的逐筆報價。",
@@ -606,26 +610,45 @@
     "股息尚未完整自動入帳；各帳戶分帳，本次不憑未到期股息增加現金。"
   ],
   "operational_status": {
-    "status": "off-schedule-preopen-recovery",
-    "run_type": "off-schedule-recovery",
+    "status": "blocked-local-persistence",
+    "run_type": "scheduled-execution-failure-report",
+    "market_date": "2026-11-20",
     "schedule_phase": "entry",
-    "market_date": "2026-11-19",
-    "intended_market_session": "2026-11-18",
-    "regular_session": false,
-    "market_closed": false,
-    "trigger_received_at": "2026-11-18T19:14:56.554Z",
-    "recovery_evaluated_at": "2026-11-19T13:48:00.892Z",
-    "evaluated_at": "2026-11-16T15:29:52.574Z",
-    "last_regular_session_evaluation": {
-      "evaluated_at": "2026-11-16T15:29:52.574Z",
-      "report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html"
-    },
+    "trigger_received_at": "2026-11-20T15:00:19.097Z",
+    "started_at": "2026-11-20T15:00:33Z",
+    "evaluated_at": null,
+    "read_only_checks_completed_at": "2026-11-20T15:04:52Z",
     "scheduled_evaluation_completed": false,
     "scheduled_review_completed": false,
-    "open_at": "2026-11-19T14:30:00.000Z",
-    "close_at": "2026-11-19T21:00:00.000Z",
+    "regular_session_evaluation_completed": false,
+    "last_successful_operational_status": {
+      "status": "off-schedule-preopen-recovery",
+      "run_type": "off-schedule-recovery",
+      "schedule_phase": "entry",
+      "market_date": "2026-11-19",
+      "intended_market_session": "2026-11-18",
+      "regular_session": false,
+      "market_closed": false,
+      "trigger_received_at": "2026-11-18T19:14:56.554Z",
+      "recovery_evaluated_at": "2026-11-19T13:48:00.892Z",
+      "evaluated_at": "2026-11-16T15:29:52.574Z",
+      "last_regular_session_evaluation": {
+        "evaluated_at": "2026-11-16T15:29:52.574Z",
+        "report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html"
+      },
+      "scheduled_evaluation_completed": false,
+      "scheduled_review_completed": false,
+      "open_at": "2026-11-19T14:30:00.000Z",
+      "close_at": "2026-11-19T21:00:00.000Z",
+      "published_at": null,
+      "pages_verified_at": null
+    },
+    "local_health_recorded": false,
     "published_at": null,
-    "pages_verified_at": null
+    "pages_verified_at": null,
+    "evaluation_completed_at": null,
+    "current_run_trade_ledger_persisted": false,
+    "current_trade_intents_created": false
   },
   "planned_risk_usd": 0,
   "strategy_comparison": {
@@ -669,7 +692,7 @@
   "valuation_session": "2026-11-18",
   "valuation_ended_at": "2026-11-18T21:00:00.000Z",
   "valuation_retrieved_at": "2026-11-19T13:47:19.941Z",
-  "previous_operational_report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html",
+  "previous_operational_report": "reports/trader-x-rebound-2026-11-19-entry-recovery-20261119134800892-r2.html",
   "previous_trading_report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html",
   "previous_trading_evaluated_at": "2026-11-16T15:29:52.574Z",
   "last_completed_signal_evaluation": {
@@ -1941,5 +1964,33 @@
     ]
   },
   "trades": [],
-  "close_risk_reference_breaches": []
+  "close_risk_reference_breaches": [],
+  "performance_data_as_of": "2026-11-18T21:00:00.000Z",
+  "execution_failure": {
+    "code": "LOCAL_WORKSPACE_READ_ONLY",
+    "trigger_received_at": "2026-11-20T15:00:19.097Z",
+    "started_at": "2026-11-20T15:00:33Z",
+    "read_only_checks_completed_at": "2026-11-20T15:04:52Z",
+    "evaluation_completed_at": null,
+    "local_health_recorded": false,
+    "local_ledger_recorded": false,
+    "transaction_decisions_created": false,
+    "recorded_new_trades": 0,
+    "trade_evaluation_completed": false,
+    "source_of_failure": "Current environment filesystem policy is read-only; no permission request tool is exposed.",
+    "missing_normal_entry_sessions": [
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
+    ],
+    "missing_trader_x_review_sessions": [
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
+    ],
+    "current_session": "2026-11-20",
+    "current_session_status": "blocked-during-scheduled-window",
+    "next_review_completed": false
+  }
 }

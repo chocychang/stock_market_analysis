@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-19T13:48:00.892Z",
+  "updated_at": "2026-11-20T15:04:52Z",
   "name": "大C",
-  "status": "延遲恢復：CDNS11/18收盤低於10%退出參考；未成交，NAV未含CEG應收47.34",
+  "status": "11/20執行受阻：本機帳本唯讀；最後估值11/18，未完成交易評估",
   "capital_usd": 300000,
   "cash_usd": 173398.15610000008,
   "nav_usd": 291686.1661000001,
@@ -236,8 +236,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-11-19-entry-recovery-20261119134800892-r2.html",
-  "version": "2026-11-19-entry-recovery-20261119134800892-da-c-r2",
+  "latest_report": "reports/da-c-2026-11-20-c-blocked-readonly-20261120150452.html",
+  "version": "2026-11-20-c-blocked-readonly-20261120150452-da-c",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -265,14 +265,14 @@
     "decision_at": "2026-10-27T15:08:36Z",
     "limitation": "Delayed quote-based paper execution; not an actual brokerage fill or guaranteed execution. No subsequent independent mark yet."
   },
-  "review": "原觸發2026-11-18T19:14:56Z已錯過23:00窗口；平台寫入權限等待後，實際可寫恢復開始為2026-11-19T13:45:37Z（台灣21:45），此時仍在11/19美股正常盤開盤前。當前恢復不形成新買賣、不補填漏跑成交，也不算今晚23:00或隔日01:00已完成。 缺少NY11/17、11/18晚間正常評估；兩個交易X另缺NY11/16、11/17、11/18的01:00評估。既有10/29、11/2、11/9、11/11缺漏仍保留。 CDNS11/18 Close305.82較成本約跌10.35%，已低於307.02672退出參考；當前沒有合格新決策後正常盤報價，未建立或宣稱成交。NET資本結構提案未核實生效，107股不變。",
+  "review": "本次在台灣11/20 23:00準時觸發，但環境僅允許讀取本機專案，且沒有可用的寫入授權工具，無法保存started_at、決策意圖、原始行情與原子帳本，因此交易評估未完成。沒有模擬成交，也沒有將執行受阻記成策略不買；網站只發布失敗狀態，沒有改寫帳本現金、股數或歷史事件。 CDNS先前11/18收盤已低於原退出參考線，風險提醒仍保留；本次沒有11/20新合格報價或已保存賣單，不能宣稱已退出或已確認續抱。",
   "previous_close": {
     "session": "2026-11-13",
     "nav_usd": 295163.57610000006,
     "valuation_type": "close",
     "as_of": "2026-11-13T21:00:00.000Z"
   },
-  "valuation_note": "以11/18正常盤日K Close估值，收盤時段端點21:00Z；資料於11/19 13:45–13:47Z實際取得。mark_at是日K端點，quote_at為null，不能當作可成交的逐筆報價。 CEG應收47.3415未含NAV。",
+  "valuation_note": "最後成功保存的估值截止2026-11-18正常盤收盤；本次沒有更新11/20行情或執行買賣。以下金額沿用舊估值，不能當作今天即時績效。 CEG應收股息47.3415未含NAV。",
   "realized_pnl_usd": -7364.78595999999,
   "performance": {
     "return": -0.027712779666666368,
@@ -284,6 +284,10 @@
     "sharpe": null
   },
   "limitations": [
+    "本頁是本次執行失敗狀態，不能視為已完成正常交易評估、已檢查即時停損或已更新績效。",
+    "估值保留原11/18來源與取得時間，沒有把舊價格重新標成11/20行情。",
+    "NY11/17、11/18、11/19晚間評估仍缺漏；交易X另缺NY11/16至11/19的01:00檢查。既有歷史缺漏不刪除、不回填成交。",
+    "當前11/20正在23:00窗口內遇到阻擋，未提前標成歷史漏跑；下一次台灣11/21 01:00尚未執行。",
     "原觸發2026-11-18T19:14:56Z已錯過23:00窗口；平台寫入權限等待後，實際可寫恢復開始為2026-11-19T13:45:37Z（台灣21:45），此時仍在11/19美股正常盤開盤前。當前恢復不形成新買賣、不補填漏跑成交，也不算今晚23:00或隔日01:00已完成。",
     "缺少NY11/17、11/18晚間正常評估；兩個交易X另缺NY11/16、11/17、11/18的01:00評估。既有10/29、11/2、11/9、11/11缺漏仍保留。",
     "以11/18正常盤日K Close估值，收盤時段端點21:00Z；資料於11/19 13:45–13:47Z實際取得。mark_at是日K端點，quote_at為null，不能當作可成交的逐筆報價。",
@@ -292,57 +296,47 @@
     "股息尚未完整自動入帳。CEG已知毛額應收47.3415仍不含在現金或此NAV，付款12/4前不加可用現金；因此不是完整含息績效。"
   ],
   "operational_status": {
-    "status": "off-schedule-preopen-recovery",
-    "run_type": "off-schedule-recovery",
+    "status": "blocked-local-persistence",
+    "run_type": "scheduled-execution-failure-report",
+    "market_date": "2026-11-20",
     "schedule_phase": "entry",
-    "market_date": "2026-11-19",
-    "intended_market_session": "2026-11-18",
-    "regular_session": false,
-    "market_closed": false,
-    "trigger_received_at": "2026-11-18T19:14:56.554Z",
-    "recovery_evaluated_at": "2026-11-19T13:48:00.892Z",
-    "evaluated_at": "2026-11-16T15:24:08.361Z",
-    "last_regular_session_evaluation": {
-      "evaluated_at": "2026-11-16T15:24:08.361Z",
-      "report": "reports/da-c-2026-11-16-entry-20261116152209349-r2.html"
-    },
+    "trigger_received_at": "2026-11-20T15:00:19.097Z",
+    "started_at": "2026-11-20T15:00:33Z",
+    "evaluated_at": null,
+    "read_only_checks_completed_at": "2026-11-20T15:04:52Z",
     "scheduled_evaluation_completed": false,
     "scheduled_review_completed": false,
-    "open_at": "2026-11-19T14:30:00.000Z",
-    "close_at": "2026-11-19T21:00:00.000Z",
+    "regular_session_evaluation_completed": false,
+    "last_successful_operational_status": {
+      "status": "off-schedule-preopen-recovery",
+      "run_type": "off-schedule-recovery",
+      "schedule_phase": "entry",
+      "market_date": "2026-11-19",
+      "intended_market_session": "2026-11-18",
+      "regular_session": false,
+      "market_closed": false,
+      "trigger_received_at": "2026-11-18T19:14:56.554Z",
+      "recovery_evaluated_at": "2026-11-19T13:48:00.892Z",
+      "evaluated_at": "2026-11-16T15:24:08.361Z",
+      "last_regular_session_evaluation": {
+        "evaluated_at": "2026-11-16T15:24:08.361Z",
+        "report": "reports/da-c-2026-11-16-entry-20261116152209349-r2.html"
+      },
+      "scheduled_evaluation_completed": false,
+      "scheduled_review_completed": false,
+      "open_at": "2026-11-19T14:30:00.000Z",
+      "close_at": "2026-11-19T21:00:00.000Z",
+      "published_at": null,
+      "pages_verified_at": null
+    },
+    "local_health_recorded": false,
     "published_at": null,
-    "pages_verified_at": null
+    "pages_verified_at": null,
+    "evaluation_completed_at": null,
+    "current_run_trade_ledger_persisted": false,
+    "current_trade_intents_created": false
   },
-  "news_decisions": [
-    {
-      "as_of": "2026-11-19T13:48:00.892Z",
-      "action": "NO_ORDER_RECOVERY_ONLY",
-      "summary": "有限官方列表與定向搜尋未核實11/16後足以否定四持股論點的新正式事件或生效拆股；這不是全面無風險確認。CDNS及CSCO動態列表存在文章級覆蓋缺口。",
-      "sources": [
-        {
-          "ticker": "CDNS",
-          "source_url": "https://investor.cadence.com/news/default.aspx",
-          "coverage_limited": true
-        },
-        {
-          "ticker": "NET",
-          "source_url": "https://www.cloudflare.com/press/press-releases/",
-          "latest_visible_date": "2026-11-13"
-        },
-        {
-          "ticker": "CEG",
-          "source_url": "https://constellationenergy.gcs-web.com/financial-information/sec-filings",
-          "latest_visible_material_date": "2026-11-09"
-        },
-        {
-          "ticker": "CSCO",
-          "source_url": "https://newsroom.cisco.com/c/r/newsroom/en/us/press-releases.html",
-          "coverage_limited": true
-        }
-      ],
-      "event_time_caution": "11/19取得的資訊僅屬本次恢復，不回寫11/18當時已知資訊。"
-    }
-  ],
+  "news_decisions": [],
   "unrealized_pnl_usd": -949.0479399999895,
   "latest_executions": [],
   "trade_reviews": [
@@ -522,5 +516,63 @@
   ],
   "previous_report": "reports/da-c-2026-11-15-entry-closed-20261115150244942.html",
   "trades": [],
-  "previous_operational_report": "reports/da-c-2026-11-16-entry-20261116152209349-r2.html"
+  "previous_operational_report": "reports/da-c-2026-11-19-entry-recovery-20261119134800892-r2.html",
+  "performance_data_as_of": "2026-11-18T21:00:00.000Z",
+  "execution_failure": {
+    "code": "LOCAL_WORKSPACE_READ_ONLY",
+    "trigger_received_at": "2026-11-20T15:00:19.097Z",
+    "started_at": "2026-11-20T15:00:33Z",
+    "read_only_checks_completed_at": "2026-11-20T15:04:52Z",
+    "evaluation_completed_at": null,
+    "local_health_recorded": false,
+    "local_ledger_recorded": false,
+    "transaction_decisions_created": false,
+    "recorded_new_trades": 0,
+    "trade_evaluation_completed": false,
+    "source_of_failure": "Current environment filesystem policy is read-only; no permission request tool is exposed.",
+    "missing_normal_entry_sessions": [
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
+    ],
+    "missing_trader_x_review_sessions": [
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
+    ],
+    "current_session": "2026-11-20",
+    "current_session_status": "blocked-during-scheduled-window",
+    "next_review_completed": false
+  },
+  "news_diagnostic": {
+    "as_of": "2026-11-20T15:04:52Z",
+    "completed_trade_evaluation": false,
+    "summary": "有限官方查核未核實新增合格BUY或基本面SELL；價格退出檢查未完成。CEG11/19 Form144、NET資安更新不直接當新增財測上修。CDNS/CSCO動態列表仍有覆蓋缺口。",
+    "sources": [
+      {
+        "ticker": "CEG",
+        "published_date": "2026-11-19",
+        "published_at": null,
+        "url": "https://constellationenergy.gcs-web.com/financial-information/sec-filings"
+      },
+      {
+        "ticker": "NET",
+        "published_date": "2026-11-19",
+        "published_at": null,
+        "url": "https://www.cloudflare.com/press/press-releases/"
+      },
+      {
+        "ticker": "CDNS",
+        "url": "https://investor.cadence.com/news/default.aspx",
+        "coverage_limited": true
+      },
+      {
+        "ticker": "CSCO",
+        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/press-releases.html",
+        "coverage_limited": true
+      }
+    ],
+    "new_order_created": false
+  }
 }
