@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2026-11-23-c-blocked-readonly-20261123150318-trader-x-rebound",
+  "version": "2026-11-23-review-blocked-readonly-20261123170143-trader-x-rebound",
   "name": "交易X跌深反彈",
   "strategy_kind": "rebound",
   "strategy_label": "跌深反彈實驗",
@@ -8,9 +8,9 @@
   "report_prefix": "trader-x-rebound",
   "configuration_revision": "2026-11-13-cross-sector-40-v1",
   "configuration_updated_at": "2026-11-13T15:52:05.661Z",
-  "updated_at": "2026-11-23T15:03:18Z",
+  "updated_at": "2026-11-23T17:01:43Z",
   "activated_at": "2026-11-13T15:52:05.661Z",
-  "status": "11/23執行受阻：帳本唯讀；新風險診斷已更新，NAV仍截止11/18",
+  "status": "11/24 01:00唯讀受阻：反彈帳戶未完整評估；未成交，NAV仍11/18",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
@@ -30,7 +30,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "ASML",
@@ -41,7 +41,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "GEV",
@@ -52,7 +52,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "MSFT",
@@ -63,7 +63,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "AMZN",
@@ -74,7 +74,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "CRWD",
@@ -85,7 +85,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "GE",
@@ -96,7 +96,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "LMT",
@@ -107,7 +107,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "JNJ",
@@ -118,7 +118,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "GOOGL",
@@ -129,7 +129,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "CDNS",
@@ -140,7 +140,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "NET",
@@ -151,7 +151,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "NVDA",
@@ -162,7 +162,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "AAPL",
@@ -173,7 +173,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "AVGO",
@@ -184,7 +184,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "META",
@@ -195,7 +195,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "TSLA",
@@ -206,7 +206,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "ORCL",
@@ -217,7 +217,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "QCOM",
@@ -228,7 +228,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "PLD",
@@ -239,7 +239,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "MU",
@@ -250,7 +250,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "LIN",
@@ -261,7 +261,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "JPM",
@@ -272,7 +272,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "BAC",
@@ -283,7 +283,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "GS",
@@ -294,7 +294,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "V",
@@ -305,7 +305,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "MA",
@@ -316,7 +316,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "UNH",
@@ -327,7 +327,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "LLY",
@@ -338,7 +338,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "ABBV",
@@ -349,7 +349,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "XOM",
@@ -360,7 +360,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "CVX",
@@ -371,7 +371,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "COST",
@@ -382,7 +382,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "WMT",
@@ -393,7 +393,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "HD",
@@ -404,7 +404,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "MCD",
@@ -415,7 +415,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "CAT",
@@ -426,7 +426,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "HON",
@@ -437,7 +437,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "NEE",
@@ -448,7 +448,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     },
     {
       "ticker": "DUK",
@@ -459,7 +459,7 @@
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "無法保存本機輸入、決策及原子帳本，未執行本次完整進場掃描；不是規則未通過。"
+      "not_bought_reason": "本機無法保存輸入、意圖及原子帳本，未執行本次review完整進場掃描；不是規則不符。"
     }
   ],
   "universe_evaluation": {
@@ -519,7 +519,9 @@
     "scanned_count": 0,
     "universe_count": 40,
     "signal_session": null,
-    "current_scan_completed": false
+    "current_scan_completed": false,
+    "phase": "review",
+    "expected_signal_session": "2026-11-20"
   },
   "performance": {
     "return": 0,
@@ -599,31 +601,44 @@
     "frozen_at": "2026-11-10T16:26:29.925Z",
     "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
   },
-  "latest_report": "reports/trader-x-rebound-2026-11-23-c-blocked-readonly-20261123150318.html",
-  "review": "今晚已於23時窗口查核，但本機環境仍唯讀，無法保存started_at、交易意圖、原始行情或原子帳本。沒有新增成交、pending或已保存買賣決策；這是執行受阻，不是策略已完成不買。網站帳戶金額與持股沿用既有快照，估值仍截止11/18。 帳戶仍全現金；40檔未做本次完整資料驗證與規則掃描，不能說沒有反彈訊號。",
-  "valuation_note": "帳戶金額沿用最後保存的2026-11-18正常盤收盤估值；11/23更新受阻狀態及獨立風險診斷，新價格未寫入NAV或損益。",
+  "latest_report": "reports/trader-x-rebound-2026-11-23-review-blocked-readonly-20261123170143.html",
+  "review": "已在台灣11/24 01:00窗口獨立查核，屬美東11/23的phase=review。本機仍唯讀，無法保存health、輸入與交易意圖或執行原子帳本；沒有新增成交、pending或持久BUY/SELL決策。這是執行受阻，不是策略已完成不買；沒有把23:00查核當01:00完成。 帳戶仍全現金；完整40檔資料與規則掃描未執行，不能據此說沒有反彈訊號。",
+  "valuation_note": "網站帳戶金額、持股與損益沿用11/18正常盤收盤估值；本次01:00僅新增唯讀風險查核與受阻狀態，新價格未加入NAV或損益。",
   "limitations": [
-    "本次僅完成唯讀查核與公開診斷，未完成正常交易評估、持久保存、原始資料本機封存或記帳，pending仍為0。",
-    "帳戶NAV與持股估值仍截止11/18；本次新風險價格未寫入NAV。行情單一來源且有延遲，不能當保證成交價格。",
-    "CDNS今天第20交易日為重新檢視期限，不等於自動時間清倉。X的GE為第8日，其餘第7日，尚未到10日時間退出。",
-    "最後正常評估11/16；11/17、18、19、20晚間未完成，11/20為已觸發受阻。兩X另缺11/16至11/20正常盤01:00評估；11/21及22週末休市。",
-    "11/23當晚已受阻，未標成完整完成；下一個01:00尚未執行。既有更早缺漏及舊報告保留，不回填漏跑成交。",
-    "11/26感恩節休市、11/27正常盤提早18:00Z收盤。實際執行須重新核對時鐘及交易所公告。",
-    "完整歷史回測、SPY對照、Sharpe及完整收盤MDD未完成，短期損益不能證明策略有效。",
-    "本機排程需要主機與app可執行、實際觸發及可寫入專案；本次未修改排程。"
+    "01:00是獨立review時段，可自行形成新BUY及SELL；本次因唯讀無法保存，沒有成交或新pending，不以23:00受阻作為策略不買原因。",
+    "網站NAV與持股估值仍截止11/18；新報價僅做風險診斷，未改現金、股數、成本、歷史事件或帳戶損益。",
+    "來源快照均為11/23正常盤分鐘精度、存在延遲；未交叉核對、不補造秒數、不當收盤績效或成交保證。",
+    "順勢突破帳戶的JNJ低於原停損的風險提醒延續；尚未建立賣單。其餘快照在原停損/停利之間，不等於完成HOLD決策。先前日K或盤中最低價不回填為賣出。",
+    "GE仍為第8個交易日，其餘第7日；同NY11/23的23:00及01:00不多算一天。11/26休市、11/27提早18:00Z收盤，10日退出日為GE11/25、其餘11/27。",
+    "最後正常評估仍11/16；entry未完成11/17、18、19、20，review未完成11/16至11/20。11/20已觸發受阻；11/21與22週末休市。11/23兩時段各自受阻，舊缺漏不刪除、不回填。",
+    "40檔本次完整進場掃描0/40，signal_matched為null；不能稱沒有訊號。最後已完成掃描與規則版本保留。",
+    "完整歷史回測、SPY對照、Sharpe及完整收盤MDD未完成；目前無法由短期報酬證明策略有效。股息、公司行動及個人稅費尚未完整自動入帳。",
+    "本次只更新兩X公開診斷報告，不修改小C、大C、首頁或排程；本機任務需主機與app可執行、實際觸發及可寫入專案。"
   ],
   "operational_status": {
     "status": "blocked-local-persistence",
-    "run_type": "scheduled-execution-failure-with-read-only-risk-diagnostic",
+    "run_type": "scheduled-review-failure-with-read-only-risk-diagnostic",
     "market_date": "2026-11-23",
-    "schedule_phase": "entry",
-    "trigger_received_at": "2026-11-23T14:55:45.055Z",
-    "started_at": "2026-11-23T15:00:07Z",
+    "schedule_phase": "review",
+    "trigger_received_at": "2026-11-23T16:55:46.715Z",
+    "precheck_started_at": "2026-11-23T16:56:09Z",
+    "review_started_at": "2026-11-23T17:00:22Z",
+    "read_only_checks_completed_at": "2026-11-23T17:01:43Z",
+    "quote_response_received_at": "2026-11-23T17:00:23Z",
     "evaluated_at": null,
-    "read_only_checks_completed_at": "2026-11-23T15:03:18Z",
+    "evaluation_completed_at": null,
+    "published_at": null,
+    "pages_verified_at": null,
     "scheduled_evaluation_completed": false,
     "scheduled_review_completed": false,
     "regular_session_evaluation_completed": false,
+    "local_health_recorded": false,
+    "current_run_trade_ledger_persisted": false,
+    "current_trade_intents_created": false,
+    "pending_created": false,
+    "entry_independent": true,
+    "open_at": "2026-11-23T14:30:00Z",
+    "close_at": "2026-11-23T21:00:00Z",
     "last_successful_operational_status": {
       "status": "off-schedule-preopen-recovery",
       "run_type": "off-schedule-recovery",
@@ -646,20 +661,11 @@
       "published_at": null,
       "pages_verified_at": null
     },
-    "local_health_recorded": false,
-    "published_at": null,
-    "pages_verified_at": null,
-    "evaluation_completed_at": null,
-    "current_run_trade_ledger_persisted": false,
-    "current_trade_intents_created": false,
-    "precheck_started_at": "2026-11-23T14:55:56Z",
-    "pending_created": false,
-    "open_at": "2026-11-23T14:30:00Z",
-    "close_at": "2026-11-23T21:00:00Z",
     "previous_attempt": {
-      "version": "2026-11-20-c-blocked-readonly-20261120150452-trader-x-rebound",
-      "report": "reports/trader-x-rebound-2026-11-20-c-blocked-readonly-20261120150452.html",
-      "market_date": "2026-11-20"
+      "phase": "entry",
+      "version": "2026-11-23-c-blocked-readonly-20261123150318-trader-x-rebound",
+      "report": "reports/trader-x-rebound-2026-11-23-c-blocked-readonly-20261123150318.html",
+      "market_date": "2026-11-23"
     }
   },
   "planned_risk_usd": 0,
@@ -704,7 +710,7 @@
   "valuation_session": "2026-11-18",
   "valuation_ended_at": "2026-11-18T21:00:00.000Z",
   "valuation_retrieved_at": "2026-11-19T13:47:19.941Z",
-  "previous_operational_report": "reports/trader-x-rebound-2026-11-20-c-blocked-readonly-20261120150452.html",
+  "previous_operational_report": "reports/trader-x-rebound-2026-11-23-c-blocked-readonly-20261123150318.html",
   "previous_trading_report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html",
   "previous_trading_evaluated_at": "2026-11-16T15:29:52.574Z",
   "last_completed_signal_evaluation": {
@@ -1980,12 +1986,12 @@
   "performance_data_as_of": "2026-11-18T21:00:00.000Z",
   "execution_failure": {
     "code": "LOCAL_FILESYSTEM_READ_ONLY",
-    "detected_at": "2026-11-23T14:55:56Z",
-    "scheduled_window_rechecked_at": "2026-11-23T15:00:07Z",
-    "message": "專案唯讀且無可用寫入授權工具，無法保存health、決策、原始行情或原子帳本。只透過已授權GitHub發布診斷，不改帳本經濟狀態。"
+    "detected_at": "2026-11-23T16:56:09Z",
+    "scheduled_window_rechecked_at": "2026-11-23T17:00:22Z",
+    "message": "本機專案仍唯讀，且無可用寫入授權工具；未保存本次health、輸入、交易意圖或原子帳本。行情可取得，未以缺價取代實際阻礙。"
   },
   "missing_phase_audit": {
-    "as_of": "2026-11-23T15:03:18Z",
+    "as_of": "2026-11-23T17:01:43Z",
     "last_completed_regular_evaluation": "2026-11-16",
     "entry_incomplete_dates": [
       "2026-11-17",
@@ -2007,23 +2013,105 @@
     ],
     "current_entry_completed": false,
     "next_review_completed": false,
-    "older_gap_records_preserved_in_previous_reports": true
+    "older_gap_records_preserved_in_previous_reports": true,
+    "current_review_completed": false,
+    "current_entry_status": "blocked",
+    "current_review_status": "blocked"
   },
   "risk_diagnostic": {
     "risk_diagnostic_only": true,
-    "checked_at": "2026-11-23T15:03:18Z",
+    "checked_at": "2026-11-23T17:01:43Z",
     "included_in_nav": false,
     "trade_intents_created": false,
     "pending_created": false,
     "ledger_updated": false,
     "observations": [],
-    "query_failures": [],
-    "note": "分鐘精度時間不補造秒數，日K端點不當作成交時間；沒有持久意圖或成交。"
+    "prior_entry_report": "reports/trader-x-rebound-2026-11-23-c-blocked-readonly-20261123150318.html",
+    "note": "01:00查詢的來源快照均早於本次查核，且沒有已保存交易意圖；僅供風險診斷。分鐘精度不補造秒數，不當成交時間。"
   },
   "calendar_review_diagnostic": {
     "as_of": "2026-11-23",
+    "phase": "review",
+    "same_market_date_as_entry": true,
     "ledger_updated": false,
     "holdings": [],
-    "note": "僅依交易日曆推算，未改寫state持有天數，也不代表缺漏期間已評估。"
+    "note": "同一美東交易日不重複加一天；只依交易日曆推算，不代表缺漏期間已完成風控。"
+  },
+  "entry_phase_status": {
+    "status": "blocked-local-persistence",
+    "run_type": "scheduled-execution-failure-with-read-only-risk-diagnostic",
+    "market_date": "2026-11-23",
+    "schedule_phase": "entry",
+    "trigger_received_at": "2026-11-23T14:55:45.055Z",
+    "started_at": "2026-11-23T15:00:07Z",
+    "evaluated_at": null,
+    "read_only_checks_completed_at": "2026-11-23T15:03:18Z",
+    "scheduled_evaluation_completed": false,
+    "scheduled_review_completed": false,
+    "regular_session_evaluation_completed": false,
+    "last_successful_operational_status": {
+      "status": "off-schedule-preopen-recovery",
+      "run_type": "off-schedule-recovery",
+      "schedule_phase": "entry",
+      "market_date": "2026-11-19",
+      "intended_market_session": "2026-11-18",
+      "regular_session": false,
+      "market_closed": false,
+      "trigger_received_at": "2026-11-18T19:14:56.554Z",
+      "recovery_evaluated_at": "2026-11-19T13:48:00.892Z",
+      "evaluated_at": "2026-11-16T15:29:52.574Z",
+      "last_regular_session_evaluation": {
+        "evaluated_at": "2026-11-16T15:29:52.574Z",
+        "report": "reports/trader-x-rebound-2026-11-16-entry-intent-20261116152952574-reviewed.html"
+      },
+      "scheduled_evaluation_completed": false,
+      "scheduled_review_completed": false,
+      "open_at": "2026-11-19T14:30:00.000Z",
+      "close_at": "2026-11-19T21:00:00.000Z",
+      "published_at": null,
+      "pages_verified_at": null
+    },
+    "local_health_recorded": false,
+    "published_at": null,
+    "pages_verified_at": null,
+    "evaluation_completed_at": null,
+    "current_run_trade_ledger_persisted": false,
+    "current_trade_intents_created": false,
+    "precheck_started_at": "2026-11-23T14:55:56Z",
+    "pending_created": false,
+    "open_at": "2026-11-23T14:30:00Z",
+    "close_at": "2026-11-23T21:00:00Z",
+    "previous_attempt": {
+      "version": "2026-11-20-c-blocked-readonly-20261120150452-trader-x-rebound",
+      "report": "reports/trader-x-rebound-2026-11-20-c-blocked-readonly-20261120150452.html",
+      "market_date": "2026-11-20"
+    },
+    "report": "reports/trader-x-rebound-2026-11-23-c-blocked-readonly-20261123150318.html",
+    "version": "2026-11-23-c-blocked-readonly-20261123150318-trader-x-rebound"
+  },
+  "review_phase_status": {
+    "status": "blocked-local-persistence",
+    "run_type": "scheduled-review-failure-with-read-only-risk-diagnostic",
+    "market_date": "2026-11-23",
+    "schedule_phase": "review",
+    "trigger_received_at": "2026-11-23T16:55:46.715Z",
+    "precheck_started_at": "2026-11-23T16:56:09Z",
+    "review_started_at": "2026-11-23T17:00:22Z",
+    "read_only_checks_completed_at": "2026-11-23T17:01:43Z",
+    "quote_response_received_at": "2026-11-23T17:00:23Z",
+    "evaluated_at": null,
+    "evaluation_completed_at": null,
+    "published_at": null,
+    "pages_verified_at": null,
+    "scheduled_evaluation_completed": false,
+    "scheduled_review_completed": false,
+    "regular_session_evaluation_completed": false,
+    "local_health_recorded": false,
+    "current_run_trade_ledger_persisted": false,
+    "current_trade_intents_created": false,
+    "pending_created": false,
+    "entry_independent": true,
+    "open_at": "2026-11-23T14:30:00Z",
+    "close_at": "2026-11-23T21:00:00Z"
   }
 }
