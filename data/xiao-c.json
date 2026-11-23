@@ -8,13 +8,13 @@
   "positions": [],
   "trades": [],
   "review": "今晚已於23時窗口查核，但本機環境仍唯讀，無法保存started_at、交易意圖、原始行情或原子帳本。沒有新增成交、pending或已保存買賣決策；這是執行受阻，不是策略已完成不買。網站帳戶金額與持股沿用既有快照，估值仍截止11/18。 今日08:07盤前封存12檔全WATCH，來源hash與GitHub一致；沒有可執行訂單。這是唯讀診斷，未記成帳本NO_TRADE。",
-  "latest_report": "reports/xiao-c-2026-11-23-c-blocked-readonly-20261123150318.html",
+  "latest_report": "reports/xiao-c-2026-11-23-c-blocked-readonly-20261123150318-r2.html",
   "methodology": "xiao-c-methodology.html",
   "run_at": "2026-11-19T13:48:00.892Z",
   "market_session": "2026-11-19",
   "signal_archive_valid": null,
   "valuation_type": "close",
-  "version": "2026-11-23-c-blocked-readonly-20261123150318-xiao-c",
+  "version": "2026-11-23-c-blocked-readonly-20261123150318-xiao-c-r2",
   "source_report_type": "read-only-morning-WATCH-diagnostic",
   "source_execution_allowed": false,
   "source_commit": "006acd9972de90ab1b3ae54c1872e16fbe4c21e1",
@@ -157,5 +157,7 @@
     "observations": [],
     "query_failures": [],
     "note": "分鐘精度時間不補造秒數，日K端點不當作成交時間；沒有持久意圖或成交。"
-  }
+  },
+  "name": "小C",
+  "previous_report_revision": "reports/xiao-c-2026-11-23-c-blocked-readonly-20261123150318.html"
 }
