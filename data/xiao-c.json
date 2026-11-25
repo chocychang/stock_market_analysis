@@ -1,33 +1,33 @@
 {
-  "updated_at": "2026-11-24T15:03:12Z",
-  "status": "11/24執行受阻：帳本唯讀；診斷已更新，未成交，NAV仍11/18",
+  "updated_at": "2026-11-25T15:03:22Z",
+  "status": "11/25受阻：缺晨間封存且帳本唯讀；未成交，NAV仍11/18",
   "capital_usd": 300000,
   "cash_usd": 300000,
   "nav_usd": 300000,
   "pnl_usd": 0,
   "positions": [],
   "trades": [],
-  "review": "本次在23時窗口完成唯讀查核，但專案仍唯讀且無可用寫入授權工具，無法保存health、原始行情、交易意圖或原子帳本。沒有新增成交、pending或持久買賣決策；不把保存失敗當成策略不買。帳戶金額沿用11/18快照。 今日08:09盤前封存12檔全WATCH，來源blob及SHA256已核對，沒有可執行BUY/SELL；未記成帳本NO_TRADE。",
-  "latest_report": "reports/xiao-c-2026-11-24-c-blocked-readonly-20261124150312.html",
+  "review": "本次在23:00窗口完成唯讀診斷；專案仍唯讀且無可用寫入授權工具，無法保存health、輸入、交易意圖或原子帳本。沒有新增成交、pending或持久BUY/SELL，不把保存失敗當策略不買；新價格未寫入NAV。 可用本機歸檔與GitHub main未取得11/25晨間封存，不能沿用11/24的WATCH冒充今天訊號，也不補造開盤單。缺晨報只阻小C，不作其他角色的交易限制。",
+  "latest_report": "reports/xiao-c-2026-11-25-c-blocked-readonly-20261125150322.html",
   "methodology": "xiao-c-methodology.html",
   "run_at": "2026-11-19T13:48:00.892Z",
   "market_session": "2026-11-19",
-  "signal_archive_valid": null,
+  "signal_archive_valid": false,
   "valuation_type": "close",
-  "version": "2026-11-24-c-blocked-readonly-20261124150312-xiao-c",
-  "source_report_type": "read-only-morning-WATCH-diagnostic",
+  "version": "2026-11-25-c-blocked-readonly-20261125150322-xiao-c",
+  "source_report_type": "missing-current-morning-archive",
   "source_execution_allowed": false,
-  "source_commit": "006acd9972de90ab1b3ae54c1872e16fbe4c21e1",
-  "signal_archive_integrity_valid": true,
+  "source_commit": null,
+  "signal_archive_integrity_valid": null,
   "operational_status": {
     "status": "blocked-local-persistence",
     "run_type": "scheduled-entry-failure-with-read-only-diagnostics",
-    "market_date": "2026-11-24",
+    "market_date": "2026-11-25",
     "schedule_phase": "entry",
-    "trigger_received_at": "2026-11-24T14:57:03.717Z",
-    "precheck_started_at": "2026-11-24T14:57:19Z",
-    "started_at": "2026-11-24T15:00:13Z",
-    "read_only_checks_completed_at": "2026-11-24T15:03:12Z",
+    "trigger_received_at": "2026-11-25T14:55:52.018Z",
+    "precheck_started_at": "2026-11-25T14:56:12Z",
+    "started_at": "2026-11-25T15:00:28Z",
+    "read_only_checks_completed_at": "2026-11-25T15:03:22Z",
     "evaluated_at": null,
     "evaluation_completed_at": null,
     "published_at": null,
@@ -39,13 +39,13 @@
     "current_run_trade_ledger_persisted": false,
     "current_trade_intents_created": false,
     "pending_created": false,
-    "open_at": "2026-11-24T14:30:00Z",
-    "close_at": "2026-11-24T21:00:00Z",
+    "open_at": "2026-11-25T14:30:00Z",
+    "close_at": "2026-11-25T21:00:00Z",
     "previous_attempt": {
-      "market_date": "2026-11-23",
+      "market_date": "2026-11-24",
       "phase": "entry",
-      "version": "2026-11-23-c-blocked-readonly-20261123150318-xiao-c-r2",
-      "report": "reports/xiao-c-2026-11-23-c-blocked-readonly-20261123150318-r2.html"
+      "version": "2026-11-24-c-blocked-readonly-20261124150312-xiao-c",
+      "report": "reports/xiao-c-2026-11-24-c-blocked-readonly-20261124150312.html"
     },
     "last_successful_operational_status": {
       "status": "off-schedule-preopen-recovery",
@@ -77,7 +77,7 @@
   "valuation_session": "2026-11-18",
   "valuation_ended_at": "2026-11-18T21:00:00.000Z",
   "valuation_retrieved_at": "2026-11-19T13:47:19.941Z",
-  "valuation_note": "帳戶估值仍截止2026-11-18正常盤收盤；本次新價格、事件候選及股息資格都只做獨立診斷，未計入現金、NAV或損益。",
+  "valuation_note": "帳戶金額與持股估值仍截止2026-11-18正常盤收盤。今天更新的是缺漏、時間退出到期、行情及事件診斷，新價格與未入帳股息不加入現金或NAV。",
   "previous_trading_report": "reports/xiao-c-2026-11-16-entry-20261116152209349-r2.html",
   "previous_trading_evaluated_at": "2026-11-16T15:22:09.349Z",
   "performance": {
@@ -90,128 +90,55 @@
   },
   "close_risk_reference_breaches": [],
   "limitations": [
-    "本次只有唯讀診斷與公開報告，沒有完成持久交易評估、health更新、輸入封存或記帳。",
-    "NAV及持股估值仍截止11/18；新報價未寫入NAV，不能當今日績效。",
-    "自11/17起正常交易評估不完整，原應處理的退出未能依流程執行；不能用這段持股結果驗證策略有效或失效。",
-    "新行情為單一來源分鐘快照且有延遲，不補造秒數、不回填成交；日K最低價不視為當時已監控到的成交價。",
-    "11/26休市、11/27提早18:00Z收盤；X GE第10日為11/25，其餘為11/27。",
-    "完整歷史回測、SPY對照、Sharpe及完整收盤MDD未完成；股息、公司行動、稅費亦未完整自動化。",
-    "本機排程須主機與app可執行、實際觸發及可寫入專案；沒有修改排程或首頁。"
+    "本次僅唯讀診斷與公開報告，沒有保存本機health、輸入、意圖、原子帳本或新成交。",
+    "11/25晨間封存尚未取得，只阻止小C開盤策略；大C與兩X仍獨立核對可用資訊，不受WATCH或缺晨報限制。本次共同阻礙是本機唯讀。",
+    "GE今天第10交易日的時間退出尚未執行；不能把未賣出當策略選擇續抱、延長期限或重新起算。其餘X第9日、第10日為11/27。",
+    "CDNS20日檢視已逾期，CEG及CDNS來源價低於退出參考；價格風險與正式消息規則分開，沒有假稱已賣出。",
+    "新價格為單一來源、延遲分鐘快照，未寫入NAV。NET/COST初始快照無效後採首次有效替代資料；Yahoo交叉核對HTTP429，未當獨立核實。",
+    "突破X毛額股息資格680.40仍未入現金、應收帳本或NAV，CEG既有應收47.3415亦未計入；不是完整含息績效，不自行修改停損或成本。",
+    "自11/17起正常交易評估不完整，原應處理退出未按流程執行，不能用這段持股結果證明原策略有效或失效。",
+    "完整歷史回測、SPY對照、Sharpe與完整收盤MDD未完成。規則、名單、訊號ID與帳戶均未重設。",
+    "11/26感恩節休市、11/27提早18:00Z收盤；下一次台灣11/26 01:00仍屬NY11/25，尚未執行。",
+    "本機工作需要主機與app可執行、實際觸發及可寫入專案；本次未改排程或首頁。"
   ],
-  "source_published_at": "2026-11-20T08:13:16.313557+08:00",
-  "source_pre_open_archive": true,
+  "source_published_at": null,
+  "source_pre_open_archive": false,
   "previous_report": "reports/xiao-c-2026-11-15-entry-closed-20261115150244942.html",
-  "previous_operational_report": "reports/xiao-c-2026-11-23-c-blocked-readonly-20261123150318-r2.html",
-  "source_signal_session": "2026-11-20",
-  "source_signal_expired": false,
+  "previous_operational_report": "reports/xiao-c-2026-11-24-c-blocked-readonly-20261124150312.html",
+  "source_signal_session": "2026-11-25",
+  "source_signal_expired": null,
   "performance_data_as_of": "2026-11-18T21:00:00.000Z",
   "execution_failure": {
     "code": "LOCAL_FILESYSTEM_READ_ONLY",
-    "detected_at": "2026-11-24T14:57:19Z",
-    "scheduled_window_rechecked_at": "2026-11-24T15:00:13Z",
-    "message": "本機無法保存health、決策、原始資料與原子帳本；行情可查但不能將公開報告當帳本成交。"
+    "detected_at": "2026-11-25T14:56:12Z",
+    "scheduled_window_rechecked_at": "2026-11-25T15:00:28Z",
+    "message": "無法保存本機health、行情輸入、意圖與原子帳本；公開報告不冒充成交或正常評估完成。"
   },
   "morning_signal_diagnostic": {
-    "session": "2026-11-24",
-    "frozen_at": "2026-11-24T00:09:14.020312+00:00",
-    "pre_open_archive": true,
-    "source_commit": "d511bb6248ecd2a8eaa6ea99802ca184a1d9d84e",
-    "source_content_sha": "7fcb8418264b70b7fb54665bb62155fc0f1186ed",
-    "source_blob_computed": "7fcb8418264b70b7fb54665bb62155fc0f1186ed",
-    "source_sha256": "c54a8aa6c27e27cf433803a180706df2cd5d4f97fa646b89bfcb46811834788e",
-    "archive_sha256": "c54a8aa6c27e27cf433803a180706df2cd5d4f97fa646b89bfcb46811834788e",
+    "session": "2026-11-25",
+    "available": false,
+    "pre_open_archive": false,
+    "source_commit": null,
+    "source_content_sha": null,
+    "source_blob_verified": null,
+    "counts": null,
+    "verified_orders": null,
     "execution_allowed": false,
-    "counts": {
-      "WATCH": 12
-    },
-    "verified_orders": [],
-    "signals": [
-      {
-        "ticker": "AMD",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://newsroom.amd.com/news/microsoft-running-workload-validation-amd-helios-rackscale-solution/"
-      },
-      {
-        "ticker": "ASML",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-transactions-under-its-current-share-buyback-program-10"
-      },
-      {
-        "ticker": "GEV",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm"
-      },
-      {
-        "ticker": "MSFT",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://nsm.no/aktuelt/nsm-deler-tiltak-mot-sarbarhet-i-azure-api-management"
-      },
-      {
-        "ticker": "AMZN",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization"
-      },
-      {
-        "ticker": "CRWD",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-third-quarter-fiscal-year-2027-financial/"
-      },
-      {
-        "ticker": "GE",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://www.globenewswire.com/news-release/2026/11/23/3408897/0/en/ge-aerospace-defense-systems-leadership-transition.html"
-      },
-      {
-        "ticker": "LMT",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://www.nasa.gov/blogs/quesst/2026/11/23/nasa-officially-takes-ownership-of-x-59-supersonic-aircraft/"
-      },
-      {
-        "ticker": "JNJ",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-Announces-Quarterly-Dividend-for-Fourth-Quarter-2026/default.aspx"
-      },
-      {
-        "ticker": "GOOGL",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://blog.google/innovation-and-ai/models-and-research/quantum-computing/putting-one-of-quantum-mechanics-deepest-features-to-test-at-scale/"
-      },
-      {
-        "ticker": "CDNS",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://investor.cadence.com/news/news-details/2026/Cadence-Reports-Third-Quarter-2026-Financial-Results/default.aspx"
-      },
-      {
-        "ticker": "NET",
-        "action": "WATCH",
-        "conditions_verified": false,
-        "source": "https://www.cloudflarestatus.com/incidents/00dp7cliyqqt"
-      }
-    ],
     "diagnostic_only": true,
-    "source_blob_verified": true,
-    "committed_simulation_run": false
+    "committed_simulation_run": false,
+    "reason": "No current-date immutable signal/archive in the known local output directories; GitHub main still at prior 01:00 publication before this run",
+    "last_known_signal_session": "2026-11-24"
   },
   "missing_phase_audit": {
-    "as_of": "2026-11-24T15:03:12Z",
+    "as_of": "2026-11-25T15:03:22Z",
     "last_completed_regular_evaluation": "2026-11-16",
     "entry_incomplete_dates": [
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "review_incomplete_dates": [],
     "closed_dates": [
@@ -220,18 +147,18 @@
     ],
     "current_entry_completed": false,
     "next_review_completed": false,
-    "older_gap_records_preserved_in_previous_reports": true,
-    "note": "11/20及11/23有觸發受阻紀錄，不能說未觸發，也不能算完成。"
+    "older_gap_records_preserved_in_previous_reports": true
   },
   "risk_diagnostic": {
     "risk_diagnostic_only": true,
-    "checked_at": "2026-11-24T15:03:12Z",
+    "checked_at": "2026-11-25T15:03:22Z",
     "included_in_nav": false,
     "trade_intents_created": false,
     "pending_created": false,
     "ledger_updated": false,
     "observations": [],
-    "note": "數值比較不是持久決策；來源僅分鐘精度且報價較早，不補造秒數，不當首次合格成交價。"
+    "query_log": [],
+    "note": "只做風險診斷；時間為分鐘精度、不補造秒數，無持久意圖，不當成成交。"
   },
   "name": "小C",
   "previous_report_revision": "reports/xiao-c-2026-11-23-c-blocked-readonly-20261123150318.html"
