@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2026-11-26-review-closed-readonly-20261126170151-trader-x",
+  "version": "2026-11-27-c-blocked-readonly-20261127150506-trader-x",
   "name": "交易X",
   "strategy_kind": "breakout",
   "strategy_label": "順勢突破",
@@ -8,9 +8,9 @@
   "report_prefix": "trader-x",
   "configuration_revision": "2026-11-13-cross-sector-40-v1",
   "configuration_updated_at": "2026-11-11T23:48:02.122Z",
-  "updated_at": "2026-11-26T17:01:51Z",
+  "updated_at": "2026-11-27T15:05:06Z",
   "activated_at": "2026-11-10T16:26:29.925Z",
-  "status": "11/27 01:00：美東11/26感恩節休市；GE退出仍未執行，估值仍11/18",
+  "status": "11/27：五檔時間退出均到期未執行；帳本唯讀，估值仍11/18",
   "capital_usd": 300000,
   "cash_usd": 234978.048005,
   "nav_usd": 298856.698005,
@@ -224,443 +224,443 @@
   "scan_results": [
     {
       "ticker": "AMD",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "ASML",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "GEV",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "MSFT",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "AMZN",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "CRWD",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "GE",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "LMT",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "JNJ",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "GOOGL",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "CDNS",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "NET",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "NVDA",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "AAPL",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "AVGO",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "META",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "TSLA",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "ORCL",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "QCOM",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "PLD",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "MU",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "LIN",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "JPM",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "BAC",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "GS",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "V",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "MA",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "UNH",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "LLY",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "ABBV",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "XOM",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "CVX",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "COST",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "WMT",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "HD",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "MCD",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "CAT",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "HON",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "NEE",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     },
     {
       "ticker": "DUK",
-      "action": "NOT_EVALUATED_MARKET_CLOSED",
+      "action": "NOT_EVALUATED_PERSISTENCE_BLOCKED",
       "scanned": false,
       "signal_matched": null,
       "signal_session": null,
       "decision_at": null,
       "source_url": null,
       "rule_checks": null,
-      "not_bought_reason": "美東11/26感恩節休市，沒有正常盤成交；本次未做新進場掃描，不當規則未通過。"
+      "not_bought_reason": "本機唯讀無法先保存決策及行情輸入，本次未完成40檔訊號掃描；不是條件已檢查但未通過。11/26休市，上一完整正常盤為11/25。"
     }
   ],
   "universe_evaluation": {
@@ -709,21 +709,21 @@
       "NEE",
       "DUK"
     ],
-    "as_of": "2026-11-26T17:01:51Z",
+    "as_of": "2026-11-27T15:05:06Z",
     "coverage": {
       "total": 40,
       "scanned": 0,
       "not_scanned": 40
     },
-    "evaluation_type": "market-closed-readonly-check",
+    "evaluation_type": "not-evaluated-persistence-blocked",
     "evaluated_at": null,
     "scanned_count": 0,
     "universe_count": 40,
     "signal_session": null,
     "current_scan_completed": false,
-    "phase": "review",
+    "phase": "entry",
     "expected_signal_session": "2026-11-25",
-    "market_closed": true
+    "market_closed": false
   },
   "performance": {
     "return": -0.003811006649999957,
@@ -803,8 +803,8 @@
     "frozen_at": "2026-11-10T16:26:29.925Z",
     "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
   },
-  "latest_report": "reports/trader-x-2026-11-26-review-closed-readonly-20261126170151.html",
-  "review": "已於台灣11/27 01:00窗口獨立核對，仍屬美東11/26感恩節休市。今天沒有正常盤，沒有新增成交、pending或持久買賣決策；未回填前日價格。現有唯讀限制未變，本機health與帳本未更新，休市查核不作正常交易完成紀錄，也不把23:00代替01:00。 GE持有交易日仍10，11/25到期的時間退出未執行；其餘四檔仍9，休市不多算一天。680.40毛額股息資格仍未入帳，帳戶估值仍截至11/18。",
+  "latest_report": "reports/trader-x-2026-11-27-c-blocked-readonly-20261127150506.html",
+  "review": "本機檔案系統唯讀，無法先保存health、決策、行情輸入及原子帳本；本次只完成可核實的訊號／日曆／來源風險查核，未完成正常買賣評估，沒有新增成交或pending。 GE第11交易日，其餘四檔第10交易日，五檔均應處理時間退出，尚未建立持久賣單。價格回升不取消時間規則，不能延長期限或把提醒列為pending。",
   "valuation_note": "帳戶估值仍截止2026-11-18正常盤收盤；本次01:00為休市唯讀查核，沒有更新行情、股數、成本、現金或NAV，未入帳股息亦未納入帳戶金額。",
   "limitations": [
     "本次是01:00獨立休市查核，沒有以23:00當成本次完成；今日沒有正常盤成交。",
@@ -819,20 +819,19 @@
     "只更新兩X的公開報告，不改小C、大C、首頁或排程；本機工作須主機及app可執行並實際觸發。"
   ],
   "operational_status": {
-    "status": "market-closed-local-readonly",
-    "run_type": "scheduled-holiday-review-readonly-check",
-    "market_date": "2026-11-26",
-    "schedule_phase": "review",
-    "trigger_received_at": "2026-11-26T16:58:42.338Z",
-    "precheck_started_at": "2026-11-26T16:59:03Z",
-    "review_started_at": "2026-11-26T17:00:16Z",
-    "read_only_checks_completed_at": "2026-11-26T17:01:51Z",
-    "market_closed": true,
-    "market_holiday": "Thanksgiving",
-    "normal_trading_applicable": false,
-    "regular_session_evaluation_required": false,
-    "closed_market_check_observed": true,
-    "closed_market_check_persisted": false,
+    "status": "blocked-local-readonly",
+    "run_type": "scheduled-entry-readonly-diagnostic",
+    "market_date": "2026-11-27",
+    "schedule_phase": "entry",
+    "trigger_received_at": "2026-11-27T14:58:29.148Z",
+    "precheck_started_at": "2026-11-27T14:59:01Z",
+    "started_at": "2026-11-27T15:00:43Z",
+    "read_only_checks_completed_at": "2026-11-27T15:05:06Z",
+    "market_closed": false,
+    "market_holiday": null,
+    "early_close": true,
+    "normal_trading_applicable": true,
+    "regular_session_evaluation_required": true,
     "local_health_recorded": false,
     "scheduled_evaluation_completed": false,
     "scheduled_review_completed": false,
@@ -844,13 +843,16 @@
     "current_run_trade_ledger_persisted": false,
     "current_trade_intents_created": false,
     "pending_created": false,
-    "entry_independent": true,
-    "open_at": null,
-    "close_at": null,
-    "next_regular_session": "2026-11-27",
-    "next_open_at": "2026-11-27T14:30:00Z",
-    "next_close_at": "2026-11-27T18:00:00Z",
-    "next_early_close": true,
+    "new_execution_count": 0,
+    "open_at": "2026-11-27T14:30:00Z",
+    "close_at": "2026-11-27T18:00:00Z",
+    "calendar_source_url": "https://www.nyse.com/markets/hours-calendars",
+    "previous_attempt": {
+      "market_date": "2026-11-26",
+      "phase": "review",
+      "report": "reports/trader-x-2026-11-26-review-closed-readonly-20261126170151.html",
+      "version": "2026-11-26-review-closed-readonly-20261126170151-trader-x"
+    },
     "last_successful_operational_status": {
       "status": "off-schedule-preopen-recovery",
       "run_type": "off-schedule-recovery",
@@ -872,12 +874,6 @@
       "close_at": "2026-11-19T21:00:00.000Z",
       "published_at": null,
       "pages_verified_at": null
-    },
-    "previous_attempt": {
-      "phase": "entry",
-      "market_date": "2026-11-26",
-      "version": "2026-11-26-closed-readonly-20261126150943-trader-x",
-      "report": "reports/trader-x-2026-11-26-closed-readonly-20261126150943.html"
     }
   },
   "planned_risk_usd": 4441.78366628,
@@ -922,7 +918,7 @@
   "valuation_session": "2026-11-18",
   "valuation_ended_at": "2026-11-18T21:00:00.000Z",
   "valuation_retrieved_at": "2026-11-19T13:47:19.941Z",
-  "previous_operational_report": "reports/trader-x-2026-11-26-closed-readonly-20261126150943.html",
+  "previous_operational_report": "reports/trader-x-2026-11-26-review-closed-readonly-20261126170151.html",
   "previous_trading_report": "reports/trader-x-2026-11-16-entry-intent-20261116152952574-reviewed.html",
   "previous_trading_evaluated_at": "2026-11-16T15:29:52.574Z",
   "last_completed_signal_evaluation": {
@@ -2223,11 +2219,11 @@
   "execution_failure": {
     "code": "LOCAL_FILESYSTEM_READ_ONLY",
     "previously_known": true,
-    "detected_at": "2026-11-26T17:00:16Z",
-    "message": "本機唯讀限制延續，未保存本次health、輸入或原子帳本；正常盤休市及既有未執行退出分開列報。"
+    "detected_at": "2026-11-27T14:59:01Z",
+    "message": "本機檔案系統唯讀，無法先保存health、決策、行情輸入及原子帳本；本次只完成可核實的訊號／日曆／來源風險查核，未完成正常買賣評估，沒有新增成交或pending。"
   },
   "missing_phase_audit": {
-    "as_of": "2026-11-26T17:01:51Z",
+    "as_of": "2026-11-27T15:05:06Z",
     "last_completed_regular_evaluation": "2026-11-16",
     "entry_incomplete_dates": [
       "2026-11-17",
@@ -2258,91 +2254,265 @@
         "reason": "Thanksgiving"
       }
     ],
-    "current_day_is_not_a_missing_regular_session": true,
     "current_entry_persisted": false,
     "next_review_completed": false,
     "older_gap_records_preserved_in_previous_reports": true,
-    "current_review_persisted": false
+    "current_review_persisted": false,
+    "current_entry_status": "blocked-local-readonly",
+    "current_day_classification": "normal-session-early-close"
   },
   "risk_diagnostic": {
     "risk_diagnostic_only": true,
-    "checked_at": "2026-11-26T17:01:51Z",
-    "market_closed": true,
-    "quote_refresh_performed": false,
-    "observations": [],
+    "checked_at": "2026-11-27T15:05:06Z",
+    "included_in_nav": false,
     "trade_intents_created": false,
     "pending_created": false,
     "ledger_updated": false,
-    "included_in_nav": false,
-    "prior_closed_market_report": "reports/trader-x-2026-11-26-closed-readonly-20261126150943.html",
-    "previous_open_market_report": "reports/trader-x-2026-11-25-review-blocked-readonly-20261125170151.html",
-    "note": "今日沒有正常盤，不重抓或重標價格；前次風險來源與時間保留，沒有改成今日或11/25收盤估值。"
+    "observations": [
+      {
+        "ticker": "GE",
+        "price": 320.93,
+        "valid": true,
+        "reason": null,
+        "source_url": "https://stockanalysis.com/stocks/ge/",
+        "source_time_label": "Nov 27, 2026, 9:33 AM EST - Market open",
+        "quote_at": null,
+        "quote_at_minute": "2026-11-27T14:33Z",
+        "source_time_precision": "minute-only-no-invented-seconds",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "risk_diagnostic_only": true,
+        "cross_source_verified": false,
+        "included_in_nav": false,
+        "execution_eligible": false,
+        "trade_intent_created": false,
+        "pending_created": false,
+        "stop_reference": 314.0002371428571,
+        "target_reference": 385.1516657142856,
+        "reference_relation": "between-original-reference-lines",
+        "corporate_action_review_required": false,
+        "calendar_time_exit_due": true,
+        "exit_rule_evaluation": null
+      },
+      {
+        "ticker": "AMD",
+        "price": 406.46,
+        "valid": true,
+        "reason": null,
+        "source_url": "https://stockanalysis.com/stocks/amd/",
+        "source_time_label": "Nov 27, 2026, 9:40 AM EST - Market open",
+        "quote_at": null,
+        "quote_at_minute": "2026-11-27T14:40Z",
+        "source_time_precision": "minute-only-no-invented-seconds",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "risk_diagnostic_only": true,
+        "cross_source_verified": false,
+        "included_in_nav": false,
+        "execution_eligible": false,
+        "trade_intent_created": false,
+        "pending_created": false,
+        "stop_reference": 434.50034285714287,
+        "target_reference": 702.1689142857143,
+        "reference_relation": "below-original-exit-reference",
+        "corporate_action_review_required": false,
+        "calendar_time_exit_due": true,
+        "exit_rule_evaluation": null
+      },
+      {
+        "ticker": "AVGO",
+        "price": 309.09,
+        "valid": true,
+        "reason": null,
+        "source_url": "https://stockanalysis.com/stocks/avgo/",
+        "source_time_label": "Nov 27, 2026, 9:37 AM EST - Market open",
+        "quote_at": null,
+        "quote_at_minute": "2026-11-27T14:37Z",
+        "source_time_precision": "minute-only-no-invented-seconds",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "risk_diagnostic_only": true,
+        "cross_source_verified": false,
+        "included_in_nav": false,
+        "execution_eligible": false,
+        "trade_intent_created": false,
+        "pending_created": false,
+        "stop_reference": 306.63517928571423,
+        "target_reference": 421.15803642857134,
+        "reference_relation": "between-original-reference-lines",
+        "corporate_action_review_required": false,
+        "calendar_time_exit_due": true,
+        "exit_rule_evaluation": null
+      },
+      {
+        "ticker": "COST",
+        "price": 1093.99,
+        "valid": true,
+        "reason": null,
+        "source_url": "https://stockanalysis.com/stocks/cost/",
+        "source_time_label": "Nov 27, 2026, 9:53 AM EST - Market open",
+        "quote_at": null,
+        "quote_at_minute": "2026-11-27T14:53Z",
+        "source_time_precision": "minute-only-no-invented-seconds",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "risk_diagnostic_only": true,
+        "cross_source_verified": false,
+        "included_in_nav": false,
+        "execution_eligible": false,
+        "trade_intent_created": false,
+        "pending_created": false,
+        "stop_reference": 1065.6961314285713,
+        "target_reference": 1194.610417142857,
+        "reference_relation": "between-original-reference-lines",
+        "corporate_action_review_required": true,
+        "calendar_time_exit_due": true,
+        "exit_rule_evaluation": null
+      },
+      {
+        "ticker": "JNJ",
+        "price": 274.28,
+        "valid": true,
+        "reason": null,
+        "source_url": "https://stockanalysis.com/stocks/jnj/",
+        "source_time_label": "Nov 27, 2026, 9:33 AM EST - Market open",
+        "quote_at": null,
+        "quote_at_minute": "2026-11-27T14:33Z",
+        "source_time_precision": "minute-only-no-invented-seconds",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "risk_diagnostic_only": true,
+        "cross_source_verified": false,
+        "included_in_nav": false,
+        "execution_eligible": false,
+        "trade_intent_created": false,
+        "pending_created": false,
+        "stop_reference": 271.85441971428565,
+        "target_reference": 315.5515625714286,
+        "reference_relation": "between-original-reference-lines",
+        "corporate_action_review_required": true,
+        "calendar_time_exit_due": true,
+        "exit_rule_evaluation": null
+      }
+    ],
+    "query_log": [
+      {
+        "ticker": "GE",
+        "source_url": "https://stockanalysis.com/stocks/ge/",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "valid": true,
+        "reason": null
+      },
+      {
+        "ticker": "AMD",
+        "source_url": "https://stockanalysis.com/stocks/amd/",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "valid": true,
+        "reason": null
+      },
+      {
+        "ticker": "AVGO",
+        "source_url": "https://stockanalysis.com/stocks/avgo/",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "valid": true,
+        "reason": null
+      },
+      {
+        "ticker": "COST",
+        "source_url": "https://stockanalysis.com/stocks/cost/",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "valid": true,
+        "reason": null
+      },
+      {
+        "ticker": "JNJ",
+        "source_url": "https://stockanalysis.com/stocks/jnj/",
+        "request_started_at": "2026-11-27T15:00:43Z",
+        "response_received_recorded_at": "2026-11-27T15:00:46Z",
+        "valid": true,
+        "reason": null
+      }
+    ],
+    "note": "原始公共頁面只在本次工具回應中核對，未能保存本機原始行情檔；時間僅有分鐘精度、不補造秒數。單一來源快照不當成交價、不更新NAV、不代表完整風控通過；價格回升不刪除前報告風險歷史。"
   },
   "calendar_review_diagnostic": {
-    "as_of": "2026-11-26",
+    "as_of": "2026-11-27",
+    "checked_at": "2026-11-27T15:05:06Z",
+    "phase": "entry",
+    "market_closed": false,
     "ledger_updated": false,
     "holdings": [
       {
         "ticker": "GE",
-        "holding_sessions": 10,
+        "holding_sessions": 11,
         "time_exit_due": "2026-11-25",
         "time_exit_due_today": false,
         "sell_intent_created": false,
         "time_exit_executed": false,
-        "time_exit_overdue": true
+        "time_exit_overdue": true,
+        "time_exit_due_or_overdue": true
       },
       {
         "ticker": "AMD",
-        "holding_sessions": 9,
+        "holding_sessions": 10,
         "time_exit_due": "2026-11-27",
-        "time_exit_due_today": false,
+        "time_exit_due_today": true,
         "sell_intent_created": false,
-        "time_exit_executed": false
+        "time_exit_executed": false,
+        "time_exit_due_or_overdue": true,
+        "time_exit_overdue": false
       },
       {
         "ticker": "AVGO",
-        "holding_sessions": 9,
+        "holding_sessions": 10,
         "time_exit_due": "2026-11-27",
-        "time_exit_due_today": false,
+        "time_exit_due_today": true,
         "sell_intent_created": false,
-        "time_exit_executed": false
+        "time_exit_executed": false,
+        "time_exit_due_or_overdue": true,
+        "time_exit_overdue": false
       },
       {
         "ticker": "COST",
-        "holding_sessions": 9,
+        "holding_sessions": 10,
         "time_exit_due": "2026-11-27",
-        "time_exit_due_today": false,
+        "time_exit_due_today": true,
         "sell_intent_created": false,
-        "time_exit_executed": false
+        "time_exit_executed": false,
+        "time_exit_due_or_overdue": true,
+        "time_exit_overdue": false
       },
       {
         "ticker": "JNJ",
-        "holding_sessions": 9,
+        "holding_sessions": 10,
         "time_exit_due": "2026-11-27",
-        "time_exit_due_today": false,
+        "time_exit_due_today": true,
         "sell_intent_created": false,
-        "time_exit_executed": false
+        "time_exit_executed": false,
+        "time_exit_due_or_overdue": true,
+        "time_exit_overdue": false
       }
     ],
-    "note": "與23:00同一NYSE休市日，GE仍10、其他持股仍9；不加一天、不重設日數或延長10日上限。",
-    "phase": "review",
-    "same_market_date_as_entry": true,
-    "market_closed": true
+    "note": "GE第11日、其他四檔第10日，全部已達時間退出條件。既有到期日不變，不因價格回升續抱；沒有持久賣單，pending仍0，尚未成交。"
   },
   "entry_phase_status": {
-    "status": "market-closed-local-readonly",
-    "run_type": "scheduled-holiday-readonly-check",
-    "market_date": "2026-11-26",
+    "status": "blocked-local-readonly",
+    "run_type": "scheduled-entry-readonly-diagnostic",
+    "market_date": "2026-11-27",
     "schedule_phase": "entry",
-    "trigger_received_at": "2026-11-26T15:03:40.561Z",
-    "started_at": "2026-11-26T15:04:15Z",
-    "read_only_checks_completed_at": "2026-11-26T15:09:43Z",
-    "market_closed": true,
-    "market_holiday": "Thanksgiving",
-    "normal_trading_applicable": false,
-    "regular_session_evaluation_required": false,
-    "closed_market_check_observed": true,
-    "closed_market_check_persisted": false,
+    "trigger_received_at": "2026-11-27T14:58:29.148Z",
+    "precheck_started_at": "2026-11-27T14:59:01Z",
+    "started_at": "2026-11-27T15:00:43Z",
+    "read_only_checks_completed_at": "2026-11-27T15:05:06Z",
+    "market_closed": false,
+    "market_holiday": null,
+    "early_close": true,
+    "normal_trading_applicable": true,
+    "regular_session_evaluation_required": true,
     "local_health_recorded": false,
     "scheduled_evaluation_completed": false,
     "scheduled_review_completed": false,
@@ -2354,17 +2524,15 @@
     "current_run_trade_ledger_persisted": false,
     "current_trade_intents_created": false,
     "pending_created": false,
-    "open_at": null,
-    "close_at": null,
-    "next_regular_session": "2026-11-27",
-    "next_open_at": "2026-11-27T14:30:00Z",
-    "next_close_at": "2026-11-27T18:00:00Z",
-    "next_early_close": true,
+    "new_execution_count": 0,
+    "open_at": "2026-11-27T14:30:00Z",
+    "close_at": "2026-11-27T18:00:00Z",
+    "calendar_source_url": "https://www.nyse.com/markets/hours-calendars",
     "previous_attempt": {
-      "market_date": "2026-11-25",
+      "market_date": "2026-11-26",
       "phase": "review",
-      "report": "reports/trader-x-2026-11-25-review-blocked-readonly-20261125170151.html",
-      "version": "2026-11-25-review-blocked-readonly-20261125170151-trader-x"
+      "report": "reports/trader-x-2026-11-26-review-closed-readonly-20261126170151.html",
+      "version": "2026-11-26-review-closed-readonly-20261126170151-trader-x"
     },
     "last_successful_operational_status": {
       "status": "off-schedule-preopen-recovery",
@@ -2388,10 +2556,20 @@
       "published_at": null,
       "pages_verified_at": null
     },
-    "report": "reports/trader-x-2026-11-26-closed-readonly-20261126150943.html",
-    "version": "2026-11-26-closed-readonly-20261126150943-trader-x"
+    "report": "reports/trader-x-2026-11-27-c-blocked-readonly-20261127150506.html",
+    "version": "2026-11-27-c-blocked-readonly-20261127150506-trader-x"
   },
   "review_phase_status": {
+    "market_date": "2026-11-27",
+    "schedule_phase": "review",
+    "due_at": "2026-11-27T17:00:00Z",
+    "taipei_due_at": "2026-11-28T01:00:00+08:00",
+    "status": "not-yet-due",
+    "scheduled_review_completed": false,
+    "evaluation_completed_at": null,
+    "note": "01:00與本晚23:00屬同一美股交易日，仍在今日提早收盤前；本次不代替第二次買賣評估。"
+  },
+  "previous_review_phase_status": {
     "status": "market-closed-local-readonly",
     "run_type": "scheduled-holiday-review-readonly-check",
     "market_date": "2026-11-26",
@@ -2423,14 +2601,9 @@
     "next_regular_session": "2026-11-27",
     "next_open_at": "2026-11-27T14:30:00Z",
     "next_close_at": "2026-11-27T18:00:00Z",
-    "next_early_close": true
-  },
-  "previous_review_phase_status": {
-    "market_date": "2026-11-25",
-    "phase": "review",
-    "completed": false,
-    "report": "reports/trader-x-2026-11-25-review-blocked-readonly-20261125170151.html",
-    "version": "2026-11-25-review-blocked-readonly-20261125170151-trader-x"
+    "next_early_close": true,
+    "report": "reports/trader-x-2026-11-26-review-closed-readonly-20261126170151.html",
+    "version": "2026-11-26-review-closed-readonly-20261126170151-trader-x"
   },
   "corporate_action_diagnostic": {
     "as_of": "2026-11-24",
@@ -2617,5 +2790,24 @@
     "included_in_nav": false,
     "prior_entry_report": "reports/trader-x-2026-11-25-c-blocked-readonly-20261125150322.html",
     "note": "來源快照早於本次查核，只有分鐘精度且未交叉核實，無持久意圖，不當首次合格決策後成交價。"
+  },
+  "previous_report": "reports/trader-x-2026-11-26-review-closed-readonly-20261126170151.html",
+  "previous_risk_diagnostic": {
+    "report": "reports/trader-x-2026-11-26-review-closed-readonly-20261126170151.html",
+    "version": "2026-11-26-review-closed-readonly-20261126170151-trader-x",
+    "diagnostic": {
+      "risk_diagnostic_only": true,
+      "checked_at": "2026-11-26T17:01:51Z",
+      "market_closed": true,
+      "quote_refresh_performed": false,
+      "observations": [],
+      "trade_intents_created": false,
+      "pending_created": false,
+      "ledger_updated": false,
+      "included_in_nav": false,
+      "prior_closed_market_report": "reports/trader-x-2026-11-26-closed-readonly-20261126150943.html",
+      "previous_open_market_report": "reports/trader-x-2026-11-25-review-blocked-readonly-20261125170151.html",
+      "note": "今日沒有正常盤，不重抓或重標價格；前次風險來源與時間保留，沒有改成今日或11/25收盤估值。"
+    }
   }
 }
