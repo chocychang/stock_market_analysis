@@ -236,8 +236,8 @@
       "與小C比較只作行為對照，不是同時啟動的公平前瞻競賽"
     ]
   },
-  "latest_report": "reports/da-c-2026-11-27-c-blocked-readonly-20261127150506.html",
-  "version": "2026-11-27-c-blocked-readonly-20261127150506-da-c",
+  "latest_report": "reports/da-c-2026-11-27-c-blocked-readonly-20261127150506-r2.html",
+  "version": "2026-11-27-c-blocked-readonly-20261127150506-da-c-r2",
   "execution": {
     "version": "2026-10-27-CDNS-filled-1546",
     "quote": {
@@ -272,7 +272,7 @@
     "valuation_type": "close",
     "as_of": "2026-11-13T21:00:00.000Z"
   },
-  "valuation_note": "帳戶金額與持股估值仍截止2026-11-18正常盤收盤。11/26休市查核沒有更新行情或NAV，前次11/25盤中快照未改稱收盤。未入帳股息亦未加現金或NAV。",
+  "valuation_note": "帳戶估值仍截止2026-11-18正常盤收盤。本次為11/27 23:00正常盤唯讀查核；今日提早收盤。新來源快照僅供風險診斷，沒有記入NAV，股數、成本、現金及損益未更新；未入帳股息亦未納入金額。",
   "realized_pnl_usd": -7364.78595999999,
   "performance": {
     "return": -0.027712779666666368,
@@ -991,5 +991,6 @@
       "previous_open_market_report": "reports/da-c-2026-11-25-c-blocked-readonly-20261125150322.html",
       "note": "今日無正常盤，未重抓價格，也未將前日盤中快照改稱昨日收盤或今日行情。前次風險來源與時間另存保留。"
     }
-  }
+  },
+  "previous_report_revision": "reports/da-c-2026-11-27-c-blocked-readonly-20261127150506.html"
 }

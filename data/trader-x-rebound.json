@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2026-11-27-c-blocked-readonly-20261127150506-trader-x-rebound",
+  "version": "2026-11-27-c-blocked-readonly-20261127150506-trader-x-rebound-r2",
   "name": "交易X跌深反彈",
   "strategy_kind": "rebound",
   "strategy_label": "跌深反彈實驗",
@@ -602,9 +602,9 @@
     "frozen_at": "2026-11-10T16:26:29.925Z",
     "note": "沿用建立角色前已保存12檔晨間觀察清單，只取股票名單，不沿用WATCH限制，不依後來報酬選股"
   },
-  "latest_report": "reports/trader-x-rebound-2026-11-27-c-blocked-readonly-20261127150506.html",
+  "latest_report": "reports/trader-x-rebound-2026-11-27-c-blocked-readonly-20261127150506-r2.html",
   "review": "本機檔案系統唯讀，無法先保存health、決策、行情輸入及原子帳本；本次只完成可核實的訊號／日曆／來源風險查核，未完成正常買賣評估，沒有新增成交或pending。 40檔反彈掃描未完成，不將未掃描當條件不符；本帳戶仍全現金，不挪用突破帳戶權益。",
-  "valuation_note": "帳戶估值仍截止2026-11-18正常盤收盤；本次01:00為休市唯讀查核，沒有更新行情、股數、成本、現金或NAV，未入帳股息亦未納入帳戶金額。",
+  "valuation_note": "帳戶估值仍截止2026-11-18正常盤收盤。本次為11/27 23:00正常盤唯讀查核；今日提早收盤。新來源快照僅供風險診斷，沒有記入NAV，股數、成本、現金及損益未更新；未入帳股息亦未納入金額。",
   "limitations": [
     "本次是01:00獨立休市查核，沒有以23:00當成本次完成；今日沒有正常盤成交。",
     "現有本機唯讀限制未解除，本次health、輸入、意圖與原子帳本沒有寫入；正常交易評估完成時間仍為null。",
@@ -2113,8 +2113,8 @@
       "published_at": null,
       "pages_verified_at": null
     },
-    "report": "reports/trader-x-rebound-2026-11-27-c-blocked-readonly-20261127150506.html",
-    "version": "2026-11-27-c-blocked-readonly-20261127150506-trader-x-rebound"
+    "report": "reports/trader-x-rebound-2026-11-27-c-blocked-readonly-20261127150506-r2.html",
+    "version": "2026-11-27-c-blocked-readonly-20261127150506-trader-x-rebound-r2"
   },
   "review_phase_status": {
     "market_date": "2026-11-27",
@@ -2202,5 +2202,6 @@
       "previous_open_market_report": "reports/trader-x-rebound-2026-11-25-review-blocked-readonly-20261125170151.html",
       "note": "今日沒有正常盤，不重抓或重標價格；前次風險來源與時間保留，沒有改成今日或11/25收盤估值。"
     }
-  }
+  },
+  "previous_report_revision": "reports/trader-x-rebound-2026-11-27-c-blocked-readonly-20261127150506.html"
 }

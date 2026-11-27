@@ -8,13 +8,13 @@
   "positions": [],
   "trades": [],
   "review": "本機檔案系統唯讀，無法先保存health、決策、行情輸入及原子帳本；本次只完成可核實的訊號／日曆／來源風險查核，未完成正常買賣評估，沒有新增成交或pending。 今日08:10封存12檔WATCH，沒有條件已驗證的明確BUY／SELL；小C沒有開盤買賣訊號，不因缺成交而把WATCH改為BUY。",
-  "latest_report": "reports/xiao-c-2026-11-27-c-blocked-readonly-20261127150506.html",
+  "latest_report": "reports/xiao-c-2026-11-27-c-blocked-readonly-20261127150506-r2.html",
   "methodology": "xiao-c-methodology.html",
   "run_at": "2026-11-27T15:05:06Z",
   "market_session": "2026-11-27",
   "signal_archive_valid": true,
   "valuation_type": "close",
-  "version": "2026-11-27-c-blocked-readonly-20261127150506-xiao-c",
+  "version": "2026-11-27-c-blocked-readonly-20261127150506-xiao-c-r2",
   "source_report_type": "daily_morning",
   "source_execution_allowed": false,
   "source_commit": "d45e00af12be0656ab27d39adb443225bcea464f",
@@ -84,7 +84,7 @@
   "valuation_session": "2026-11-18",
   "valuation_ended_at": "2026-11-18T21:00:00.000Z",
   "valuation_retrieved_at": "2026-11-19T13:47:19.941Z",
-  "valuation_note": "帳戶金額與持股估值仍截止2026-11-18正常盤收盤。11/26休市查核沒有更新行情或NAV，前次11/25盤中快照未改稱收盤。未入帳股息亦未加現金或NAV。",
+  "valuation_note": "帳戶估值仍截止2026-11-18正常盤收盤。本次為11/27 23:00正常盤唯讀查核；今日提早收盤。新來源快照僅供風險診斷，沒有記入NAV，股數、成本、現金及損益未更新；未入帳股息亦未納入金額。",
   "previous_trading_report": "reports/xiao-c-2026-11-16-entry-20261116152209349-r2.html",
   "previous_trading_evaluated_at": "2026-11-16T15:22:09.349Z",
   "performance": {
@@ -260,7 +260,7 @@
     "note": "原始公共頁面只在本次工具回應中核對，未能保存本機原始行情檔；時間僅有分鐘精度、不補造秒數。單一來源快照不當成交價、不更新NAV、不代表完整風控通過；價格回升不刪除前報告風險歷史。"
   },
   "name": "小C",
-  "previous_report_revision": "reports/xiao-c-2026-11-23-c-blocked-readonly-20261123150318.html",
+  "previous_report_revision": "reports/xiao-c-2026-11-27-c-blocked-readonly-20261127150506.html",
   "last_open_market_risk_diagnostic": {
     "risk_diagnostic_only": true,
     "checked_at": "2026-11-25T15:03:22Z",

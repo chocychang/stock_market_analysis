@@ -203,6 +203,8 @@
     const op = data.operational_status || {};
     const isRebound = data.strategy_kind === 'rebound' || reboundPage;
     const diagnosticOnly = data.universe_evaluation?.evaluation_type === 'diagnostic-only' || op.status === 'configuration-and-diagnostic-completed';
+    const persistenceBlocked = op.status === 'blocked-local-readonly';
+    const lastRegularEvaluation = op.evaluated_at || op.last_successful_operational_status?.last_regular_session_evaluation?.evaluated_at || data.previous_trading_evaluated_at;
     const strategyLabel = data.strategy_label || (isRebound ? '跌深反彈實驗' : '順勢突破');
     put('strategy-eyebrow', `TRADER X / ${strategyLabel}`);
     put('page-title', isRebound ? '交易X 跌深反彈實驗室' : '交易X 波段交易實驗室');
@@ -214,13 +216,15 @@
       : '檢查上一個完整正常交易日的收盤價，是否嚴格高於此前20個交易日最高價。股票名單與規則先固定，再觀察未來結果。');
 
     put('status-title', data.status || '帳戶狀態尚未提供');
-    put('status-detail', diagnosticOnly
+    put('status-detail', persistenceBlocked
+      ? `本次交易評估受本機唯讀限制阻擋，沒有新增成交或待成交單。${data.review || ''}`
+      : diagnosticOnly
       ? `選股池中的資料診斷並非買單；帳戶估值截點請依下方估值註記與逐股時間核對。${op.evaluated_at ? '' : '尚未執行正式交易評估；已掃描數量與缺資料原因另列。'}`
       : op.evaluated_at
       ? '此處為正式前瞻模擬紀錄；盤中估值與已完成收盤估值請依資料註記區分。'
       : '角色已建立，等待首次正式評估。尚未執行訊號掃描，也沒有因此回補過去成交。');
     put('updated-at', data.updated_at ? time(data.updated_at) : '尚未提供');
-    put('evaluated-at', time(op.evaluated_at));
+    put('evaluated-at', time(lastRegularEvaluation));
     put('data-version', data.version || '尚未提供');
     put('strategy-version', data.strategy_version || '策略版本尚未提供');
     if (data.valuation_note) put('valuation-note', data.valuation_note);
